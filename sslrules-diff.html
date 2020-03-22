@@ -1275,8 +1275,8 @@ A game is controlled by the community-maintained ssl-game-controller (<a href="h
 It is operated by the <a href="#_game_controller_operator">game controller operator</a>. The software translates decisions of the <a href="#_主審_referee">referee</a> and the <a href="#_automatic_referee">automatic referee</a> into Ethernet communication signals that are broadcast to the network. It maintains the state of the game, tracks all events and acts as a proxy between all participating parties in the game.</p>
 </div>
 <div class="paragraph">
-<p>game-controllerは試合を行うチームのためにネットワークインターフェースを持っている。各チームはボールが<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">アウトオブプレイ</a>の時に、自動的にキーパーのIDを切り替える事ができるほか、次の機会に向けてロボット交代の意図を伝えることや、<a href="#_アドバンテージルール_advantage_rule">アドバンテージルール</a>の要求に応答することができる。<br>
-The game-controller has a network interface for the playing teams. They can automatically change their keeper id when the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">out of play</a>, they can signal a robot substitution intent for the next opportunity and they can reply to requests of the <a href="#_アドバンテージルール_advantage_rule">advantage rule</a>.</p>
+<p><span class="diff_delete">game-controllerは試合を行うチームのためにネットワークインターフェースを持っている。各チームはボールが</span><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">アウトオブプレイ</span><span class="diff_insert">game-controllerは試合を行うチームのためにネットワークインターフェースを持っている。各チームは自動的に</span><a href="#_ゴールキーパーのidの選択_choosing_keeper_id"><span class="diff_insert">キーパーのIDを切り替える</span></a><span class="diff_delete">の時に、自動的にキーパーのIDを切り替える事ができるほか、次の機会に向けてロボット交代の意図を伝えることや、</span><span class="diff_insert">事ができるほか、次の機会に向けてロボット交代の意図を伝えることや、</span><a href="#_アドバンテージルール_advantage_rule">アドバンテージルール</a>の要求に応答することができる。<br>
+The game-controller has a network interface for the playing teams. They can automatically <a href="#_ゴールキーパーのidの選択_choosing_keeper_id">change their keeper <span class="diff_delete">id </span><span class="diff_delete">when </span><span class="diff_delete">the </span><span class="diff_delete">ball </span><span class="diff_delete">is </span><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">out </span><span class="diff_delete">of </span><span class="diff_delete">play</span><span class="diff_insert">id</span></a>, they can signal a robot substitution intent for the next opportunity and they can reply to requests of the <a href="#_アドバンテージルール_advantage_rule">advantage rule</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1747,6 +1747,35 @@ The <a href="#_主審_referee">referee</a> tosses a coin with both <a href="#_�
 <div class="paragraph">
 <p><a href="#_主審_referee">主審</a>は両チームの<a href="#_ハンドラ_robot_handler">ハンドラ</a>にどのロボットをキーパーとして使用するつもりなのか確認し、<a href="#_game_controller_operator">game controller operator</a>に情報を連絡する。<br>
 The <a href="#_主審_referee">referee</a> asks both <a href="#_ハンドラ_robot_handler">robot handlers</a> which robot they will use as the keeper and forwards this information to the <a href="#_game_controller_operator">game controller operator</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">キーパーのIDは、</span><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">アウトオブプレイ中</span></a><span class="diff_insert">もしくはボールがフィールドの相手側ハーフにあれば、以下の方法でいつでも変更できる:</span><br><span class="diff_insert">
+The </span><span class="diff_insert">keeper </span><span class="diff_insert">id </span><span class="diff_insert">can </span><span class="diff_insert">be </span><span class="diff_insert">changed </span><span class="diff_insert">anytime </span><span class="diff_insert">during </span><span class="diff_insert">the </span><span class="diff_insert">game </span><span class="diff_insert">if </span><span class="diff_insert">the </span><span class="diff_insert">ball </span><span class="diff_insert">is </span><span class="diff_insert">either </span><a href="#Ball In And Out Of Play"><span class="diff_insert">out </span><span class="diff_insert">of </span><span class="diff_insert">play</span></a> <span class="diff_insert">or </span><span class="diff_insert">in </span><span class="diff_insert">the </span><span class="diff_insert">opponent&#8217;s </span><span class="diff_insert">field </span><span class="diff_insert">half </span><span class="diff_insert">by:</span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="#_game_controller"><span class="diff_insert">Game </span><span class="diff_insert">controller</span></a><span class="diff_insert">のネットワークインターフェースを利用する</span><br><span class="diff_insert">
+Using </span><span class="diff_insert">the </span><a href="#_game_controller"><span class="diff_insert">game </span><span class="diff_insert">controller</span></a> <span class="diff_insert">network </span><span class="diff_insert">interface</span></p>
+</li>
+<li>
+<p><a href="#_game_controller_operator"><span class="diff_insert">game </span><span class="diff_insert">controller </span><span class="diff_insert">operator</span></a><span class="diff_insert">に、</span><a href="#_game_controller"><span class="diff_insert">game </span><span class="diff_insert">controller</span></a><span class="diff_insert">で設定されているキーパーのIDを変更するよう依頼する。</span><a href="#_game_controller_operator"><span class="diff_insert">Game </span><span class="diff_insert">controller </span><span class="diff_insert">operator</span></a><span class="diff_insert">は、ボールが適切な位置に来るまでキーパーのIDを変更してはならない。</span><br><span class="diff_insert">
+Asking </span><span class="diff_insert">the </span><a href="#_game_controller_operator"><span class="diff_insert">game </span><span class="diff_insert">controller </span><span class="diff_insert">operator</span></a> <span class="diff_insert">to </span><span class="diff_insert">change </span><span class="diff_insert">it </span><span class="diff_insert">in </span><span class="diff_insert">the </span><a href="#_game_controller"><span class="diff_insert">game </span><span class="diff_insert">controller</span></a><span class="diff_insert">. </span><span class="diff_insert">The </span><a href="#_game_controller_operator"><span class="diff_insert">game </span><span class="diff_insert">controller </span><span class="diff_insert">operator</span></a> <span class="diff_insert">must </span><span class="diff_insert">not </span><span class="diff_insert">change </span><span class="diff_insert">the </span><span class="diff_insert">keeper </span><span class="diff_insert">id </span><span class="diff_insert">until </span><span class="diff_insert">the </span><span class="diff_insert">ball </span><span class="diff_insert">is </span><span class="diff_insert">at </span><span class="diff_insert">a </span><span class="diff_insert">valid </span><span class="diff_insert">position.</span></p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content"><span class="diff_insert">
+チームは、要件を満たした時にのみ変更を要請する必要がある。</span><a href="#_game_controller_operator"><span class="diff_insert">Game </span><span class="diff_insert">controller </span><span class="diff_insert">operator</span></a><span class="diff_insert">はルールを尊守する必要がある。</span><br><span class="diff_insert">
+Teams </span><span class="diff_insert">should </span><span class="diff_insert">only </span><span class="diff_insert">ask </span><span class="diff_insert">for </span><span class="diff_insert">a </span><span class="diff_insert">change </span><span class="diff_insert">once </span><span class="diff_insert">the </span><span class="diff_insert">requirements </span><span class="diff_insert">are </span><span class="diff_insert">met. </span><span class="diff_insert">The </span><a href="#_game_controller_operator"><span class="diff_insert">game </span><span class="diff_insert">controller </span><span class="diff_insert">operator</span></a> <span class="diff_insert">is </span><span class="diff_insert">responsible </span><span class="diff_insert">for </span><span class="diff_insert">complying </span><span class="diff_insert">to </span><span class="diff_insert">the </span><span class="diff_insert">rules.
+</span></td>
+</tr>
+</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3834,7 +3863,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-22 </span><span class="diff_insert">07:16:24 </span>GMT
+最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-22 </span><span class="diff_insert">07:37:27 </span>GMT
 </div>
 </div>
 </body>

@@ -850,8 +850,8 @@ A game is controlled by the community-maintained ssl-game-controller (<a href="h
 It is operated by the <a href="#_game_controller_operator">game controller operator</a>. The software translates decisions of the <a href="#_主審_referee">referee</a> and the <a href="#_automatic_referee">automatic referee</a> into Ethernet communication signals that are broadcast to the network. It maintains the state of the game, tracks all events and acts as a proxy between all participating parties in the game.</p>
 </div>
 <div class="paragraph">
-<p>game-controllerは試合を行うチームのためにネットワークインターフェースを持っている。各チームはボールが<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">アウトオブプレイ</a>の時に、自動的にキーパーのIDを切り替える事ができるほか、次の機会に向けてロボット交代の意図を伝えることや、<a href="#_アドバンテージルール_advantage_rule">アドバンテージルール</a>の要求に応答することができる。<br>
-The game-controller has a network interface for the playing teams. They can automatically change their keeper id when the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">out of play</a>, they can signal a robot substitution intent for the next opportunity and they can reply to requests of the <a href="#_アドバンテージルール_advantage_rule">advantage rule</a>.</p>
+<p>game-controllerは試合を行うチームのためにネットワークインターフェースを持っている。各チームは自動的に<a href="#_ゴールキーパーのidの選択_choosing_keeper_id">キーパーのIDを切り替える</a>事ができるほか、次の機会に向けてロボット交代の意図を伝えることや、<a href="#_アドバンテージルール_advantage_rule">アドバンテージルール</a>の要求に応答することができる。<br>
+The game-controller has a network interface for the playing teams. They can automatically <a href="#_ゴールキーパーのidの選択_choosing_keeper_id">change their keeper id</a>, they can signal a robot substitution intent for the next opportunity and they can reply to requests of the <a href="#_アドバンテージルール_advantage_rule">advantage rule</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1322,6 +1322,35 @@ The <a href="#_主審_referee">referee</a> tosses a coin with both <a href="#_�
 <div class="paragraph">
 <p><a href="#_主審_referee">主審</a>は両チームの<a href="#_ハンドラ_robot_handler">ハンドラ</a>にどのロボットをキーパーとして使用するつもりなのか確認し、<a href="#_game_controller_operator">game controller operator</a>に情報を連絡する。<br>
 The <a href="#_主審_referee">referee</a> asks both <a href="#_ハンドラ_robot_handler">robot handlers</a> which robot they will use as the keeper and forwards this information to the <a href="#_game_controller_operator">game controller operator</a>.</p>
+</div>
+<div class="paragraph">
+<p>キーパーのIDは、<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">アウトオブプレイ中</a>もしくはボールがフィールドの相手側ハーフにあれば、以下の方法でいつでも変更できる:<br>
+The keeper id can be changed anytime during the game if the ball is either <a href="#Ball In And Out Of Play">out of play</a> or in the opponent&#8217;s field half by:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="#_game_controller">Game controller</a>のネットワークインターフェースを利用する<br>
+Using the <a href="#_game_controller">game controller</a> network interface</p>
+</li>
+<li>
+<p><a href="#_game_controller_operator">game controller operator</a>に、<a href="#_game_controller">game controller</a>で設定されているキーパーのIDを変更するよう依頼する。<a href="#_game_controller_operator">Game controller operator</a>は、ボールが適切な位置に来るまでキーパーのIDを変更してはならない。<br>
+Asking the <a href="#_game_controller_operator">game controller operator</a> to change it in the <a href="#_game_controller">game controller</a>. The <a href="#_game_controller_operator">game controller operator</a> must not change the keeper id until the ball is at a valid position.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content">
+チームは、要件を満たした時にのみ変更を要請する必要がある。<a href="#_game_controller_operator">Game controller operator</a>はルールを尊守する必要がある。<br>
+Teams should only ask for a change once the requirements are met. The <a href="#_game_controller_operator">game controller operator</a> is responsible for complying to the rules.
+</td>
+</tr>
+</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3409,7 +3438,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2020-03-22 07:16:24 GMT
+最終更新 2020-03-22 07:37:27 GMT
 </div>
 </div>
 </body>
