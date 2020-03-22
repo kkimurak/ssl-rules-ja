@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.1">
-<meta name="author" content="2020-02-27">
+<meta name="author" content="2020-03-22">
 <title>RoboCup小型機リーグルール</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -430,7 +430,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCup小型機リーグルール</h1>
 <div class="details">
-<span id="author" class="author">2020-02-27</span><br>
+<span id="author" class="author">2020-03-22</span><br>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">目次</div>
@@ -907,8 +907,8 @@ Existing implementations can be found on Github: <a href="https://github.com/Rob
 <div class="sect2">
 <h3 id="_ロボットの台数_number_of_robots">3.1. ロボットの台数/Number Of Robots</h3>
 <div class="paragraph">
-<p>試合は1台のキーパーを含んだディヴィジョンAなら8台以下、ディヴィジョンBなら6台以下のロボットを使用する2つのチームで行われる。試合中に審判がロボットを識別できるように、各ロボットにはVision pattarnに従って明確に番号が与えられていなければならない。ゴールキーパーのIDは試合が始まる前に指定されていなければならない(「<a href="#_ゴールキーパーのidの選択_choosing_keeper_id">ゴールキーパーのIDの選択</a>」を参照)。<br>
-A match is played by two teams, with each team consisting of not more than 8 robots in division A and not more than 6 robots in division B, one of which may be the keeper. Each robot must be clearly numbered according to its vision pattern so that the referee can identify it during the match. The id of the keeper must be chosen before the match starts (see [<a href="#_ゴールキーパーのidの選択_choosing_keeper_id">Choosing Keeper ID</a>]).</p>
+<p>試合は1台のキーパーを含んだディヴィジョンAなら11台以下、ディヴィジョンBなら6台以下のロボットを使用する2つのチームで行われる。試合中に審判がロボットを識別できるように、各ロボットにはVision pattarnに従って明確に番号が与えられていなければならない。ゴールキーパーのIDは試合が始まる前に指定されていなければならない(「<a href="#_ゴールキーパーのidの選択_choosing_keeper_id">ゴールキーパーのIDの選択</a>」を参照)。<br>
+A match is played by two teams, with each team consisting of not more than 11 robots in division A and not more than 6 robots in division B, one of which may be the keeper. Each robot must be clearly numbered according to its vision pattern so that the referee can identify it during the match. The id of the keeper must be chosen before the match starts (see [<a href="#_ゴールキーパーのidの選択_choosing_keeper_id">Choosing Keeper ID</a>]).</p>
 </div>
 </div>
 <div class="sect2">
@@ -2516,6 +2516,13 @@ If a robot other than the keeper touches the ball while being partially inside i
 If a robot other than the keeper touches the ball while being entirely inside its own defense area, the game is stopped and a <a href="#_ペナルティーキック_penalty_kick">penalty kick</a> is awarded to the other team. The foul counter is not increased.</p>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_境界線との交差_boundary_crossing">8.2.11. 境界線との交差/Boundary Crossing</h4>
+<div class="paragraph">
+<p>ロボットは、フィールド境界を越えてフィールド外に出るようにボールを蹴ってはならない。<br>
+A robot must not kick the ball over the field boundary such that the ball leaves the field.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_非スポーツマン行為_unsporting_behavior">8.3. 非スポーツマン行為/Unsporting Behavior</h3>
@@ -3402,7 +3409,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2020-02-27 13:36:57 GMT
+最終更新 2020-03-22 07:16:24 GMT
 </div>
 </div>
 </body>
