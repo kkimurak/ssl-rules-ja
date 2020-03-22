@@ -2357,16 +2357,50 @@ Penalty Kicks are used to punish teams that received multiple <a href="#_イエ�
 <h4 id="_イエローカード_yellow_card">5.4.1. イエローカード/Yellow Card</h4>
 <div class="paragraph">
 <div class="title">定義/Definition</div>
-<p>イエローカードは<a href="#_ハルト_halt">ハルト</a>中の時のみ宣告される。<br>
-A yellow card can only be given during <a href="#_ハルト_halt">halt</a>.</p>
+<p><span class="diff_delete">イエローカードは</span><a href="#_ハルト_halt"><span class="diff_delete">ハルト</span></a><span class="diff_delete">中の時のみ宣告される。</span><br><span class="diff_delete">
+A </span><span class="diff_delete">yellow </span><span class="diff_delete">card </span><span class="diff_delete">can </span><span class="diff_delete">only </span><span class="diff_delete">be </span><span class="diff_delete">given </span><span class="diff_delete">during </span><a href="#_ハルト_halt"><span class="diff_delete">halt</span></a><span class="diff_delete">.</span></p>
 </div>
 <div class="paragraph">
 <p>イエローカードが非スポーツマン行為の結果として示された場合、主審は直ちに試合を<a href="#_ハルト_halt">中断</a>することができる。この場合、もう片方のチームの直接フリーキックで試合が継続される。<br>
 If the yellow card is shown as a result of <a href="#_非スポーツマン行為_unsporting_behavior">unsporting behavior</a>, the referee may decide to immediately <a href="#_ハルト_halt">halt</a> the match. In this case, the match continues with a direct free kick for the other team.</p>
 </div>
 <div class="paragraph">
-<p>イエローカードを受け取ると、ペナルティを受けたチームがフィールドに出場させて良いロボットの数が1台減少する。この減少のあと、チームがフィールドに出場させて良い台数よりも多くのロボットが出場している場合、<a href="#_試合の再開_resuming_the_game">試合の再開</a>より前に<a href="#_ロボットの交代_robot_substitution">ロボットを退場</a>させなければいけない。ペナルティを受けたチームは、退場させるロボットを選択することができる。<br>
-Upon receipt of a yellow card, the number of robots allowed on the field for the penalized team decreases by one. If, after this decrease, the team has more robots than permitted on the field, a robot must be <a href="#_ロボットの交代_robot_substitution">taken out</a> before <a href="#_試合の再開_resuming_the_game">play resumes</a>. The penalized team can choose the robot to remove.</p>
+<p>イエローカードを受け取ると、ペナルティを受けたチームがフィールドに出場させて良いロボットの数が1台減少する。この減少のあと、チームがフィールドに出場させて良い台数よりも多くのロボットが出場している場合、<a href="#_試合の再開_resuming_the_game"><span class="diff_delete">試合の再開</span></a><span class="diff_delete">より前に</span><a href="#_ロボットの交代_robot_substitution">ロボットを退場</a><span class="diff_delete">させなければいけない。ペナルティを受けたチームは、退場させるロボットを選択することができる。</span><span class="diff_insert">させなければいけない。</span><br>
+Upon receipt of a yellow card, the number of robots allowed on the field for the penalized team decreases by one. If, after this decrease, the team has more robots than permitted on the field, a robot must be <a href="#_ロボットの交代_robot_substitution">taken out</a> <span class="diff_delete">before </span><a href="#_試合の再開_resuming_the_game"><span class="diff_delete">play </span><span class="diff_delete">resumes</span><span class="diff_insert">.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">イエローカードは自動的には試合を停止させない。</span><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><span class="diff_insert">であれば、イエローカードを受けたチームは10秒間で、</span><a href="#_ロボットの交代_robot_substitution"><span class="diff_insert">自動的にロボットを退場</span></a><span class="diff_insert">させることができる。もしその時間でロボットが退場しなかった場合、ゲームは</span><a href="#_ロボットの交代_robot_substitution"><span class="diff_insert">手動でのロボット退場</span></a><span class="diff_insert">のため停止させられる。</span><br><span class="diff_insert">
+A </span><span class="diff_insert">yellow </span><span class="diff_insert">card </span><span class="diff_insert">does </span><span class="diff_insert">not </span><span class="diff_insert">lead </span><span class="diff_insert">to </span><span class="diff_insert">a </span><span class="diff_insert">stop </span><span class="diff_insert">automatically. </span><span class="diff_insert">If </span><span class="diff_insert">the </span><span class="diff_insert">the </span><span class="diff_insert">ball </span><span class="diff_insert">is </span><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">in </span><span class="diff_insert">play</span></a><span class="diff_insert">, </span><span class="diff_insert">the </span><span class="diff_insert">team </span><span class="diff_insert">will </span><span class="diff_insert">have </span><span class="diff_insert">10 </span><span class="diff_insert">seconds </span><span class="diff_insert">to </span><a href="#Robot Substitution"><span class="diff_insert">automatically </span><span class="diff_insert">remove </span><span class="diff_insert">the </span><span class="diff_insert">robot</span></a>. <span class="diff_delete">The </span><span class="diff_delete">penalized </span><span class="diff_insert">If </span><span class="diff_insert">a </span><span class="diff_insert">robot </span><span class="diff_insert">is </span><span class="diff_insert">not </span><span class="diff_insert">taken </span><span class="diff_insert">out </span><span class="diff_insert">within </span><span class="diff_insert">time, </span><span class="diff_insert">the </span><span class="diff_insert">game </span><span class="diff_insert">is </span><span class="diff_insert">stopped </span><span class="diff_insert">for </span><a href="#_ロボットの交代_robot_substitution"><span class="diff_insert">manual </span><span class="diff_insert">substitution</span></a><span class="diff_insert">.</span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content"><span class="diff_insert">
+このルールは、イエローカードを受け取った後、ゲームが自動的に停止しない可能性があることを意味する。しかしながら、例えば部品を落とすといった、イエローカードの対象となるファウルがあった場合はゲームは停止する。したがって、これらのファウルのいずれかが発生した場合、チームはロボットを手動で取り除くことができる。</span><br><span class="diff_insert">
+This </span><span class="diff_insert">rule </span><span class="diff_insert">implies </span><span class="diff_insert">that </span><span class="diff_insert">after </span><span class="diff_insert">receiving </span><span class="diff_insert">a </span><span class="diff_insert">yellow </span><span class="diff_insert">card, </span><span class="diff_insert">the </span><span class="diff_insert">game </span><span class="diff_insert">might </span><span class="diff_insert">not </span><span class="diff_insert">be </span><span class="diff_insert">automatically </span><span class="diff_insert">stopped. </span><span class="diff_insert">However, </span><span class="diff_insert">the </span><span class="diff_insert">game </span><span class="diff_insert">will </span><span class="diff_insert">be </span><span class="diff_insert">stopped </span><span class="diff_insert">if </span><span class="diff_insert">the </span><span class="diff_insert">foul </span><span class="diff_insert">that </span><span class="diff_insert">led </span><span class="diff_insert">to </span><span class="diff_insert">the </span><span class="diff_insert">yellow </span><span class="diff_insert">card </span><span class="diff_insert">causes </span><span class="diff_insert">a </span><span class="diff_insert">game </span><span class="diff_insert">stoppage, </span><span class="diff_insert">e.g. </span><span class="diff_insert">dropping </span><span class="diff_insert">parts. </span><span class="diff_insert">Therefore, </span><span class="diff_insert">if </span><span class="diff_insert">one </span><span class="diff_insert">of </span><span class="diff_insert">those </span><span class="diff_insert">fouls </span><span class="diff_insert">occurred, </span><span class="diff_insert">the </span>team <span class="diff_delete">can </span><span class="diff_delete">choose </span><span class="diff_insert">is </span><span class="diff_insert">allowed </span><span class="diff_insert">to </span><span class="diff_insert">manually </span><span class="diff_insert">remove </span><span class="diff_insert">the </span><span class="diff_insert">robot.
+</span></td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content"><span class="diff_insert">
+2020年のルールでは、時間内にロボットを外に出せなかった場合もペナルティーは無い。したがって、ゲームはフォーススタートにより再開する。しかしながら2021年には、ロボットを手動で取り除いた場合には、ボールは当該チームのディフェンスエリアから1.5mのミッドライン上に置かれ、相手チームのフリーキックとなる。</span><br><span class="diff_insert">
+In </span><span class="diff_insert">2020 </span><span class="diff_insert">no </span><span class="diff_insert">penalty </span><span class="diff_insert">will </span><span class="diff_insert">be </span><span class="diff_insert">given </span><span class="diff_insert">to </span><span class="diff_insert">the </span><span class="diff_insert">team </span><span class="diff_insert">that </span><span class="diff_insert">couldn&#8217;t </span><span class="diff_insert">get </span>the robot <span class="diff_delete">to </span><span class="diff_delete">remove.</span><span class="diff_insert">out </span><span class="diff_insert">of </span><span class="diff_insert">the </span><span class="diff_insert">field </span><span class="diff_insert">in </span><span class="diff_insert">time. </span><span class="diff_insert">Thus, </span><span class="diff_insert">the </span><span class="diff_insert">game </span><span class="diff_insert">shall </span><span class="diff_insert">be </span><span class="diff_insert">restarted </span><span class="diff_insert">using </span><span class="diff_insert">a </span><span class="diff_insert">force </span><span class="diff_insert">start. </span><span class="diff_insert">However, </span><span class="diff_insert">in </span><span class="diff_insert">2021, </span><span class="diff_insert">if </span><span class="diff_insert">the </span><span class="diff_insert">robot </span><span class="diff_insert">gets </span><span class="diff_insert">manually </span><span class="diff_insert">substituted, </span><span class="diff_insert">the </span><span class="diff_insert">ball </span><span class="diff_insert">is </span><span class="diff_insert">placed </span><span class="diff_insert">on </span><span class="diff_insert">the </span><span class="diff_insert">mid </span><span class="diff_insert">line </span><span class="diff_insert">and </span><span class="diff_insert">1.5 </span><span class="diff_insert">meters </span><span class="diff_insert">away </span><span class="diff_insert">from </span><span class="diff_insert">the </span><span class="diff_insert">teams </span><span class="diff_insert">defense </span><span class="diff_insert">area </span><span class="diff_insert">and </span><span class="diff_insert">the </span><span class="diff_insert">opposing </span><span class="diff_insert">team </span><span class="diff_insert">gets </span><span class="diff_insert">a </span><span class="diff_insert">free </span><span class="diff_insert">kick.
+</span></td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">許可された台数以上のロボットがフィールド上にある間は、そのチームの得点は認められない。</span><br><span class="diff_insert">
+A </span><span class="diff_insert">team </span><span class="diff_insert">cannot </span><span class="diff_insert">score </span><span class="diff_insert">a </span><span class="diff_insert">goal </span><span class="diff_insert">while </span><span class="diff_insert">having </span><span class="diff_insert">more </span><span class="diff_insert">than </span><span class="diff_insert">the </span><span class="diff_insert">allowed </span><span class="diff_insert">number </span><span class="diff_insert">of </span><span class="diff_insert">robots </span><span class="diff_insert">on </span><span class="diff_insert">the </span><span class="diff_insert">field.</span></p>
 </div>
 <div class="paragraph">
 <p>(game controllerによって計測された)試合時間が120秒経過した後、イエローカードの有効期間が終了してフィールドに出場してよいロボットが1台増える。イエローカードを受けていたチームは次の機会に<a href="#_ロボットの交代_robot_substitution">ロボットを戻しても良い</a>。<br>
@@ -3892,7 +3926,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-22 </span><span class="diff_insert">08:09:54 </span>GMT
+最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-22 </span><span class="diff_insert">08:53:31 </span>GMT
 </div>
 </div>
 </body>
