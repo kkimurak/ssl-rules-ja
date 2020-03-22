@@ -488,6 +488,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_ロボットの交代_robot_substitution">9. ロボットの交代/Robot Substitution</a></li>
 <li><a href="#_シュートアウト_shoot_out">10. シュートアウト/Shoot-Out</a></li>
+<li><a href="#_非常停止_emergency_stop">11. 非常停止/Emergency stop</a></li>
 <li><a href="#_専門用語_terminology">付録 A: 専門用語/Terminology</a>
 <ul class="sectlevel2">
 <li><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">A.1. インプレイとアウトオブプレイ/Ball In And Out Of Play</a></li>
@@ -2915,6 +2916,91 @@ Shoot-Out is used to determine the winner of an elimination match if both teams 
 </div>
 </div>
 <div class="sect1">
+<h2 id="_非常停止_emergency_stop">11. 非常停止/Emergency stop</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>このルールはDivision Aにのみ適用される。<br>
+This rule only applies to Division A.</p>
+</div>
+<div class="paragraph">
+<div class="title">定義/Definition</div>
+<p>チームは現在の状況に関係なく、10秒の猶予時間後もしくは次のストップのいずれか早い時点でゲームを停止するよう要求できる。
+これはイエローカードとなり、直ちにタイムアウトの取得となる。
+非常停止を要求したチームにタイムアウトが残されていない場合でもフィールド上からロボットを取り除くことはできるが、残りのタイムアウト時間を使用することはできない。<br>
+A team can ask to stop the game immediately after a grace period of 10 seconds or at the next stoppage, whichever happens first regardless of the current situation.
+It will receive a yellow card for this and must take a timeout immediately.
+If the team is out of timeouts, it is still allowed to remove robots from the field, but can not use any remaining timeout time.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content">
+このルールは極端な - 例えばソフトウェアがクラッシュした、ロボットが自分自身にダメージを与えている、といった - 状況でのみ使用されることを想定する。<br>
+This rule is supposed to be used in extreme situations only, e.g. a software crash or when robots are damaging themselves significantly.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>このルールで試合が停止された場合、以下の3つの可能性が考えられる:<br>
+When the game is stopped due to this rule, there are three possibilities that may have happened:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>猶予時間が経過し、試合が停止された。<br>
+The grace period has passed and the game is stopped.</p>
+</li>
+<li>
+<p>主審が、猶予時間が経過するより早く試合を停止した。<br>
+The human referee stopped the game earlier.</p>
+</li>
+<li>
+<p>ファウルが発生した、またはボールがフィールド外に出たことにより、猶予時間より早く試合が停止した。<br>
+The game is stopped earlier due to the ball leaving the field or because of a foul.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>これらの可能性に対し、試合を処理するにあたって以下の2種類の方法がある:<br>
+For these possibilities there are two methods to proceed the game:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>1</strong> および <strong>2</strong> に対しては、試合は相手チームの<a href="#フリーキック/Free Kick">フリーキック</a>で続行される。<br>
+For <strong>1</strong> and <strong>2</strong>, the game is continued with a <a href="#フリーキック/Free Kick">free kick</a> for the opposing team.</p>
+</li>
+<li>
+<p><strong>3</strong> に対しては、試合は通常のタイムアウトと同様に続行される。<br>
+For <strong>3</strong>, the game is continued like after a regular timeout.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">用途/Usage</div>
+<p>非常停止の意図は<a href="#コミュニケーションフラッグ/Communication Flags">コミュニケーションフラッグ</a>を使用して伝えらえる。<br>
+An emergency stop intent can be made using <a href="#コミュニケーションフラッグ/Communication Flags">communication flags</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content">
+主審は、有望なプレイが行われていない場合は猶予時間より早く試合を停止することができる。<br>
+The referee may stop the game earlier if there is no promising play in action.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_専門用語_terminology">付録 A: 専門用語/Terminology</h2>
 <div class="sectionbody">
 <div class="sect2">
@@ -3488,7 +3574,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2020-03-22 08:53:31 GMT
+最終更新 2020-03-22 11:48:13 GMT
 </div>
 </div>
 </body>
