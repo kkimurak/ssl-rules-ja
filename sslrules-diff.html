@@ -1115,8 +1115,8 @@ The numbers in the figures below show the distances in millimeters.
 The playing surface is green felt mat or carpet. The floor under the carpet is level, flat, and hard.</p>
 </div>
 <div class="paragraph">
-<p>フィールドはすべての<a href="#_フィールドライン_field_lines">フィールドライン</a>から0.7mまで続いている。フィールドの外周には高さ0.1mのフェンスがあり、ロボットやボールがフィールド外に出ることを防ぐ。フィールドのさらに0.4m外側は<a href="#_主審_referee">主審</a>と<a href="#_副審_assistant_referee">副審</a>が通行するためのエリアである。<br>
-The field surface will continue for 0.7 meters beyond the <a href="#_フィールドライン_field_lines">field lines</a> on all sides. The outer 0.4 meters of this runoff area, separated from the robot area by a 0.1 meters tall wall, is used as a designated walking area for the <a href="#_主審_referee">referee</a> and the <a href="#_副審_assistant_referee">assistant referee</a>.</p>
+<p>フィールドはすべての<a href="#_フィールドライン_field_lines">フィールドライン</a>から0.7mまで続いている。フィールドの外周には高さ0.1mのフェンスがあり、ロボットやボールがフィールド外に出ることを防ぐ。フィールドのさらに0.4m外側は<a href="#_主審_referee">主審</a>と<a href="#_副審_assistant_referee">副審</a><span class="diff_delete">が通行するためのエリアである。</span><span class="diff_insert">が通行するためのエリアである。 </span><span class="diff_insert">残りの0.3mはフィールドのマージンである。</span><br>
+The field surface will continue for 0.7 meters beyond the <a href="#_フィールドライン_field_lines">field lines</a> on all sides. The outer 0.4 meters of this runoff area, separated from the robot area by a 0.1 meters tall wall, is used as a designated walking area for the <a href="#_主審_referee">referee</a> and the <a href="#_副審_assistant_referee">assistant referee</a><span class="diff_delete">.</span><span class="diff_insert">. </span><span class="diff_insert">The </span><span class="diff_insert">remaining </span><span class="diff_insert">0.3 </span><span class="diff_insert">meters </span><span class="diff_insert">are </span><span class="diff_insert">the </span><span class="diff_insert">field </span><span class="diff_insert">margins.</span></p>
 </div>
 </div>
 <div class="sect3">
@@ -1678,6 +1678,10 @@ The robot handler helps <a href="#_競技の準備_match_preparation">preparing 
 <li>
 <p>必要であれば、ハンドラは主審に<a href="#_タイムアウト_timeouts">タイムアウト</a>を要求する。<br>
 The robot handler asks the referee for <a href="#_タイムアウト_timeouts">timeouts</a> if necessary.</p>
+</li>
+<li>
+<p><span class="diff_insert">ハンドラは</span><a href="#_ロボットの交代_robot_substitution"><span class="diff_insert">試合中にロボットを交代することができる</span></a><span class="diff_insert">。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">robot </span><span class="diff_insert">handler </span><span class="diff_insert">can </span><a href="#_ロボットの交代_robot_substitution"><span class="diff_insert">substitute </span><span class="diff_insert">a </span><span class="diff_insert">robot </span><span class="diff_insert">during </span><span class="diff_insert">game </span><span class="diff_insert">play</span></a><span class="diff_insert">.</span></p>
 </li>
 <li>
 <p>ハンドラは次のStop Game時にロボットを交代する許可を主審に要求し、主審が許可した場合は<a href="#_ロボットの交代_robot_substitution">ロボットを交代する</a>。<br>
@@ -3109,27 +3113,48 @@ If the team is not connected to the game controller or does not reply within 0.2
 <p>ロボットはそれぞれのチームの<a href="#_ハンドラ_robot_handler">ハンドラ</a>によって交代される。他のいかなるチームメンバもロボットを出し入れすることは許可されない。<br>
 Robots are substituted by the <a href="#_ハンドラ_robot_handler">robot handler</a> of the respective team. No other team member is allowed to take robots out or put robots in.</p>
 </div>
+<div class="paragraph">
+<p><a href="#_ハンドラ_robot_handler"><span class="diff_insert">ハンドラ</span></a><span class="diff_insert">は、visionシステムに干渉しない色の長袖を着用することが推奨される。</span><br><span class="diff_insert">
+The </span><a href="#_ハンドラ_robot_handler"><span class="diff_insert">robot </span><span class="diff_insert">handler</span></a> <span class="diff_insert">should </span><span class="diff_insert">prefer </span><span class="diff_insert">to </span><span class="diff_insert">use </span><span class="diff_insert">long </span><span class="diff_insert">sleeves </span><span class="diff_insert">and </span><span class="diff_insert">colors </span><span class="diff_insert">that </span><span class="diff_insert">won&#8217;t </span><span class="diff_insert">interfere </span><span class="diff_insert">with </span><span class="diff_insert">the </span><span class="diff_insert">vision </span><span class="diff_insert">system.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">以下のすべての条件に適合する場合は、ゲーム中のいつでも</span><a href="#_主審_referee"><span class="diff_insert">主審</span></a><span class="diff_insert">に確認を取ることなくロボットを交代させることができる:</span><br><span class="diff_insert">
+Robots </span><span class="diff_insert">can </span><span class="diff_insert">always </span><span class="diff_insert">be </span><span class="diff_insert">substituted </span><span class="diff_insert">during </span><span class="diff_insert">game </span><span class="diff_insert">play </span><span class="diff_insert">without </span><span class="diff_insert">notifying </span><span class="diff_insert">the </span><a href="#_主審_referee"><span class="diff_insert">referee</span></a> <span class="diff_insert">if </span><span class="diff_insert">all </span><span class="diff_insert">the </span><span class="diff_insert">following </span><span class="diff_insert">conditions </span><span class="diff_insert">are </span><span class="diff_insert">met:</span></p>
+</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>ロボットの交代のためにチームが指定した<a href="#_ハンドラ_robot_handler">ハンドラ</a>は、以下の動作の少なくとも1つを所定の順序で実行する。<br>
-A <a href="#_ハンドラ_robot_handler">robot handler</a> who&#8217;s team is marked for robot substitution performs at least one of the following operations in the given order.</p>
+<p><span class="diff_delete">ロボットの交代のためにチームが指定した</span><a href="#_ハンドラ_robot_handler"><span class="diff_delete">ハンドラ</span><span class="diff_insert">ロボットは少なくとも部分的に</span><a href="#_フィールドの表面_field_surface"><span class="diff_insert">フィールドのマージン部分</span></a><span class="diff_delete">は、以下の動作の少なくとも1つを所定の順序で実行する。</span><span class="diff_insert">にある。</span><br><span class="diff_delete">
+A </span><a href="#_ハンドラ_robot_handler"><span class="diff_insert">
+The </span>robot <span class="diff_delete">handler</span></a> <span class="diff_delete">who&#8217;s </span><span class="diff_delete">team </span>is <span class="diff_delete">marked </span><span class="diff_delete">for </span><span class="diff_delete">robot </span><span class="diff_delete">substitution </span><span class="diff_delete">performs </span>at least <span class="diff_delete">one </span><span class="diff_delete">of </span><span class="diff_insert">partially </span><span class="diff_insert">inside </span>the <span class="diff_delete">following </span><span class="diff_delete">operations </span><span class="diff_delete">in </span><span class="diff_delete">the </span><span class="diff_delete">given </span><span class="diff_delete">order.</span></p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>ロボットを中に置く。チームがフィールド上においてよい最大数を超えてはいけない。<br>
-Put robots in. The maximum allowed number of robots of the team on the field must not be exceeded.</p>
+<p><span class="diff_delete">ロボットを中に置く。チームがフィールド上においてよい最大数を超えてはいけない。</span><br><span class="diff_delete">
+Put </span><span class="diff_delete">robots </span><span class="diff_delete">in. </span><span class="diff_delete">The </span><span class="diff_delete">maximum </span><span class="diff_delete">allowed </span><span class="diff_delete">number </span><span class="diff_delete">of </span><span class="diff_delete">robots </span><span class="diff_delete">of </span><span class="diff_delete">the </span><span class="diff_delete">team </span><span class="diff_delete">on </span><span class="diff_delete">the </span><a href="#_フィールドの表面_field_surface">field <span class="diff_delete">must </span><span class="diff_delete">not </span><span class="diff_delete">be </span><span class="diff_delete">exceeded.</span><span class="diff_insert">margin</span></a><span class="diff_insert">.</span></p>
 </li>
 <li>
-<p>ロボットを取り除く。取り除かれたロボットがハーフウェイラインとタッチラインの交点から1m以内の距離にいる場合、別のロボットをすぐに置くことができる。それ以外の場合はハンドラは次の機会を待たなければならない。<br>
-Take robots out. If a robot that is taken out is closer than 1 meter to the intersection of the halfway line with one of the touch lines, another robot can be put in right away. Otherwise the robot handler has to wait until the next substitution opportunity.</p>
+<p><span class="diff_delete">ロボットを取り除く。取り除かれたロボットがハーフウェイラインとタッチラインの交点から1m以内の距離にいる場合、別のロボットをすぐに置くことができる。それ以外の場合はハンドラは次の機会を待たなければならない。</span><span class="diff_insert">ロボットはハーフウェーラインから1mを超えない位置にある。</span><br><span class="diff_delete">
+Take </span><span class="diff_delete">robots </span><span class="diff_delete">out. </span><span class="diff_delete">If </span><span class="diff_insert">
+The </span><span class="diff_insert">robot </span><span class="diff_insert">is </span><span class="diff_insert">at </span>a <span class="diff_delete">robot </span><span class="diff_delete">that </span><span class="diff_delete">is </span><span class="diff_delete">taken </span><span class="diff_delete">out </span><span class="diff_delete">is </span><span class="diff_delete">closer </span><span class="diff_delete">than </span><span class="diff_delete">1 </span><span class="diff_delete">meter </span><span class="diff_delete">to </span><span class="diff_delete">the </span><span class="diff_delete">intersection </span><span class="diff_delete">of </span><span class="diff_insert">distance </span><span class="diff_insert">from </span>the halfway line <span class="diff_delete">with </span><span class="diff_delete">one </span><span class="diff_delete">of </span><span class="diff_insert">that </span><span class="diff_insert">must </span><span class="diff_insert">not </span><span class="diff_insert">exceed </span><span class="diff_insert">1 </span><span class="diff_insert">meter.</span></p>
+</li>
+<li>
+<p><span class="diff_insert">ボールはハーフウェーラインから少なくとも2m離れた地点にある。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">ball </span><span class="diff_insert">must </span><span class="diff_insert">be </span><span class="diff_insert">at </span><span class="diff_insert">least </span><span class="diff_insert">2 </span><span class="diff_insert">meters </span><span class="diff_insert">away </span><span class="diff_insert">from </span>the <span class="diff_delete">touch </span><span class="diff_delete">lines, </span><span class="diff_delete">another </span><span class="diff_delete">robot </span><span class="diff_delete">can </span><span class="diff_delete">be </span><span class="diff_delete">put </span><span class="diff_delete">in </span><span class="diff_delete">right </span><span class="diff_delete">away. </span><span class="diff_delete">Otherwise </span><span class="diff_delete">the </span><span class="diff_delete">robot </span><span class="diff_delete">handler </span><span class="diff_delete">has </span><span class="diff_delete">to </span><span class="diff_delete">wait </span><span class="diff_delete">until </span><span class="diff_delete">the </span><span class="diff_delete">next </span><span class="diff_delete">substitution </span><span class="diff_delete">opportunity.</span><span class="diff_insert">halfway </span><span class="diff_insert">line.</span></p>
 </li>
 </ol>
 </div>
 </li>
+<li><div class="paragraph">
+<p><span class="diff_delete">取り除かれたロボットのうち1台がキーパーだった場合、</span><span class="diff_insert">加えて、</span><a href="#_試合の停止_stopping_the_game"><span class="diff_insert">ストップゲーム中</span></a><span class="diff_insert">であれば、ロボットはどの位置からでも以下の手順に従い</span><a href="#_ハンドラ_robot_handler">ハンドラ</a><span class="diff_delete">は</span><a href="#_game_controller_operator"><span class="diff_delete">game </span><span class="diff_delete">controller </span><span class="diff_delete">operator</span></a><span class="diff_delete">にキーパーの役割を引き継ぐロボットのIDを伝える。</span><span class="diff_insert">により交代させられる:</span><br><span class="diff_delete">
+If </span><span class="diff_delete">one </span><span class="diff_delete">of </span><span class="diff_delete">the </span><span class="diff_insert">
+Additionally, </span>robots <span class="diff_insert">can </span><span class="diff_insert">be </span>taken out <span class="diff_delete">is </span><span class="diff_delete">the </span><span class="diff_delete">keeper, </span><span class="diff_insert">from </span><span class="diff_insert">any </span><span class="diff_insert">position </span><span class="diff_insert">during </span><a href="#_試合の停止_stopping_the_game"><span class="diff_insert">game </span><span class="diff_insert">stoppage</span></a> <span class="diff_insert">by </span>the <a href="#_ハンドラ_robot_handler">robot handler</a> <span class="diff_delete">tells </span><span class="diff_insert">using </span>the <a href="#_game_controller_operator"><span class="diff_delete">game </span><span class="diff_delete">controller </span><span class="diff_delete">operator</span><span class="diff_insert">procedure </span><span class="diff_insert">below:</span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>取り除かれたロボットのうち1台がキーパーだった場合、<a href="#_ハンドラ_robot_handler">ハンドラ</a>は<a href="#_game_controller_operator">game controller operator</a>にキーパーの役割を引き継ぐロボットのIDを伝える。<br>
-If one of the robots taken out is the keeper, the <a href="#_ハンドラ_robot_handler">robot handler</a> tells the <a href="#_game_controller_operator">game controller operator</a> the id of the robot that takes over the keeper role.</p>
+<p><a href="#_ハンドラ_robot_handler"><span class="diff_insert">ハンドラ</span></a><span class="diff_insert">はロボットを外に出す</span><br><span class="diff_insert">
+The </span><a href="#Robot Handler"><span class="diff_insert">robot </span><span class="diff_insert">handler</span></a> <span class="diff_delete">the </span><span class="diff_delete">id </span><span class="diff_delete">of </span><span class="diff_delete">the </span><span class="diff_delete">robot </span><span class="diff_delete">that </span>takes <span class="diff_delete">over </span><span class="diff_delete">the </span><span class="diff_delete">keeper </span><span class="diff_delete">role.</span><span class="diff_insert">robots </span><span class="diff_insert">out.</span></p>
 </li>
 <li>
 <p><a href="#_ハンドラ_robot_handler">ハンドラ</a>は交代が完了したら<a href="#_主審_referee">主審</a>に連絡する<br>
@@ -3144,6 +3169,10 @@ When both teams finished the robot substitution, the <a href="#_主審_referee">
 The <a href="#_game_controller_operator">game controller operator</a> performs a <a href="#_停止_stop">stop</a> followed by continuing the game.</p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">いかなる時点でも、フィールド上にある各チームのロボットの台数は指定された最大数を越えてはならない。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">maximum </span><span class="diff_insert">allowed </span><span class="diff_insert">number </span><span class="diff_insert">of </span><span class="diff_insert">robots </span><span class="diff_insert">of </span><span class="diff_insert">the </span><span class="diff_insert">team </span><span class="diff_insert">on </span><span class="diff_insert">the </span><span class="diff_insert">field </span><span class="diff_insert">must </span><span class="diff_insert">not </span><span class="diff_insert">be </span><span class="diff_insert">exceeded </span><span class="diff_insert">at </span><span class="diff_insert">any </span><span class="diff_insert">time.</span></p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
@@ -3863,7 +3892,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-22 </span><span class="diff_insert">07:37:27 </span>GMT
+最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-22 </span><span class="diff_insert">08:09:54 </span>GMT
 </div>
 </div>
 </body>

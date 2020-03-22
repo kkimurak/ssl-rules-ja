@@ -690,8 +690,8 @@ The numbers in the figures below show the distances in millimeters.
 The playing surface is green felt mat or carpet. The floor under the carpet is level, flat, and hard.</p>
 </div>
 <div class="paragraph">
-<p>フィールドはすべての<a href="#_フィールドライン_field_lines">フィールドライン</a>から0.7mまで続いている。フィールドの外周には高さ0.1mのフェンスがあり、ロボットやボールがフィールド外に出ることを防ぐ。フィールドのさらに0.4m外側は<a href="#_主審_referee">主審</a>と<a href="#_副審_assistant_referee">副審</a>が通行するためのエリアである。<br>
-The field surface will continue for 0.7 meters beyond the <a href="#_フィールドライン_field_lines">field lines</a> on all sides. The outer 0.4 meters of this runoff area, separated from the robot area by a 0.1 meters tall wall, is used as a designated walking area for the <a href="#_主審_referee">referee</a> and the <a href="#_副審_assistant_referee">assistant referee</a>.</p>
+<p>フィールドはすべての<a href="#_フィールドライン_field_lines">フィールドライン</a>から0.7mまで続いている。フィールドの外周には高さ0.1mのフェンスがあり、ロボットやボールがフィールド外に出ることを防ぐ。フィールドのさらに0.4m外側は<a href="#_主審_referee">主審</a>と<a href="#_副審_assistant_referee">副審</a>が通行するためのエリアである。 残りの0.3mはフィールドのマージンである。<br>
+The field surface will continue for 0.7 meters beyond the <a href="#_フィールドライン_field_lines">field lines</a> on all sides. The outer 0.4 meters of this runoff area, separated from the robot area by a 0.1 meters tall wall, is used as a designated walking area for the <a href="#_主審_referee">referee</a> and the <a href="#_副審_assistant_referee">assistant referee</a>. The remaining 0.3 meters are the field margins.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1253,6 +1253,10 @@ The robot handler helps <a href="#_競技の準備_match_preparation">preparing 
 <li>
 <p>必要であれば、ハンドラは主審に<a href="#_タイムアウト_timeouts">タイムアウト</a>を要求する。<br>
 The robot handler asks the referee for <a href="#_タイムアウト_timeouts">timeouts</a> if necessary.</p>
+</li>
+<li>
+<p>ハンドラは<a href="#_ロボットの交代_robot_substitution">試合中にロボットを交代することができる</a>。<br>
+The robot handler can <a href="#_ロボットの交代_robot_substitution">substitute a robot during game play</a>.</p>
 </li>
 <li>
 <p>ハンドラは次のStop Game時にロボットを交代する許可を主審に要求し、主審が許可した場合は<a href="#_ロボットの交代_robot_substitution">ロボットを交代する</a>。<br>
@@ -2684,27 +2688,39 @@ If the team is not connected to the game controller or does not reply within 0.2
 <p>ロボットはそれぞれのチームの<a href="#_ハンドラ_robot_handler">ハンドラ</a>によって交代される。他のいかなるチームメンバもロボットを出し入れすることは許可されない。<br>
 Robots are substituted by the <a href="#_ハンドラ_robot_handler">robot handler</a> of the respective team. No other team member is allowed to take robots out or put robots in.</p>
 </div>
+<div class="paragraph">
+<p><a href="#_ハンドラ_robot_handler">ハンドラ</a>は、visionシステムに干渉しない色の長袖を着用することが推奨される。<br>
+The <a href="#_ハンドラ_robot_handler">robot handler</a> should prefer to use long sleeves and colors that won&#8217;t interfere with the vision system.</p>
+</div>
+<div class="paragraph">
+<p>以下のすべての条件に適合する場合は、ゲーム中のいつでも<a href="#_主審_referee">主審</a>に確認を取ることなくロボットを交代させることができる:<br>
+Robots can always be substituted during game play without notifying the <a href="#_主審_referee">referee</a> if all the following conditions are met:</p>
+</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>ロボットの交代のためにチームが指定した<a href="#_ハンドラ_robot_handler">ハンドラ</a>は、以下の動作の少なくとも1つを所定の順序で実行する。<br>
-A <a href="#_ハンドラ_robot_handler">robot handler</a> who&#8217;s team is marked for robot substitution performs at least one of the following operations in the given order.</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>ロボットを中に置く。チームがフィールド上においてよい最大数を超えてはいけない。<br>
-Put robots in. The maximum allowed number of robots of the team on the field must not be exceeded.</p>
+<p>ロボットは少なくとも部分的に<a href="#_フィールドの表面_field_surface">フィールドのマージン部分</a>にある。<br>
+The robot is at least partially inside the <a href="#_フィールドの表面_field_surface">field margin</a>.</p>
 </li>
 <li>
-<p>ロボットを取り除く。取り除かれたロボットがハーフウェイラインとタッチラインの交点から1m以内の距離にいる場合、別のロボットをすぐに置くことができる。それ以外の場合はハンドラは次の機会を待たなければならない。<br>
-Take robots out. If a robot that is taken out is closer than 1 meter to the intersection of the halfway line with one of the touch lines, another robot can be put in right away. Otherwise the robot handler has to wait until the next substitution opportunity.</p>
+<p>ロボットはハーフウェーラインから1mを超えない位置にある。<br>
+The robot is at a distance from the halfway line that must not exceed 1 meter.</p>
+</li>
+<li>
+<p>ボールはハーフウェーラインから少なくとも2m離れた地点にある。<br>
+The ball must be at least 2 meters away from the halfway line.</p>
 </li>
 </ol>
 </div>
-</li>
+<div class="paragraph">
+<p>加えて、<a href="#_試合の停止_stopping_the_game">ストップゲーム中</a>であれば、ロボットはどの位置からでも以下の手順に従い<a href="#_ハンドラ_robot_handler">ハンドラ</a>により交代させられる:<br>
+Additionally, robots can be taken out from any position during <a href="#_試合の停止_stopping_the_game">game stoppage</a> by the <a href="#_ハンドラ_robot_handler">robot handler</a> using the procedure below:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>取り除かれたロボットのうち1台がキーパーだった場合、<a href="#_ハンドラ_robot_handler">ハンドラ</a>は<a href="#_game_controller_operator">game controller operator</a>にキーパーの役割を引き継ぐロボットのIDを伝える。<br>
-If one of the robots taken out is the keeper, the <a href="#_ハンドラ_robot_handler">robot handler</a> tells the <a href="#_game_controller_operator">game controller operator</a> the id of the robot that takes over the keeper role.</p>
+<p><a href="#_ハンドラ_robot_handler">ハンドラ</a>はロボットを外に出す<br>
+The <a href="#Robot Handler">robot handler</a> takes robots out.</p>
 </li>
 <li>
 <p><a href="#_ハンドラ_robot_handler">ハンドラ</a>は交代が完了したら<a href="#_主審_referee">主審</a>に連絡する<br>
@@ -2719,6 +2735,10 @@ When both teams finished the robot substitution, the <a href="#_主審_referee">
 The <a href="#_game_controller_operator">game controller operator</a> performs a <a href="#_停止_stop">stop</a> followed by continuing the game.</p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p>いかなる時点でも、フィールド上にある各チームのロボットの台数は指定された最大数を越えてはならない。<br>
+The maximum allowed number of robots of the team on the field must not be exceeded at any time.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
@@ -3438,7 +3458,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2020-03-22 07:37:27 GMT
+最終更新 2020-03-22 08:09:54 GMT
 </div>
 </div>
 </body>
