@@ -1625,8 +1625,8 @@ A ball is considered placed successfully by the robots if</p>
 no more than 30 seconds passed since the placement command</p>
 </li>
 <li>
-<p>次のコマンドがボール配置を担当するチームの<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>か<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>の場合、ボールまでの距離が0.05m以内のロボットが存在しない<br>
-there is no robot within 0.05 meters distance to the ball if the next command is an <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a> or <a href="#_直接フリーキック_direct_free_kick">direct free kick</a> for the placing team</p>
+<p>次のコマンドがボール配置を担当するチームの<a href="#_フリーキック_free_kick">フリーキック</a>の場合、ボールまでの距離が0.05m以内のロボットが存在しない<br>
+there is no robot within 0.05 meters distance to the ball if the next command is a <a href="#_フリーキック_free_kick">free kick</a> for the placing team</p>
 </li>
 <li>
 <p>次のコマンドが<a href="#_フォーススタート_force_start">force start</a>の場合、ボールまでの距離が0.5m以内のロボットが存在しない<br>
@@ -1643,10 +1643,10 @@ the ball is at a position within 0.15 meters radius from the requested position<
 </ul>
 </div>
 <div class="paragraph">
-<p>ボールが正常に配置されるまで、<a href="#_game_controller">game controller</a>によってそれ以外のコマンドは発行されない。ボールが上手く配置された場合、試合は<a href="#_game_controller">game controller</a>によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。配置が失敗した場合、相手に間接フリーキックが与えられる。このチームがボールをうまく配置することに失敗した場合、ボールは<a href="#_主審_referee">主審</a>により配置され、試合は元のコマンドによって続行される。<br>
+<p>ボールが正常に配置されるまで、<a href="#_game_controller">game controller</a>によってそれ以外のコマンドは発行されない。ボールが上手く配置された場合、試合は<a href="#_game_controller">game controller</a>によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。配置が失敗した場合、相手にフリーキックが与えられる。このチームがボールをうまく配置することに失敗した場合、ボールは<a href="#_主審_referee">主審</a>により配置され、試合は元のコマンドによって続行される。<br>
 No further commands will be issued by the <a href="#_game_controller">game controller</a> until the automatic placement is complete.
 The game will be continued by the <a href="#_game_controller">game controller</a> as soon as the ball is successfully placed, but not earlier than 2 seconds after the ball placement command has been issued.
-A failed placement will result in an indirect free kick for the opposing team.
+A failed placement will result in a free kick for the opposing team.
 If this team failed to place the ball as well, the ball is placed by the <a href="#_主審_referee">referee</a> and game continues with the original command.</p>
 </div>
 <div class="paragraph">
@@ -1665,8 +1665,8 @@ When the ball goes <a href="#_インプレイとアウトオブプレイ_ball_in
 The <a href="#_主審_referee">referee</a> has to place the ball for all kickoffs and all penalty kicks</p>
 </li>
 <li>
-<p><a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>と<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>の場合、ボールを<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>にするチームがボールを配置しなければならない<br>
-For an <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a> or <a href="#_直接フリーキック_direct_free_kick">direct free kick</a>, the team that brings the ball <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">into play</a> must place the ball</p>
+<p><a href="#_フリーキック_free_kick">フリーキック</a>の場合、ボールを<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>にするチームがボールを配置しなければならない<br>
+For a <a href="#_フリーキック_free_kick">free kick</a>, the team that brings the ball <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">into play</a> must place the ball</p>
 </li>
 <li>
 <p><a href="#_フォーススタート_force_start">フォーススタート</a>の場合、偶然選ばれたどちらか片方のチームがボールを配置しなければならない。<br>
@@ -1801,15 +1801,15 @@ Additionally, after a goal has been scored, the receiving team restarts the game
 </div>
 </div>
 <div class="sect3">
-<h4 id="_直接フリーキック_direct_free_kick">5.3.3. 直接フリーキック/Direct Free Kick</h4>
+<h4 id="_フリーキック_free_kick">5.3.3. フリーキック/Free Kick</h4>
 <div class="paragraph">
 <div class="title">定義/Definition</div>
 <p>フリーキックのためのボールの配置位置は、フリーキックの原因となったイベントによって異なる。この位置はすべての<a href="#_フィールドライン_field_lines">フィールドライン</a>から少なくとも0.2m、それぞれの<a href="#_ディフェンスエリア_defense_area">ディフェンスエリア</a>から1m以上離れているときに有効である。もし、このルールが適用できないところにボールを配置する必要がある場合、その位置から最も近い有効な位置にボールを配置する必要がある。<br>
 The ball placement position for a free kick depends on the event that led to the free kick. This position is valid if there is at least 0.2 meters distance to all <a href="#_フィールドライン_field_lines">field lines</a> and 1 meter distance to either <a href="#_ディフェンスエリア_defense_area">defense area</a>. If an event requires the ball to be placed at a position that contravenes this rule, it has to be placed at the closest valid position instead.</p>
 </div>
 <div class="paragraph">
-<p>直接フリーキックのコマンドが発行されたとき、攻撃側チームのロボットはボールに近づくことが許可され、防御側チームのロボットはボールから少なくとも0.5mは離れていなければならない(試合が停止中と同じ距離)。攻撃側チームのロボット1台はボールを蹴ることが許される。このロボットはキッカーと呼ばれる。直接フリーキックから直接ゴールに入った場合それは得点になる。<br>
-When the direct free kick command is issued, robots of the attacking team are allowed to approach the ball while robots of the defending team still have to stay at least 0.5 meters distance away from the ball (the same distance as in stop). One robot of the attacking team is allowed to shoot the ball. This robot will be referred to as the kicker. A goal may be scored directly from the direct free kick.</p>
+<p>フリーキックのコマンドが発行されたとき、攻撃側チームのロボットはボールに近づくことが許可され、防御側チームのロボットはボールから少なくとも0.5mは離れていなければならない(試合が停止中と同じ距離)。攻撃側チームのロボット1台はボールを蹴ることが許される。このロボットはキッカーと呼ばれる。フリーキックから直接ゴールに入った場合それは得点になる。<br>
+When the free kick command is issued, robots of the attacking team are allowed to approach the ball while robots of the defending team still have to stay at least 0.5 meters distance away from the ball (the same distance as in stop). One robot of the attacking team is allowed to shoot the ball. This robot will be referred to as the kicker. A goal may be scored directly from the free kick.</p>
 </div>
 <div class="paragraph">
 <p>ボールがインプレイになっているとき、キッカーは他のロボットがボールに触れるか、ゲームが停止するまでボールに触れてはいけない(ダブルタッチを参照)。また、ロボットの位置に関する制限が解除される。<br>
@@ -1817,79 +1817,12 @@ When the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_a
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
-<p>直接フリーキックは<a href="#_ファウル_fouls">ファウル</a>が発生した後に試合を再開するために使われる。さらに、<a href="#_ゴールキック_goal_kick">ゴールキック</a>と<a href="#_コーナーキック_corner_kick">コーナーキック</a>も直接フリーキックに割り当てられている。<br>
-Direct free kicks are used to restart the game after a <a href="#_ファウル_fouls">foul</a> has occurred. Additionally, <a href="#_ゴールキック_goal_kick">goal kicks</a> and <a href="#_コーナーキック_corner_kick">corner kicks</a> are mapped to direct free kicks.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="注記"></i>
-</td>
-<td class="content">
-(訳者注)一般的に「ダイレクトフリーキック」もしくは単に「ダイレクト」と呼称されることが多い。
-</td>
-</tr>
-</table>
+<p>フリーキックは<a href="#_ファウル_fouls">ファウル</a>が発生した後に試合を再開するために使われる。さらに、<a href="#_ゴールキック_goal_kick">ゴールキック</a>と<a href="#_コーナーキック_corner_kick">コーナーキック</a>もフリーキックに割り当てられている。<br>
+free kicks are used to restart the game after a <a href="#_ファウル_fouls">foul</a> has occurred. Additionally, <a href="#_ゴールキック_goal_kick">goal kicks</a> and <a href="#_コーナーキック_corner_kick">corner kicks</a> are mapped to free kicks.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_間接フリーキック_indirect_free_kick">5.3.4. 間接フリーキック/Indirect Free Kick</h4>
-<div class="paragraph">
-<div class="title">定義/Definition</div>
-<p>間接フリーキックは<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>と似ているが違いがある：間接フリーキックのあと、ボールが<a href="#_試合の再開_resuming_the_game">プレーに入った</a>後で、守備側チームのゴールに入る前にボールが攻撃側チームのロボットに接触した場合にのみ、ゴールで得点が得られる。ボールが攻撃側のロボットの1台にも触れることなく守備側のチームのゴールに入った場合は、ゴール外のゴールラインを横切ったように扱う。<br>
-An indirect free kick behaves like a <a href="#_直接フリーキック_direct_free_kick">direct free kick</a>, except: After an indirect free kick, a goal can only be scored if the ball touches a robot of the attacking team after the ball <a href="#_試合の再開_resuming_the_game">entered play</a> and before it entering the goal of the defending team. If the ball enters the goal of the defending team without touching an attacking robot, it will be treated like it crossed the goal line outside the goal.</p>
-</div>
-<div class="paragraph">
-<p>攻撃側チームのゴールにボールが入ってしまった場合(オウンゴール)は、守備側チームにゴールが与えられる。<br>
-If the ball enters the goal of the attacking team (an own goal), a goal will be awarded to the defending team.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="注記"></i>
-</td>
-<td class="content">
-間接フリーキックからのゴールによる得点は1台以上の攻撃ロボットを必要としない。アタッカーがゴールに蹴る前に、守備側のチームのロボットがボールに触れた場合、フリーキックを蹴った同じロボットがゴールを撃ってもよい。<br>
-Scoring a goal from an indirect free kick does not require more than one attacking robot. The goal can also be shot by the same robot that kicked the free kick if a robot of the defending team touches the ball before the attacker shoots the goal.
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="注記"></i>
-</td>
-<td class="content">
-(人間の)サッカーでは、(キーパーを含む)いずれかのプレイヤーがゴールに入る前にボールに触れていれば得点として認められる。小型ロボットリーグのルールでは、攻撃側チームが守備側のキーパーがタッチすることを望んで直接ゴールに向かってキックして得点になってしまうことを防ぐために、攻撃側チームのロボットが2回はタッチすることを必要としている。<br>
-In association football, it is sufficient if any player (including the keeper) touches the ball before it enters the goal. To discourage the teams to shoot directly at the goal and hope that the keeper touches it, the rules of the Small Size League require a second touch of an attacking robot.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<div class="title">用途/Usage</div>
-<p>間接フリーキックは<a href="#_軽微な違反_minor_offenses">軽微な違反</a>が発生した時に試合を再開するために使用する。さらに<a href="#_スローイン_throw_in">スローイン</a>も間接フリーキックに割り当てられている。<br>
-Indirect free kicks are used to restart the game after a <a href="#_軽微な違反_minor_offenses">minor offense</a> has occurred. Additionally, <a href="#_スローイン_throw_in">throw-ins</a> are mapped to indirect free kicks.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="注記"></i>
-</td>
-<td class="content">
-(訳者注)一般的に「インダイレクトフリーキック」もしくは単に「インダイレクト」と呼称されることが多い。
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_フォーススタート_force_start">5.3.5. フォーススタート/Force Start</h4>
+<h4 id="_フォーススタート_force_start">5.3.4. フォーススタート/Force Start</h4>
 <div class="paragraph">
 <div class="title">定義/Definition</div>
 <p>フォーススタートのコマンドが発行されたとき、試合はすぐに再開され、どちらのチームもボールに近づき<a href="#_ボールの操作_ball_manipulation">操作する</a>ことが再び許可される。<br>
@@ -1906,7 +1839,7 @@ It can also be used to resume the game when the game had to be stopped and no te
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ペナルティーキック_penalty_kick">5.3.6. ペナルティーキック/Penalty Kick</h4>
+<h4 id="_ペナルティーキック_penalty_kick">5.3.5. ペナルティーキック/Penalty Kick</h4>
 <div class="paragraph">
 <div class="title">定義/Definition</div>
 <p>ペナルティーキックの手順は以下の通りである:<br>
@@ -2020,8 +1953,8 @@ Penalty Kicks are used to punish teams that received multiple <a href="#_イエ�
 <h4 id="_イエローカード_yellow_card">5.4.1. イエローカード/Yellow Card</h4>
 <div class="paragraph">
 <div class="title">定義/Definition</div>
-<p>イエローカードが非スポーツマン行為の結果として示された場合、主審は直ちに試合を<a href="#_ハルト_halt">中断</a>することができる。この場合、もう片方のチームの直接フリーキックで試合が継続される。<br>
-If the yellow card is shown as a result of <a href="#_非スポーツマン行為_unsporting_behavior">unsporting behavior</a>, the referee may decide to immediately <a href="#_ハルト_halt">halt</a> the match. In this case, the match continues with a direct free kick for the other team.</p>
+<p>イエローカードが非スポーツマン行為の結果として示された場合、主審は直ちに試合を<a href="#_ハルト_halt">中断</a>することができる。この場合、もう片方のチームのフリーキックで試合が継続される。<br>
+If the yellow card is shown as a result of <a href="#_非スポーツマン行為_unsporting_behavior">unsporting behavior</a>, the referee may decide to immediately <a href="#_ハルト_halt">halt</a> the match. In this case, the match continues with a free kick for the other team.</p>
 </div>
 <div class="paragraph">
 <p>イエローカードを受け取ると、ペナルティを受けたチームがフィールドに出場させて良いロボットの数が1台減少する。この減少のあと、チームがフィールドに出場させて良い台数よりも多くのロボットが出場している場合、<a href="#_ロボットの交代_robot_substitution">ロボットを退場</a>させなければいけない。<br>
@@ -2163,8 +2096,8 @@ Touch lines are the long <a href="#_フィールドライン_field_lines">field 
 The ball has to be placed 0.2 meters perpendicular to the touch line where the ball crossed the touch line. Its distance to the goal lines must be at least 0.2 meters.</p>
 </div>
 <div class="paragraph">
-<p>ボールが設置されたのち、フィールドを離れる前の最後にボールに触れたチームの相手チームに対して<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>が与えられる。<br>
-After the ball has been placed, an <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a> is awarded to the opponent of the team that last touched the ball before it left the field.</p>
+<p>ボールが設置されたのち、フィールドを離れる前の最後にボールに触れたチームの相手チームに対して<a href="#_フリーキック_free_kick">フリーキック</a>が与えられる。<br>
+After the ball has been placed, an <a href="#_フリーキック_free_kick">free kick</a> is awarded to the opponent of the team that last touched the ball before it left the field.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
@@ -2187,8 +2120,8 @@ Goal lines are the short <a href="#_フィールドライン_field_lines">field 
 The ball has to be placed 0.2 meters from the closest touch line and 1 meter from the goal line.</p>
 </div>
 <div class="paragraph">
-<p>ボールが設置されたのち、フィールドを離れる前の最後にボールに触れたチームの相手チームに対して<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>が与えられる。<br>
-After the ball has been placed, a <a href="#_直接フリーキック_direct_free_kick">direct free kick</a> is awarded to the opponent of the team that last touched the ball before it left the field.</p>
+<p>ボールが設置されたのち、フィールドを離れる前の最後にボールに触れたチームの相手チームに対して<a href="#_フリーキック_free_kick">フリーキック</a>が与えられる。<br>
+After the ball has been placed, a <a href="#_フリーキック_free_kick">free kick</a> is awarded to the opponent of the team that last touched the ball before it left the field.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usag</div>
@@ -2217,8 +2150,8 @@ In division B, the <a href="#_エイムレスキック_aimless_kick_span_class_s
 The ball has to be placed 0.2 meters from the closest touch line and 0.2 meters from the goal line.</p>
 </div>
 <div class="paragraph">
-<p>ボールが設置されたのち、フィールドを離れる前の最後にボールに触れたチームの相手チームに対して<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>が与えられる。<br>
-After the ball has been placed, a <a href="#_直接フリーキック_direct_free_kick">direct free kick</a> is awarded to the opponent of the team that last touched the ball before it left the field.</p>
+<p>ボールが設置されたのち、フィールドを離れる前の最後にボールに触れたチームの相手チームに対して<a href="#_フリーキック_free_kick">フリーキック</a>が与えられる。<br>
+After the ball has been placed, a <a href="#_フリーキック_free_kick">free kick</a> is awarded to the opponent of the team that last touched the ball before it left the field.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
@@ -2242,10 +2175,6 @@ Additionally, the goal is only valid if</p>
 </div>
 <div class="ulist">
 <ul>
-<li>
-<p><a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>から直接ゴールにシュートされていない。<br>
-It is not shot directly from an <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a></p>
-</li>
 <li>
 <p>アタッカーが最後にボールに触れてから、ボールの高さが0.15mを超えていない<br>
 The height of the ball did not exceed 0.15 meters after the last touch of an attacker</p>
@@ -2294,8 +2223,8 @@ Rule of thumb: Minor offenses are infringements of the rules committed by an att
 <div class="sect2">
 <h3 id="_軽微な違反_minor_offenses">8.1. 軽微な違反/Minor Offenses</h3>
 <div class="paragraph">
-<p>軽微な違反はルール違反となり、結果として試合の停止とその後の相手チームへの<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>となる。フリーキックは違反が発生した時点でボールが置かれていた位置から行われる(正確なボールの位置に関するルールは「<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>」を参照する事)。<br>
-Minor offenses are violations of the rules that result in a stoppage and a subsequent <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a> for the opposing team. The free kick will be shot from the position where the ball was located when the offense began happening (see <a href="#_直接フリーキック_direct_free_kick">the direct free kick rules</a> for the exact ball position rules).</p>
+<p>軽微な違反はルール違反となり、結果として試合の停止とその後の相手チームへの<a href="#_フリーキック_free_kick">フリーキック</a>となる。フリーキックは違反が発生した時点でボールが置かれていた位置から行われる(正確なボールの位置に関するルールは「<a href="#_フリーキック_free_kick">フリーキック</a>」を参照する事)。<br>
+Minor offenses are violations of the rules that result in a stoppage and a subsequent <a href="#_フリーキック_free_kick">free kick</a> for the opposing team. The free kick will be shot from the position where the ball was located when the offense began happening (see <a href="#_フリーキック_free_kick">the free kick rules</a> for the exact ball position rules).</p>
 </div>
 <div class="paragraph">
 <p>軽微な違反を以下に示す<br>
@@ -2323,8 +2252,8 @@ A kick is aimless when after the ball touched a robot, it subsequently crossed t
 <div class="sect3">
 <h4 id="_進行の欠落_lack_of_progress">8.1.2. 進行の欠落/Lack Of Progress</h4>
 <div class="paragraph">
-<p>1チームだけが<a href="#_ボールの操作_ball_manipulation">ボールを操作する</a>ことが許可されている(<a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>、<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>)時に、ボールを動かして試合をインプレイに変化させない場合、進行の欠落が発生している。制限時間はディヴィジョンAの<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>と<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>が5秒、それ以外は10秒である。<br>
-There is a lack of progress if only one team is allowed to <a href="#_ボールの操作_ball_manipulation">manipulate the ball</a> (<a href="#_キックオフ_kick_off">kick-off</a>, <a href="#_直接フリーキック_direct_free_kick">direct free kick</a>, <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a>, <a href="#_ペナルティーキック_penalty_kick">penalty kick</a>) and does not bring the ball <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">into play</a> in time. The time limit is 5 seconds for <a href="#_間接フリーキック_indirect_free_kick">indirect free kicks</a> and <a href="#_直接フリーキック_direct_free_kick">direct free kicks</a> in division A and 10 seconds in all other cases.</p>
+<p>1チームだけが<a href="#_ボールの操作_ball_manipulation">ボールを操作する</a>ことが許可されている(<a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_フリーキック_free_kick">フリーキック</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>)時に、ボールを動かして試合をインプレイに変化させない場合、進行の欠落が発生している。制限時間はディヴィジョンAの<a href="#_フリーキック_free_kick">フリーキック</a>が5秒、それ以外は10秒である。<br>
+There is a lack of progress if only one team is allowed to <a href="#_ボールの操作_ball_manipulation">manipulate the ball</a> (<a href="#_キックオフ_kick_off">kick-off</a>, <a href="#_フリーキック_free_kick">free kick</a>, <a href="#_ペナルティーキック_penalty_kick">penalty kick</a>) and does not bring the ball <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">into play</a> in time. The time limit is 5 seconds for <a href="#_フリーキック_free_kick">free kicks</a> in division A and 10 seconds in all other cases.</p>
 </div>
 <div class="paragraph">
 <p>また、ボールがどちらかのチームの<a href="#_ディフェンスエリア_defense_area">ディフェンスエリア</a>に入っている場合、ゴールキーパーだけが<a href="#_ボールの操作_ball_manipulation">ボールを操作</a>してよいロボットなので、10秒間たてば進行の欠落となる。<br>
@@ -2350,8 +2279,8 @@ If both teams are allowed to manipulate the ball, and thus no team is at fault, 
 <i class="fa icon-note" title="注記"></i>
 </td>
 <td class="content">
-両チームともルール違反をせずにボールを<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>にする事が明らかにできない場合、主審は相手チームの<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>の代わりに<a href="#_フォーススタート_force_start">force start</a>コマンドを発行することができる。<br>
-If both teams are clearly unable to bring the ball <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">into play</a> without violating the rules, the referee may issue a <a href="#_フォーススタート_force_start">force start</a> command instead of an <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a> for the other team.
+両チームともルール違反をせずにボールを<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>にする事が明らかにできない場合、主審は相手チームの<a href="#_フリーキック_free_kick">フリーキック</a>の代わりに<a href="#_フォーススタート_force_start">force start</a>コマンドを発行することができる。<br>
+If both teams are clearly unable to bring the ball <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">into play</a> without violating the rules, the referee may issue a <a href="#_フォーススタート_force_start">force start</a> command instead of an <a href="#_フリーキック_free_kick">free kick</a> for the other team.
 </td>
 </tr>
 </table>
@@ -2360,8 +2289,8 @@ If both teams are clearly unable to bring the ball <a href="#_インプレイと
 <div class="sect3">
 <h4 id="_ダブルタッチ_double_touch">8.1.3. ダブルタッチ/Double Touch</h4>
 <div class="paragraph">
-<p><a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>、<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>によってボールがインプレイに持ち込まれたとき、キッカーは他のロボットが触れるか、試合が停止するまでボールに触れてはいけない。<br>
-When the ball is brought <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">into play</a> following a <a href="#_キックオフ_kick_off">kick-off</a>, <a href="#_直接フリーキック_direct_free_kick">direct free kick</a>, <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a> or <a href="#_ペナルティーキック_penalty_kick">penalty kick</a>, the kicker is not allowed to touch the ball until it has been touched by another robot or the game has been stopped.</p>
+<p><a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_フリーキック_free_kick">フリーキック</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>によってボールがインプレイに持ち込まれたとき、キッカーは他のロボットが触れるか、試合が停止するまでボールに触れてはいけない。<br>
+When the ball is brought <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">into play</a> following a <a href="#_キックオフ_kick_off">kick-off</a>, <a href="#_フリーキック_free_kick">free kick</a> or <a href="#_ペナルティーキック_penalty_kick">penalty kick</a>, the kicker is not allowed to touch the ball until it has been touched by another robot or the game has been stopped.</p>
 </div>
 <div class="paragraph">
 <p><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>になったとみなされるには、少なくとも0.05m以上ボールが動いていなければいけない。<br>
@@ -2444,8 +2373,8 @@ A robot must not accelerate the ball faster than 6.5 meters per second in 3D spa
 <div class="sect2">
 <h3 id="_ファウル_fouls">8.2. ファウル/Fouls</h3>
 <div class="paragraph">
-<p>ファウルは違反に関するルールで、結果として相手チームに<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>を与える。そのフリーキックは違反が発生した時点でボールが置かれていた位置から行われる(正確なボールの位置に関するルールは<a href="#_直接フリーキック_direct_free_kick">直接フリーキックのルール</a>を参照)。ファウルが<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">試合の停止中</a>に発生した場合、フリーキックは与えられない。<br>
-Fouls are violations of the rules that result in a <a href="#_直接フリーキック_direct_free_kick">direct free kick</a> for the opposing team. The free kick will be shot from the position where the ball was located when the offense began happening (see <a href="#_直接フリーキック_direct_free_kick">the direct free kick rules</a> for the exact ball position rules). If the foul happened while the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">out of play</a>, no free kick is given.</p>
+<p>ファウルは違反に関するルールで、結果として相手チームに<a href="#_フリーキック_free_kick">フリーキック</a>を与える。そのフリーキックは違反が発生した時点でボールが置かれていた位置から行われる(正確なボールの位置に関するルールは<a href="#_フリーキック_free_kick">フリーキックのルール</a>を参照)。ファウルが<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">試合の停止中</a>に発生した場合、フリーキックは与えられない。<br>
+Fouls are violations of the rules that result in a <a href="#_フリーキック_free_kick">free kick</a> for the opposing team. The free kick will be shot from the position where the ball was located when the offense began happening (see <a href="#_フリーキック_free_kick">the free kick rules</a> for the exact ball position rules). If the foul happened while the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">out of play</a>, no free kick is given.</p>
 </div>
 <div class="paragraph">
 <p>同じチームの3回目のファウルごとに<a href="#_イエローカード_yellow_card">イエローカード</a>が出る。<br>
@@ -2482,8 +2411,8 @@ When the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_a
 <div class="sect3">
 <h4 id="_ロボットの相手ディフェンスエリアへの極端な接近_robot_too_close_to_opponent_defense_area">8.2.2. ロボットの相手ディフェンスエリアへの極端な接近/Robot Too Close To Opponent Defense Area</h4>
 <div class="paragraph">
-<p><a href="#_試合の再開_resuming_the_game">試合を再開する</a>前の、<a href="#_停止_stop">停止</a>、<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>、<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>の間、すべてのロボットは相手の<a href="#_ディフェンスエリア_defense_area">ディフェンスエリア</a>から少なくとも0.2m以上離れていなければならない。<br>
-During <a href="#_停止_stop">stop</a>, <a href="#_直接フリーキック_direct_free_kick">direct free kicks</a> and <a href="#_間接フリーキック_indirect_free_kick">indirect free kicks</a>, before the ball <a href="#_試合の再開_resuming_the_game">has entered play</a>, all robots have to keep at least 0.2 meters distance to the opponent <a href="#_ディフェンスエリア_defense_area">defense area</a>.</p>
+<p><a href="#_試合の再開_resuming_the_game">試合を再開する</a>前の、<a href="#_停止_stop">停止</a>、<a href="#_フリーキック_free_kick">フリーキック</a>の間、すべてのロボットは相手の<a href="#_ディフェンスエリア_defense_area">ディフェンスエリア</a>から少なくとも0.2m以上離れていなければならない。<br>
+During <a href="#_停止_stop">stop</a> and <a href="#_フリーキック_free_kick">free kicks</a>, before the ball <a href="#_試合の再開_resuming_the_game">has entered play</a>, all robots have to keep at least 0.2 meters distance to the opponent <a href="#_ディフェンスエリア_defense_area">defense area</a>.</p>
 </div>
 <div class="paragraph">
 <p>ロボットが相手のディフェンスエリアから離れるのに2秒の猶予期間がある。<br>
@@ -2625,8 +2554,9 @@ Since the stop command is used for manual ball placement and <a href="#_ロボ�
 <div class="sect3">
 <h4 id="_ディフェンダーのボールへの極端な接近_defender_too_close_to_ball">8.2.9. ディフェンダーのボールへの極端な接近/Defender Too Close To Ball</h4>
 <div class="paragraph">
-<p>相手チームの<a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>、<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>の間、ロボットはボールから少なくとも0.5m以上離れなければならない。ファウルの前に発行されたコマンドと同じコマンドで試合が再開される。<br>
-A robot&#8217;s distance to the ball must be at least 0.5 meters during an opponent <a href="#_キックオフ_kick_off">kick-off</a>, <a href="#_直接フリーキック_direct_free_kick">direct free kick</a> or <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a>.
+<p>相手チームの<a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_フリーキック_free_kick">フリーキック</a>の間、ロボットはボールから少なくとも0.5m以上離れなければならない。
+ファウルの前に発行されたコマンドと同じコマンドで試合が再開される。<br>
+A robot&#8217;s distance to the ball must be at least 0.5 meters during an opponent <a href="#_キックオフ_kick_off">kick-off</a> or <a href="#_フリーキック_free_kick">free kick</a>.
 The game is resumed with the same command that was issued before the foul.</p>
 </div>
 <div class="admonitionblock note">
@@ -2659,8 +2589,9 @@ This rule does not use the standard sanctions defined for <a href="#_ファウ�
 </table>
 </div>
 <div class="paragraph">
-<p>キーパー以外のロボットが自チームのディフェンスエリアに部分的に入った状態でボールに触れた場合、試合は中断される。そしてロボットは<a href="#_イエローカード_yellow_card">イエローカード</a>を受け取り、相手チームの<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>で試合を再開する。ファウルのカウンターは増加しない。<br>
-If a robot other than the keeper touches the ball while being partially inside its own defense area, the game is stopped, the robot receives a <a href="#_イエローカード_yellow_card">yellow card</a> and the opponent team resumes the game with a <a href="#_直接フリーキック_direct_free_kick">direct free kick</a>. The foul counter is not increased.</p>
+<p>キーパー以外のロボットが自チームのディフェンスエリアに部分的に入った状態でボールに触れた場合、試合は中断される。そしてロボットは<a href="#_イエローカード_yellow_card">イエローカード</a>を受け取り、相手チームの<a href="#_フリーキック_free_kick">フリーキック</a>で試合を再開する。ファウルのカウンターは増加しない。<br>
+If a robot other than the keeper touches the ball while being partially inside its own defense area, the game is stopped, the robot receives a <a href="#_イエローカード_yellow_card">yellow card</a> and the opponent team resumes the game with a <a href="#_フリーキック_free_kick">free kick</a>. The foul counter is not increased.
+free kick&gt;&gt;. The foul counter is not increased.</p>
 </div>
 <div class="paragraph">
 <p>キーパー以外のロボットが自チームのディフェンスエリアに完全に入った状態でボールに触れた場合、試合は中断される。そして相手チームの<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>で試合を再開する。ファウルのカウンターは増加しない。<br>
@@ -2753,8 +2684,8 @@ If a team exploits this rule, the referee may punish this team for <a href="#_�
 <i class="fa icon-note" title="注記"></i>
 </td>
 <td class="content">
-このルールは相手の<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>と<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>をより有利な位置に動かすためにチームが意図的に反則をしないようにするために設定されている。<br>
-This rule is in place to prevent teams from purposely committing offenses in order to relocate the opponent <a href="#_直接フリーキック_direct_free_kick">direct free kick</a> or <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a> to a more favorable position.
+このルールは相手の<a href="#_フリーキック_free_kick">フリーキック</a>をより有利な位置に動かすためにチームが意図的に反則をしないようにするために設定されている。<br>
+This rule is in place to prevent teams from purposely committing offenses in order to relocate the opponent <a href="#_フリーキック_free_kick">free kick</a> to a more favorable position.
 </td>
 </tr>
 </table>
@@ -2763,10 +2694,10 @@ This rule is in place to prevent teams from purposely committing offenses in ord
 <div class="sect2">
 <h3 id="_アドバンテージルール_advantage_rule">8.5. アドバンテージルール/Advantage Rule</h3>
 <div class="paragraph">
-<p>特定の状況下では、ファウルのために試合を止めることは相手チームに不利益をもたらす可能性がある。これらの状況は自動的に検知する事が難しいので、相手チームは試合を継続したいか確認される。この場合、試合は停止されず直接フリーキックは行われない。ファウルのカウンタは加算され、いかなる結果のカードも試合が<a href="#_停止_stop">停止</a>した段階で与えられる。<br>
+<p>特定の状況下では、ファウルのために試合を止めることは相手チームに不利益をもたらす可能性がある。これらの状況は自動的に検知する事が難しいので、相手チームは試合を継続したいか確認される。この場合、試合は停止されずフリーキックは行われない。ファウルのカウンタは加算され、いかなる結果のカードも試合が<a href="#_停止_stop">停止</a>した段階で与えられる。<br>
 In certain situations, stopping the game because of a foul may have a disadvantage to the opposing team.
 As these situations are not easy to detect automatically, the opposing team is asked if it likes to continue the game.
-In this case, the game is not stopped and no direct kick is awarded at any time.
+In this case, the game is not stopped and no free kick is awarded at any time.
 The foul counter is still incremented and any resulting cards are given when the game is <a href="#_停止_stop">stopped</a>.</p>
 </div>
 <div class="ulist">
@@ -2993,8 +2924,8 @@ For these possibilities there are two methods to proceed the game:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><strong>1</strong> および <strong>2</strong> に対しては、試合は相手チームの<a href="#フリーキック/Free Kick">フリーキック</a>で続行される。<br>
-For <strong>1</strong> and <strong>2</strong>, the game is continued with a <a href="#フリーキック/Free Kick">free kick</a> for the opposing team.</p>
+<p><strong>1</strong> および <strong>2</strong> に対しては、試合は相手チームの<a href="#_フリーキック_free_kick">フリーキック</a>で続行される。<br>
+For <strong>1</strong> and <strong>2</strong>, the game is continued with a <a href="#_フリーキック_free_kick">free kick</a> for the opposing team.</p>
 </li>
 <li>
 <p><strong>3</strong> に対しては、試合は通常のタイムアウトと同様に続行される。<br>
@@ -3059,8 +2990,8 @@ The change must be approved by all team leaders (by an unanimity vote)</p>
 When the match is <a href="#_試合の停止_stopping_the_game">stopped</a>, the ball is considered <strong>out of play</strong> until it has been brought into play.</p>
 </div>
 <div class="paragraph">
-<p>試合が<a href="#_試合の再開_resuming_the_game">再開</a>されると、ボールは次の停止が発生するまではインプレイとみなされる。<a href="#_フォーススタート_force_start">フォーススタート</a>が発行される、もしくは<a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>、<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティキック</a>によってボールが0.05m以上移動した時に試合が再開される。<br>
-When the match is <a href="#_試合の再開_resuming_the_game">resumed</a>, the ball is considered <strong>in play</strong> until the next stoppage occurs. The match is resumed when <a href="#_フォーススタート_force_start">force start</a> has been issued or the ball moved at least 0.05 meters following a <a href="#_キックオフ_kick_off">kick-off</a>, <a href="#_直接フリーキック_direct_free_kick">direct free kick</a>, <a href="#_間接フリーキック_indirect_free_kick">indirect free kick</a> or <a href="#_ペナルティーキック_penalty_kick">penalty kick</a>.</p>
+<p>試合が<a href="#_試合の再開_resuming_the_game">再開</a>されると、ボールは次の停止が発生するまではインプレイとみなされる。<a href="#_フォーススタート_force_start">フォーススタート</a>が発行される、もしくは<a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_フリーキック_free_kick">フリーキック</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティキック</a>によってボールが0.05m以上移動した時に試合が再開される。<br>
+When the match is <a href="#_試合の再開_resuming_the_game">resumed</a>, the ball is considered <strong>in play</strong> until the next stoppage occurs. The match is resumed when <a href="#_フォーススタート_force_start">force start</a> has been issued or the ball moved at least 0.05 meters following a <a href="#_キックオフ_kick_off">kick-off</a>, <a href="#_フリーキック_free_kick">free kick</a> or <a href="#_ペナルティーキック_penalty_kick">penalty kick</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3194,8 +3125,8 @@ handled by the game controller)</p></td>
  <a href="#_ボール配置_ball_placement">Ball Placement</a> failed by team in favor</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement">ボール配置</a>中<br>
 during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#間接フリーキック/Direct Free Kick">間接フリーキック</a>(ディヴィジョンA) / 前回のコマンド(B)<br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_間接フリーキック_indirect_free_kick">Indirect Free Kick</a> (div A) / previous command (div B)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a>(ディヴィジョンA) / 前回のコマンド(B)<br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a> (div A) / previous command (div B)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3240,8 +3171,8 @@ during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
 <a href="#_スローイン_throw_in">Throw-In</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#間接フリーキック/Direct Free Kick">間接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_間接フリーキック_indirect_free_kick">Indirect Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3249,8 +3180,8 @@ during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
 <a href="#_ゴールキック_goal_kick">Goal Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3258,8 +3189,8 @@ during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
 <a href="#_コーナーキック_corner_kick">Corner Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 </tbody>
@@ -3297,8 +3228,8 @@ Goal</p></td>
 Invalid Goal</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 </tbody>
@@ -3327,8 +3258,8 @@ Invalid Goal</p></td>
 <a href="#_エイムレスキック_aimless_kick_span_class_small_em_division_b_only_em_span">Aimless Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#間接フリーキック/Direct Free Kick">間接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_間接フリーキック_indirect_free_kick">Indirect Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3336,8 +3267,8 @@ Invalid Goal</p></td>
 <a href="#_進行の欠落_lack_of_progress">Lack Of Progress</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#間接フリーキック/Direct Free Kick">間接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_間接フリーキック_indirect_free_kick">Indirect Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3345,8 +3276,8 @@ Invalid Goal</p></td>
 <a href="#_ダブルタッチ_double_touch">Double Touch</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#間接フリーキック/Direct Free Kick">間接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_間接フリーキック_indirect_free_kick">Indirect Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3354,8 +3285,8 @@ Invalid Goal</p></td>
  <a href="#_アタッカーの相手ディフェンスエリアへの侵入_attacker_in_defense_area">Attacker In Defense Area</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#間接フリーキック/Direct Free Kick">間接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_間接フリーキック_indirect_free_kick">Indirect Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3371,8 +3302,8 @@ Invalid Goal</p></td>
 <a href="#_ドリブルの超過_excessive_dribbling">Excessive Dribbling</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#間接フリーキック/Direct Free Kick">間接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_間接フリーキック_indirect_free_kick">Indirect Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3380,8 +3311,8 @@ Invalid Goal</p></td>
 <a href="#_ボール速度_ball_speed">Ball Speed</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#間接フリーキック/Direct Free Kick">間接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_間接フリーキック_indirect_free_kick">Indirect Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 </tbody>
@@ -3419,8 +3350,8 @@ handled by the game controller)</p></td>
  <a href="#_相手ディフェンスエリア内におけるアタッカーロボットの相手ロボットへの接触_attacker_touches_robot_in_opponent_defense_area">Attacker Touches Robot In Opponent Defense Area</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_間接フリーキック_indirect_free_kick">間接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_間接フリーキック_indirect_free_kick">Indirect Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3428,8 +3359,8 @@ handled by the game controller)</p></td>
 <a href="#_ロボットの相手ディフェンスエリアへの極端な接近_robot_too_close_to_opponent_defense_area">Robot Too Close To Opponent Defense Area</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">アウトオブプレイ</a>中 <br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball out of play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3437,15 +3368,15 @@ handled by the game controller)</p></td>
 <a href="#_ボール配置への干渉_ball_placement_interference">Ball Placement Interference</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement">ボール配置</a>中<br>
 during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_衝突_crashing">衝突/Crashing</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">常時/always</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3465,23 +3396,23 @@ during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_プッシング_pushing">プッシング/Pushing</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">常時/always</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-times"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボールの保持_ball_holding">ボールの保持/Ball Holding</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_転倒や部品の脱落_tipping_over_or_dropping_parts">転倒や部品の脱落/Tipping Over Or Dropping Parts</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">常時/always</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-times"></i></span></p></td>
 </tr>
 <tr>
@@ -3489,16 +3420,16 @@ during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
 <a href="#_ストップ中のロボットの速度_robot_stop_speed">Robot Stop Speed</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>中<br>
 during <a href="#_停止_stop">Stop</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ディフェンダーのボールへの極端な接近_defender_too_close_to_ball">ディフェンダーのボールへの極端な接近/Defender Too Close To Ball</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">アウトオブプレイ</a>中 <br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball out of play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3506,8 +3437,8 @@ during <a href="#_停止_stop">Stop</a></p></td>
 <a href="#_マルチプルディフェンス_multiple_defenders">Multiple Defenders</a> partially</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>中<br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_直接フリーキック_direct_free_kick">直接フリーキック</a>、<a href="#_イエローカード_yellow_card">イエローカード</a><br>
-<a href="#_停止_stop">Stop</a>, then <a href="#_直接フリーキック_direct_free_kick">Direct Free Kick</a>, <a href="#_イエローカード_yellow_card">Yellow Card</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a>、次いで<a href="#_フリーキック_free_kick">フリーキック</a>、<a href="#_イエローカード_yellow_card">イエローカード</a><br>
+<a href="#_停止_stop">Stop</a>, then <a href="#_フリーキック_free_kick">Free Kick</a>, <a href="#_イエローカード_yellow_card">Yellow Card</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon green"><i class="fa fa-check"></i></span></p></td>
 </tr>
 <tr>
@@ -3623,7 +3554,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2020-03-24 12:37:04 GMT
+最終更新 2020-03-24 13:13:11 GMT
 </div>
 </div>
 </body>
