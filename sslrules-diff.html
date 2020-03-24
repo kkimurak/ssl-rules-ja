@@ -871,6 +871,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_フィールドセットアップ_field_setup">2.1. フィールドセットアップ/Field Setup</a></li>
 <li><a href="#_ボール_ball">2.2. ボール/Ball</a></li>
 <li><a href="#_共有ソフトウェア_shared_software">2.3. 共有ソフトウェア/Shared Software</a></li>
+<li><a href="#_コミュニケーションフラッグ_communication_flags"><span class="diff_insert">2.4. </span><span class="diff_insert">コミュニケーションフラッグ/Communication </span><span class="diff_insert">Flags</span></a></li>
 </ul>
 </li>
 <li><a href="#_ロボット_robots">3. ロボット/Robots</a>
@@ -1324,6 +1325,29 @@ Existing implementations can be found on Github: <a href="https://github.com/Rob
 </tr>
 </table>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_コミュニケーションフラッグ_communication_flags"><span class="diff_insert">2.4. </span><span class="diff_insert">コミュニケーションフラッグ/Communication </span><span class="diff_insert">Flags</span></h3>
+<div class="paragraph">
+<p><span class="diff_insert">コミュニケーションフラッグは、試合中の</span><a href="#_主審_referee"><span class="diff_insert">主審</span></a><span class="diff_insert">に対するジェスチャーや野次を回避するために用いられる。
+これらのフラッグは</span><a href="#タイムアウト/Timeout"><span class="diff_insert">タイムアウト</span></a><span class="diff_insert">や</span><a href="#_非常停止_emergency_stop"><span class="diff_insert">非常停止</span></a><span class="diff_insert">、</span><a href="#_ロボットの交代_robot_substitution"><span class="diff_insert">手動でのロボットの交代</span></a><span class="diff_insert">、</span><a href="#チャレンジフラッグ/Challenge flags"><span class="diff_insert">チャレンジ</span></a><span class="diff_insert">など、さまざまな場面で用いられる。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">communication </span><span class="diff_insert">flags </span><span class="diff_insert">are </span><span class="diff_insert">used </span><span class="diff_insert">to </span><span class="diff_insert">avoid </span><span class="diff_insert">gesturing </span><span class="diff_insert">and </span><span class="diff_insert">yelling </span><span class="diff_insert">with </span><span class="diff_insert">the </span><a href="#_主審_referee"><span class="diff_insert">referee</span></a> <span class="diff_insert">during </span><span class="diff_insert">a </span><span class="diff_insert">match.
+These </span><span class="diff_insert">flags </span><span class="diff_insert">are </span><span class="diff_insert">responsible </span><span class="diff_insert">for </span><span class="diff_insert">communicating </span><span class="diff_insert">various </span><span class="diff_insert">intents, </span><span class="diff_insert">such </span><span class="diff_insert">as: </span><a href="#_タイムアウト_timeouts"><span class="diff_insert">timeouts</span></a><span class="diff_insert">, </span><a href="#_非常停止_emergency_stop"><span class="diff_insert">emergency </span><span class="diff_insert">stops</span></a><span class="diff_insert">, </span><a href="#_ロボットの交代_robot_substitution"><span class="diff_insert">manual </span><span class="diff_insert">robot </span><span class="diff_insert">substitution</span></a> <span class="diff_insert">and </span><a href="#チャレンジフラッグ/Challenge flags"><span class="diff_insert">challenges</span></a><span class="diff_insert">.</span></p>
+</div>
+<div class="paragraph">
+<p><a href="#_主審_referee"><span class="diff_insert">主審</span></a><span class="diff_insert">もしくは</span><a href="#_game_controller_operator"><span class="diff_insert">game </span><span class="diff_insert">controller </span><span class="diff_insert">operator</span></a><span class="diff_insert">がコミュニケーションフラッグを確認する必要がある。
+ジェスチャーや野次は</span><a href="#_非スポーツマン行為_unsporting_behavior"><span class="diff_insert">非スポーツマン行為</span></a><span class="diff_insert">とみなされ、一度の警告ののちに</span><a href="#レッドカード/Red card"><span class="diff_insert">レッドカード</span></a><span class="diff_insert">となる。
+The </span><a href="#Referee"><span class="diff_insert">referee</span></a> <span class="diff_insert">or </span><a href="#_game_controller_operator"><span class="diff_insert">game </span><span class="diff_insert">controller </span><span class="diff_insert">operator</span></a> <span class="diff_insert">has </span><span class="diff_insert">to </span><span class="diff_insert">acknowledge </span><span class="diff_insert">the </span><span class="diff_insert">communication </span><span class="diff_insert">flag.
+Any </span><span class="diff_insert">gesturing </span><span class="diff_insert">and </span><span class="diff_insert">yelling </span><span class="diff_insert">will </span><span class="diff_insert">be </span><span class="diff_insert">considered </span><a href="#_非スポーツマン行為_unsporting_behavior"><span class="diff_insert">unsporting </span><span class="diff_insert">behavior</span></a><span class="diff_insert">, </span><span class="diff_insert">punished </span><span class="diff_insert">by </span><span class="diff_insert">a </span><a href="#レッドカード/Red card"><span class="diff_insert">red </span><span class="diff_insert">card</span></a> <span class="diff_insert">after </span><span class="diff_insert">the </span><span class="diff_insert">first </span><span class="diff_insert">warning.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">コミュニケーションフラッグは大会主催者より提供される。
+リモートコントロールソフトウェアやデバイスも提供される場合があり、その場合は物理的なフラッグを置き換える。
+主催者が実行可能と判断した他の方法も使用できる。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">communication </span><span class="diff_insert">flags </span><span class="diff_insert">are </span><span class="diff_insert">provided </span><span class="diff_insert">by </span><span class="diff_insert">the </span><span class="diff_insert">organizers </span><span class="diff_insert">of </span><span class="diff_insert">the </span><span class="diff_insert">competition.
+A </span><span class="diff_insert">remote </span><span class="diff_insert">control </span><span class="diff_insert">software </span><span class="diff_insert">or </span><span class="diff_insert">device </span><span class="diff_insert">can </span><span class="diff_insert">be </span><span class="diff_insert">provided </span><span class="diff_insert">and </span><span class="diff_insert">replace </span><span class="diff_insert">physical </span><span class="diff_insert">flags.
+Any </span><span class="diff_insert">other </span><span class="diff_insert">solution </span><span class="diff_insert">that </span><span class="diff_insert">the </span><span class="diff_insert">organizers </span><span class="diff_insert">find </span><span class="diff_insert">feasible </span><span class="diff_insert">can </span><span class="diff_insert">also </span><span class="diff_insert">be </span><span class="diff_insert">used.</span></p>
 </div>
 </div>
 </div>
@@ -3509,8 +3533,8 @@ For </span><strong><span class="diff_insert">3</span></strong><span class="diff_
 </div>
 <div class="paragraph">
 <div class="title"><span class="diff_insert">用途/Usage</span></div>
-<p><span class="diff_insert">非常停止の意図は</span><a href="#コミュニケーションフラッグ/Communication Flags"><span class="diff_insert">コミュニケーションフラッグ</span></a><span class="diff_insert">を使用して伝えらえる。</span><br><span class="diff_insert">
-An </span><span class="diff_insert">emergency </span><span class="diff_insert">stop </span><span class="diff_insert">intent </span><span class="diff_insert">can </span><span class="diff_insert">be </span><span class="diff_insert">made </span><span class="diff_insert">using </span><a href="#コミュニケーションフラッグ/Communication Flags"><span class="diff_insert">communication </span><span class="diff_insert">flags</span></a><span class="diff_insert">.</span></p>
+<p><span class="diff_insert">非常停止の意図は</span><a href="#_コミュニケーションフラッグ_communication_flags"><span class="diff_insert">コミュニケーションフラッグ</span></a><span class="diff_insert">を使用して伝えらえる。</span><br><span class="diff_insert">
+An </span><span class="diff_insert">emergency </span><span class="diff_insert">stop </span><span class="diff_insert">intent </span><span class="diff_insert">can </span><span class="diff_insert">be </span><span class="diff_insert">made </span><span class="diff_insert">using </span><a href="#_コミュニケーションフラッグ_communication_flags"><span class="diff_insert">communication </span><span class="diff_insert">flags</span></a><span class="diff_insert">.</span></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4128,7 +4152,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-24 </span><span class="diff_insert">11:59:05 </span>GMT
+最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-24 </span><span class="diff_insert">12:23:17 </span>GMT
 </div>
 </div>
 </body>

@@ -446,6 +446,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_フィールドセットアップ_field_setup">2.1. フィールドセットアップ/Field Setup</a></li>
 <li><a href="#_ボール_ball">2.2. ボール/Ball</a></li>
 <li><a href="#_共有ソフトウェア_shared_software">2.3. 共有ソフトウェア/Shared Software</a></li>
+<li><a href="#_コミュニケーションフラッグ_communication_flags">2.4. コミュニケーションフラッグ/Communication Flags</a></li>
 </ul>
 </li>
 <li><a href="#_ロボット_robots">3. ロボット/Robots</a>
@@ -886,6 +887,29 @@ Existing implementations can be found on Github: <a href="https://github.com/Rob
 </tr>
 </table>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_コミュニケーションフラッグ_communication_flags">2.4. コミュニケーションフラッグ/Communication Flags</h3>
+<div class="paragraph">
+<p>コミュニケーションフラッグは、試合中の<a href="#_主審_referee">主審</a>に対するジェスチャーや野次を回避するために用いられる。
+これらのフラッグは<a href="#タイムアウト/Timeout">タイムアウト</a>や<a href="#_非常停止_emergency_stop">非常停止</a>、<a href="#_ロボットの交代_robot_substitution">手動でのロボットの交代</a>、<a href="#チャレンジフラッグ/Challenge flags">チャレンジ</a>など、さまざまな場面で用いられる。<br>
+The communication flags are used to avoid gesturing and yelling with the <a href="#_主審_referee">referee</a> during a match.
+These flags are responsible for communicating various intents, such as: <a href="#_タイムアウト_timeouts">timeouts</a>, <a href="#_非常停止_emergency_stop">emergency stops</a>, <a href="#_ロボットの交代_robot_substitution">manual robot substitution</a> and <a href="#チャレンジフラッグ/Challenge flags">challenges</a>.</p>
+</div>
+<div class="paragraph">
+<p><a href="#_主審_referee">主審</a>もしくは<a href="#_game_controller_operator">game controller operator</a>がコミュニケーションフラッグを確認する必要がある。
+ジェスチャーや野次は<a href="#_非スポーツマン行為_unsporting_behavior">非スポーツマン行為</a>とみなされ、一度の警告ののちに<a href="#レッドカード/Red card">レッドカード</a>となる。
+The <a href="#Referee">referee</a> or <a href="#_game_controller_operator">game controller operator</a> has to acknowledge the communication flag.
+Any gesturing and yelling will be considered <a href="#_非スポーツマン行為_unsporting_behavior">unsporting behavior</a>, punished by a <a href="#レッドカード/Red card">red card</a> after the first warning.</p>
+</div>
+<div class="paragraph">
+<p>コミュニケーションフラッグは大会主催者より提供される。
+リモートコントロールソフトウェアやデバイスも提供される場合があり、その場合は物理的なフラッグを置き換える。
+主催者が実行可能と判断した他の方法も使用できる。<br>
+The communication flags are provided by the organizers of the competition.
+A remote control software or device can be provided and replace physical flags.
+Any other solution that the organizers find feasible can also be used.</p>
 </div>
 </div>
 </div>
@@ -2980,8 +3004,8 @@ For <strong>3</strong>, the game is continued like after a regular timeout.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
-<p>非常停止の意図は<a href="#コミュニケーションフラッグ/Communication Flags">コミュニケーションフラッグ</a>を使用して伝えらえる。<br>
-An emergency stop intent can be made using <a href="#コミュニケーションフラッグ/Communication Flags">communication flags</a>.</p>
+<p>非常停止の意図は<a href="#_コミュニケーションフラッグ_communication_flags">コミュニケーションフラッグ</a>を使用して伝えらえる。<br>
+An emergency stop intent can be made using <a href="#_コミュニケーションフラッグ_communication_flags">communication flags</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3599,7 +3623,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2020-03-24 11:59:05 GMT
+最終更新 2020-03-24 12:23:17 GMT
 </div>
 </div>
 </body>
