@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.1">
-<meta name="author" content="2020-03-22">
+<meta name="author" content="2020-03-24">
 <title>RoboCup小型機リーグルール</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -430,7 +430,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCup小型機リーグルール</h1>
 <div class="details">
-<span id="author" class="author">2020-03-22</span><br>
+<span id="author" class="author">2020-03-24</span><br>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">目次</div>
@@ -737,21 +737,8 @@ A defense area is defined as a rectangle touching the goal lines centrally in fr
 <div class="sect4">
 <h5 id="_ペナルティーマーク_penalty_mark">ペナルティーマーク/Penalty Mark</h5>
 <div class="paragraph">
-<p>それぞれのディフェンスエリアにあるペナルティマークはゴールポストの中間点からディヴィジョンAなら1.2m、ディヴィジョンBなら1m離れた地点にある。したがってディフェンスエリアの外側の角と一致する位置である。<br>
-For each field half the penalty mark is 1.2 meters for division A and 1 meter for division B, from the midpoint between the goalposts and equidistant to them, thus coinciding with the outer edge of the defense area.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="注記"></i>
-</td>
-<td class="content">
-ペナルティーマークはミッドラインとディフェンスエリアの交点と一致するので塗装されている必要はない。<br>
-The penalty mark does not need to be painted since it coincides with the intersection of the defense area and the mid-line.
-</td>
-</tr>
-</table>
+<p>それぞれのディフェンスエリアのペナルティマークは(ハーフウェーラインではなく)<a href="#_追加のライン_additional_lines">ミッドライン</a>上の、相手チームのゴールのセンターから8m(Division A)もしくは6m(Division B)の地点にある。<br>
+For each field half the penalty mark is on the <a href="#_追加のライン_additional_lines">mid-line</a> (not halfway line), 8 meters (division A) or 6 meters (division B) away from the opponent goal center.</p>
 </div>
 </div>
 </div>
@@ -1744,8 +1731,8 @@ For two-staged referee commands, when normal start is sent, an attacker may <a h
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
-<p>Normal startは<a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティキック</a>、<a href="#_シュートアウト_shoot_out">シュートアウト</a>の時に使用する。<br>
-Normal start is used for <a href="#_キックオフ_kick_off">kick-offs</a>, <a href="#_ペナルティーキック_penalty_kick">penalty kicks</a> and <a href="#_シュートアウト_shoot_out">shoot-out</a>.</p>
+<p>ノーマルスタートは<a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティキック</a>の時に使用する。<br>
+Normal start is used for <a href="#_キックオフ_kick_off">kick-offs</a> and <a href="#_ペナルティーキック_penalty_kick">penalty kicks</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1898,16 +1885,95 @@ It can also be used to resume the game when the game had to be stopped and no te
 <h4 id="_ペナルティーキック_penalty_kick">5.3.6. ペナルティーキック/Penalty Kick</h4>
 <div class="paragraph">
 <div class="title">定義/Definition</div>
-<p>ペナルティーキックを開始するには、停止コマンドを送信しなければならず、ボールは人間の<a href="#_主審_referee">主審</a>によって<a href="#_ペナルティーマーク_penalty_mark">ペナルティマーク</a>上に配置されなければならない。<br>
-To initiate a penalty kick, the stop command has to be sent and the ball has to be placed on the <a href="#_ペナルティーマーク_penalty_mark">penalty mark</a> by the human <a href="#_主審_referee">referee</a>.</p>
+<p>ペナルティーキックの手順は以下の通りである:<br>
+The procedure of a penalty kick is as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>ボールが人間の主審により<a href="#_ペナルティーマーク_penalty_mark">ペナルティーマーク</a>に置かれる<br>
+The ball is placed by the human referee on the <a href="#_ペナルティーマーク_penalty_mark">penalty mark</a>.</p>
+</li>
+<li>
+<p><a href="#_ペナルティーキック_penalty_kick">ペナルティー</a>コマンドが発行された時、<br>
+When the <a href="#Penalty Kick">penalty</a> command is issued</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>守備側のキーパーはゴールラインまで移動し、それに触れ続けなければならない<br>
+The defending keeper has to move to the goal line and keep touching it</p>
+</li>
+<li>
+<p>攻撃側のロボット1台はボールに近付くことが許されるが、このときボールに触れてはならない。<br>
+One attacking robot is allowed to approach the ball but not touch the ball</p>
+</li>
+<li>
+<p>その他の全てのロボットはペナルティーキックの手順に干渉しないよう、ボールから1m以上後方にいなければならない。<br>
+All other robots have to be 1m behind the ball such that they do not interfere the penalty kick procedure at any time.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><a href="#_ノーマルスタート_normal_start">ノーマルスタート</a>コマンドが発行された時、攻撃側ロボットは<a href="#_ボールの操作_ball_manipulation">ボールを操作</a>することが許可される。ボールは<a href="#_vision">SSL-Vision</a>の座標系におけるX座標で計測されるところの相手ゴール側にのみ動かすことができる。<br>
+When the <a href="#_ノーマルスタート_normal_start">normal start</a> command is issued, the attacker is allowed to <a href="#_ボールの操作_ball_manipulation">manipulate the ball</a>. The ball has to only move towards the opponent goal, as measured by its x coordinate in the coordinate system of <a href="#_vision">SSL-Vision</a>.</p>
+</li>
+<li>
+<p><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>になった時、守備側のキーパーは再び自由に移動できる。<br>
+When the ball is <a href="#Ball In And Out Of Play">in play</a>, the defending keeper may move freely again</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>penaltyコマンドが発行されたとき、1台の攻撃側ロボットはボールに触れない範囲で近づくことが許可される。このロボットはキッカーと呼ばれる。守備をするキーパーはゴールラインに触れていなけばならない。それ以外のすべてのロボットは、ゴールラインと平行でペナルティマークから0.4m後ろにあたる線より後ろに移動する必要がある。これらの制約が満たされたら主審は<a href="#_ノーマルスタート_normal_start">normal start</a>コマンドにより続けることができる。<br>
-When the penalty command is issued, one attacking robot is allowed to approach but not touch the ball. This robot will be referred to as the kicker. The defending keeper has to touch the goal line. All other robots have to move behind a line parallel to the goal line and 0.4 meters behind the penalty mark. When these constraints are met, the referee may continue with a <a href="#_ノーマルスタート_normal_start">normal start</a> command.</p>
+<p>以下の場合は得点が認められる:<br>
+A goal is awarded if:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_ノーマルスタート_normal_start">ノーマルスタート</a>コマンドが発行されてから10秒以内に、ボールがゴールの内側表面もしくはゴールの地面に接触する<br>
+the ball touches the inner surface of a goal wall or the ground of the goal of the defending team in less than 10 seconds, starting from when the <a href="#Normal Start">normal start</a> command is issued</p>
+</li>
+<li>
+<p>守備側チームがなんらかのルールに違反する<br>
+the defending team violates any rule</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><a href="#_ノーマルスタート_normal_start">normal start</a>コマンドが発行されたとき、キッカーはボールをシュートすることが許可される。ペナルティキックから直接ゴールしても得点となる。<br>
-When the <a href="#_ノーマルスタート_normal_start">normal start</a> command is issued, the kicker is allowed to shoot the ball. A goal may be scored directly from the penalty kick.</p>
+<p>以下の場合は得点が認められない:<br>
+A goal is not awarded if:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ボールがゴール外の<a href="#_フィールドライン_field_lines">フィールドライン</a>と交差する<br>
+the ball crosses any <a href="#Field Lines">field lines</a> outside the goal</p>
+</li>
+<li>
+<p>守備側キーパーがボールに触れ、ボールの速度ベクトルが二次元空間で少なくとも90度方向を変える<br>
+the defending keeper touches the ball such that the ball speed vector changes direction by at least 90 degrees in 2D space</p>
+</li>
+<li>
+<p>攻撃側チームが何らかのルールに違反する<br>
+the attacking team violates any rule</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content">
+0.15mのボール高さ制限を含め、<a href="#_ゴールの得点方法_scoring_goals">得点方法</a>に定められた制限はここでは適用されない。
+その他のルール、例えば<a href="#_ドリブルの超過_excessive_dribbling">オーバードリブル</a>の制限などどは適用される。<br>
+The restrictions defined for <a href="#Scoring Goals">scoring goals</a>, including the ball height limit of 0.15 meters, do not apply here.
+Other rules like the <a href="#Excessive Dribbling">excessive dribbling</a> limitation for example do.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>ボールが<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>になっているとき、キッカーは他のロボットがボールに触れるか、ゲームが停止するまでボールに触れてはいけない(「<a href="#_ダブルタッチ_double_touch">ダブルタッチ</a>」を参照)。また、ロボットの位置に関する制限が解除される。<br>
@@ -1916,10 +1982,6 @@ When the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_a
 <div class="paragraph">
 <p>ペナルティーキックがハーフタイムや試合終了の時に実行される場合、アディショナルタイムが許可される。<br>
 Additional time is allowed for a penalty kick to be taken at the end of each half or at the end of periods of overtime.</p>
-</div>
-<div class="paragraph">
-<p>攻撃側のチームがルールを侵害し、ボールがゴールに入った場合、または守備側のチームがルールを侵害し、ボールがゴールに入っていない場合、ペナルティーキックは再度行われる。<br>
-The penalty kick is retaken if the attacking team infringes the rules and the ball enters the goal or the defending team infringes the rules and the ball does not enter the goal.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
@@ -2173,8 +2235,8 @@ The height of the ball did not exceed 0.15 meters after the last touch of an att
 <i class="fa icon-note" title="注記"></i>
 </td>
 <td class="content">
-<a href="#_シュートアウト_shoot_out">シュートアウト</a>中は、これらの追加ルールは適用されない。<br>
-During <a href="#_シュートアウト_shoot_out">shoot-out</a>, these additional rules do not apply.
+<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>中は、これらの追加ルールは適用されない。<br>
+During <a href="#_ペナルティーキック_penalty_kick">penalty kicks</a>, these additional rules do not apply.
 </td>
 </tr>
 </table>
@@ -2812,89 +2874,24 @@ If a robot substitution intent for either team is present just before the game w
 <div class="sectionbody">
 <div class="paragraph">
 <div class="title">定義/Definition</div>
-<p>両チームが交互にゴールに得点を決めようと各チームそれぞれ5回のシュートを試行する。もし両チームとも5回の試行が終わった時に同点であった場合、2チームの得点が異なるまで前と同じ順番でさらに試行回数を増やす。<br>
-Both teams alternately attempt to score a goal until each team has performed 5 attempts. If both teams have the same score after those 5 attempts, each team takes another attempt in the same order as before until the score of the two teams is different.</p>
+<p>両チームが交互にそれぞれ5回の<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>を試行する。
+もし両チームとも5回の試行が終わった時に同点であった場合、2チームの得点が異なるまで前と同じ順番でさらに試行回数を増やす。<br>
+Both teams alternately attempt to score a goal with a <a href="#_ペナルティーキック_penalty_kick">penalty kick</a> until each team has performed 5 attempts.
+If both teams have the same score after those 5 attempts, each team takes another attempt in the same order as before until the score of the two teams is different.</p>
 </div>
 <div class="paragraph">
-<p>各チームには1台の攻撃ロボットと1台のキーパーだけが許可される。シュートアウトの間、攻撃ロボットと相手のキーパーだけが<a href="#_ボールの操作_ball_manipulation">ボールの操作</a>と移動ができる。他のロボットは干渉してはいけない。<br>
-Only one attacking robot and one keeper is allowed per team. During a shoot-out attempt, the attacking robot and the opponent keeper are the only ones allowed to move and <a href="#_ボールの操作_ball_manipulation">manipulate the ball</a>. Other robots are not allowed to interfere.</p>
+<p>各チームには1台の攻撃ロボットと1台のキーパーだけが許可される。
+シュートアウトの間、攻撃ロボットと相手のキーパーだけが<a href="#_ボールの操作_ball_manipulation">ボールの操作</a>と移動ができる。
+他のロボットは干渉してはならない。<br>
+Only one attacking robot and one keeper is allowed per team.
+During a shoot-out attempt, the attacking robot and the opponent keeper are the only ones allowed to move and <a href="#_ボールの操作_ball_manipulation">manipulate the ball</a>.
+Other robots are not allowed to interfere.</p>
 </div>
 <div class="paragraph">
-<p>シュートアウトの手順は以下である:<br>
-The procedure of a shoot-out attempt is as follows:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>ボールは相手のゴールから(ディヴィジョンAなら)8mか(ディヴィジョンBなら)6mの位置にある<a href="#_追加のライン_additional_lines">ミッドライン</a>(ハーフウェイラインではない)に人間の審判によって置かれる。<br>
-The ball is placed by the human referee on the <a href="#_追加のライン_additional_lines">mid-line</a> (not halfway line), 8 meters (division A) or 6 meters (division B) away from the opponent goal.</p>
-</li>
-<li>
-<p><a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>のコマンドが発行されたとき、守備側チームのキーパーはゴールラインに移動し、ラインに触れ続けなければならない<br>
-When the <a href="#_ペナルティーキック_penalty_kick">penalty</a> command is issued, the defending keeper has to move to the goal line and keep touching it.</p>
-</li>
-<li>
-<p><a href="#_ノーマルスタート_normal_start">ノーマルスタート</a>のコマンドが発行されたとき、アタッカーは<a href="#_ボールの操作_ball_manipulation">ボールを操作する</a>ことが許可される。ボールは相手ゴールに向かって動かさなければならない。これは、SSL-Visionの座標系におけるx座標によって測定されている。<br>
-When the <a href="#_ノーマルスタート_normal_start">normal start</a> command is issued, the attacker is allowed to <a href="#_ボールの操作_ball_manipulation">manipulate the ball</a>. The ball has to only move towards the opponent goal, as measured by its x coordinate in the coordinate system of <a href="#_vision">SSL-Vision</a>.</p>
-</li>
-<li>
-<p>ボールが<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>になった時、守備側チームのキーパは<a href="#_ペナルティーキック_penalty_kick">ペナルティキック</a>と同じように再び自由に動いてよい。<br>
-When the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">in play</a>, the defending keeper may move freely again, analogous to a <a href="#_ペナルティーキック_penalty_kick">penalty kick</a>.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>以下の場合に得点が与えられる:<br>
-A goal is awarded if:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#_ノーマルスタート_normal_start">ノーマルスタート</a>のコマンドが発行されてから10秒以内に守備側チームのゴールの地面もしくはゴールウォールの内面にボールが接触した。<br>
-the ball touches the inner surface of a goal wall or the ground of the goal of the defending team in less than 10 seconds, starting from when the <a href="#_ノーマルスタート_normal_start">normal start</a> command is issued</p>
-</li>
-<li>
-<p>守備側チームがいかなる違反も犯していない<br>
-the defending team violates any rule</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>以下の場合に得点が与えられない:<br>
-A goal is not awarded if:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>ボールがゴールより外側のいずれかの<a href="#_フィールドライン_field_lines">フィールドライン</a>を横切った<br>
-the ball crosses any <a href="#_フィールドライン_field_lines">field lines</a> outside the goal</p>
-</li>
-<li>
-<p>守備側チームのキーパーが2次元空間内で少なくとも90°以上ボールの速度ベクトルを変えるようにボールに触れる<br>
-the defending keeper touches the ball such that the ball speed vector changes direction by at least 90 degrees in 2D space</p>
-</li>
-<li>
-<p>攻撃側チームが何らかの違反を犯した<br>
-the attacking team violates any rule</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="注記"></i>
-</td>
-<td class="content">
-<a href="#_ゴールの得点方法_scoring_goals">ゴールの得点</a>のために定義された制限はここでは適用されない。これには0.15mのボールの高さ制限も含まれる。例えば<a href="#_ドリブルの超過_excessive_dribbling">ドリブルの超過</a>なども該当する。<br>
-The restrictions defined for <a href="#_ゴールの得点方法_scoring_goals">scoring goals</a> do not apply here. This explicitly includes the ball height limit of 0.15 meters. Other rules like the <a href="#_ドリブルの超過_excessive_dribbling">excessive dribbling</a> limitation for example do.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>ロボットはシュートアウトの間に<a href="#_ロボットの交代_robot_substitution">交代</a>してもよい。新しいロボットを即時入れても良い。<br>
-Robots may be <a href="#_ロボットの交代_robot_substitution">substituted</a> between shoot-out attempts. The new robot may be put in right away.</p>
+<p>ロボットはシュートアウトの間に<a href="#_ロボットの交代_robot_substitution">交代</a>してもよい。
+新しいロボットを即時入れても良い。<br>
+Robots may be <a href="#_ロボットの交代_robot_substitution">substituted</a> between shoot-out attempts.
+The new robot may be put in right away.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3602,7 +3599,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2020-03-22 12:34:37 GMT
+最終更新 2020-03-24 11:59:05 GMT
 </div>
 </div>
 </body>
