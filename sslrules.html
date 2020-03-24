@@ -1616,6 +1616,34 @@ The automatic ball placement is the preferred way to place the ball at the desig
 If this is not possible, the <a href="#_主審_referee">referee</a> places the ball manually.</p>
 </div>
 <div class="paragraph">
+<p>以下の条件が全て満たされている場合、ボール配置は必要ない:<br>
+No ball placement is required if all of the following constraints are fulfilled:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ボールは指定位置から1m以内にある。<br>
+The ball is closer than 1m to the designated position.</p>
+</li>
+<li>
+<p>ボールはフィールド内にある。<br>
+The ball is inside the field.</p>
+</li>
+<li>
+<p>ボールは、どのディフェンスエリアからも0.7m以上離れている。<br>
+The ball is at least 0.7m away from any defense area.</p>
+</li>
+<li>
+<p>ボールは静止している。<br>
+The ball is stationary.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>この場合、試合は<a href="#_停止_stop">ストップ</a>に必要とされる距離を維持した時点ですぐに再開できる。<br>
+In this case, the game can be continued as soon as all robots keep the required distance for <a href="#_停止_stop">stop</a>.</p>
+</div>
+<div class="paragraph">
 <p>ボールがロボットによってうまく配置されたと考えられるのは以下の場合である<br>
 A ball is considered placed successfully by the robots if</p>
 </div>
@@ -1644,7 +1672,10 @@ the ball is at a position within 0.15 meters radius from the requested position<
 </ul>
 </div>
 <div class="paragraph">
-<p>ボールが正常に配置されるまで、<a href="#_game_controller">game controller</a>によってそれ以外のコマンドは発行されない。ボールが上手く配置された場合、試合は<a href="#_game_controller">game controller</a>によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。配置が失敗した場合、相手にフリーキックが与えられる。このチームがボールをうまく配置することに失敗した場合、ボールは<a href="#_主審_referee">主審</a>により配置され、試合は元のコマンドによって続行される。<br>
+<p>ボールが正常に配置されるまで、<a href="#_game_controller">game controller</a>によってそれ以外のコマンドは発行されない。
+ボールが上手く配置された場合、試合は<a href="#_game_controller">game controller</a>によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。
+配置が失敗した場合、相手にフリーキックが与えられる。
+このチームがボールをうまく配置することに失敗した場合、ボールは<a href="#_主審_referee">主審</a>により配置され、試合は元のコマンドによって続行される。<br>
 No further commands will be issued by the <a href="#_game_controller">game controller</a> until the automatic placement is complete.
 The game will be continued by the <a href="#_game_controller">game controller</a> as soon as the ball is successfully placed, but not earlier than 2 seconds after the ball placement command has been issued.
 A failed placement will result in a free kick for the opposing team.
@@ -1653,6 +1684,10 @@ If this team failed to place the ball as well, the ball is placed by the <a href
 <div class="paragraph">
 <p>配置を担当しない方のチームは<a href="#_ボール配置への干渉_ball_placement_interference">ボール配置に干渉</a>してはいけない。<br>
 The non-placing team must not <a href="#_ボール配置への干渉_ball_placement_interference">interfere the ball placement task</a>.</p>
+</div>
+<div class="paragraph">
+<p>チームごとに設けられたボール配置失敗カウンターは配置失敗ごとに増加し、配置成功ごとに減少する。カウンターは負値にはならない。<br>
+For each team a ball placement failure counter is incremented on each placement failure and decremented for successful placements. It can not get negative.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
@@ -1687,7 +1722,7 @@ The <a href="#_主審_referee">referee</a> can decide to disable automatic ball 
 </li>
 <li>
 <p>片方のチームが連続して5回ボールを配置することに失敗した場合、そのハーフが終わるまでボールを配置することは許されない。フィールド外に出てしまった事で発生したすべてのフリーキックは相手チームに与えられる。その他のルール違反や両チームともボールを配置することに失敗した場合、ボールは<a href="#_主審_referee">主審</a>によって配置される<br>
-When a team has failed to place the ball 5 times in a row, it is not allowed to place the ball for the rest of the game half. All free kicks that were a result of the ball leaving the field, are awarded to the opposing team. For all other rule violations or when both teams failed to place the ball, the ball is placed by the <a href="#_主審_referee">referee</a></p>
+When a teams placement failure counter reached 5, it is not allowed to place the ball for the rest of the game half. All free kicks that were a result of the ball leaving the field, are awarded to the opposing team. For all other rule violations or when both teams failed to place the ball, the ball is placed by the <a href="#_主審_referee">referee</a></p>
 </li>
 <li>
 <p>もしボール配置できるチームがいない場合、ボールは<a href="#_主審_referee">主審</a>か<a href="#_副審_assistant_referee">副審</a>によって配置される。主審または副審は、ボールを動かすために、いわゆるボールハンドラ（長い、できれば黒の棒状のデバイス）を使用することが推奨される。<br>
@@ -1702,8 +1737,8 @@ If no team can place the ball, the ball is placed by the <a href="#_主審_refer
 <i class="fa icon-note" title="注記"></i>
 </td>
 <td class="content">
-ボールがすでに配置位置にある場合（たとえば、他のチームによるフリーキックの失敗後）、ロボットがボールを操作しなくてもボール配置は成功する可能性がある。これは、配置チームによる貢献なしに失敗回数のカウンターのリセットにつながる可能性がある。<br>
-If the ball is already at the placement position (for example after a failed free kick by the other team), the ball placement can be successful without a robot manipulating the ball. This could lead to the counter for failed attempts resetting without a contribution by the placing team.
+placementコマンドが発行された時点では、ボールはまだ動いている可能性がある。<br>
+The ball may still be moving when the placement command is issued.
 </td>
 </tr>
 </table>
@@ -1715,8 +1750,21 @@ If the ball is already at the placement position (for example after a failed fre
 <i class="fa icon-note" title="注記"></i>
 </td>
 <td class="content">
-placementコマンドが発行された時点では、ボールはまだ動いている可能性がある。<br>
-The ball may still be moving when the placement command is issued.
+ゲームはボール配置の直後に開始される。ボールを受け取ったチームは必要に応じて即座にボールを蹴り、相手チームが守備のためのアクションを取る時間をわずかなものに出来る。<br>
+The game commences directly after ball placement. The team receiving the ball may shoot immediately and leave the opposing team little time to arrange defensive actions if needed.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content">
+ボール配置中はディエンスエリアへの侵入は許される。<br>
+It is allowed to enter the defense area during ball placement.
 </td>
 </tr>
 </table>
@@ -3614,7 +3662,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2020-03-24 13:21:06 GMT
+最終更新 2020-03-24 13:38:14 GMT
 </div>
 </div>
 </body>

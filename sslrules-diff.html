@@ -2054,6 +2054,34 @@ The automatic ball placement is the preferred way to place the ball at the desig
 If this is not possible, the <a href="#_主審_referee">referee</a> places the ball manually.</p>
 </div>
 <div class="paragraph">
+<p><span class="diff_insert">以下の条件が全て満たされている場合、ボール配置は必要ない:</span><br><span class="diff_insert">
+No </span><span class="diff_insert">ball </span><span class="diff_insert">placement </span><span class="diff_insert">is </span><span class="diff_insert">required </span><span class="diff_insert">if </span><span class="diff_insert">all </span><span class="diff_insert">of </span><span class="diff_insert">the </span><span class="diff_insert">following </span><span class="diff_insert">constraints </span><span class="diff_insert">are </span><span class="diff_insert">fulfilled:</span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="diff_insert">ボールは指定位置から1m以内にある。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">ball </span><span class="diff_insert">is </span><span class="diff_insert">closer </span><span class="diff_insert">than </span><span class="diff_insert">1m </span><span class="diff_insert">to </span><span class="diff_insert">the </span><span class="diff_insert">designated </span><span class="diff_insert">position.</span></p>
+</li>
+<li>
+<p><span class="diff_insert">ボールはフィールド内にある。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">ball </span><span class="diff_insert">is </span><span class="diff_insert">inside </span><span class="diff_insert">the </span><span class="diff_insert">field.</span></p>
+</li>
+<li>
+<p><span class="diff_insert">ボールは、どのディフェンスエリアからも0.7m以上離れている。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">ball </span><span class="diff_insert">is </span><span class="diff_insert">at </span><span class="diff_insert">least </span><span class="diff_insert">0.7m </span><span class="diff_insert">away </span><span class="diff_insert">from </span><span class="diff_insert">any </span><span class="diff_insert">defense </span><span class="diff_insert">area.</span></p>
+</li>
+<li>
+<p><span class="diff_insert">ボールは静止している。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">ball </span><span class="diff_insert">is </span><span class="diff_insert">stationary.</span></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">この場合、試合は</span><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a><span class="diff_insert">に必要とされる距離を維持した時点ですぐに再開できる。</span><br><span class="diff_insert">
+In </span><span class="diff_insert">this </span><span class="diff_insert">case, </span><span class="diff_insert">the </span><span class="diff_insert">game </span><span class="diff_insert">can </span><span class="diff_insert">be </span><span class="diff_insert">continued </span><span class="diff_insert">as </span><span class="diff_insert">soon </span><span class="diff_insert">as </span><span class="diff_insert">all </span><span class="diff_insert">robots </span><span class="diff_insert">keep </span><span class="diff_insert">the </span><span class="diff_insert">required </span><span class="diff_insert">distance </span><span class="diff_insert">for </span><a href="#_停止_stop"><span class="diff_insert">stop</span></a><span class="diff_insert">.</span></p>
+</div>
+<div class="paragraph">
 <p>ボールがロボットによってうまく配置されたと考えられるのは以下の場合である<br>
 A ball is considered placed successfully by the robots if</p>
 </div>
@@ -2082,7 +2110,10 @@ the ball is at a position within 0.15 meters radius from the requested position<
 </ul>
 </div>
 <div class="paragraph">
-<p>ボールが正常に配置されるまで、<a href="#_game_controller">game controller</a>によってそれ以外のコマンドは発行されない。ボールが上手く配置された場合、試合は<a href="#_game_controller">game controller</a><span class="diff_delete">によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。配置が失敗した場合、相手に間接フリーキックが与えられる。このチームがボールをうまく配置することに失敗した場合、ボールは</span><span class="diff_insert">によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。配置が失敗した場合、相手にフリーキックが与えられる。このチームがボールをうまく配置することに失敗した場合、ボールは</span><a href="#_主審_referee">主審</a>により配置され、試合は元のコマンドによって続行される。<br>
+<p>ボールが正常に配置されるまで、<a href="#_game_controller">game controller</a><span class="diff_delete">によってそれ以外のコマンドは発行されない。ボールが上手く配置された場合、試合は</span><span class="diff_insert">によってそれ以外のコマンドは発行されない。
+ボールが上手く配置された場合、試合は</span><a href="#_game_controller">game controller</a><span class="diff_delete">によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。配置が失敗した場合、相手に間接フリーキックが与えられる。このチームがボールをうまく配置することに失敗した場合、ボールは</span><span class="diff_insert">によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。
+配置が失敗した場合、相手にフリーキックが与えられる。
+このチームがボールをうまく配置することに失敗した場合、ボールは</span><a href="#_主審_referee">主審</a>により配置され、試合は元のコマンドによって続行される。<br>
 No further commands will be issued by the <a href="#_game_controller">game controller</a> until the automatic placement is complete.
 The game will be continued by the <a href="#_game_controller">game controller</a> as soon as the ball is successfully placed, but not earlier than 2 seconds after the ball placement command has been issued.
 A failed placement will result in <span class="diff_delete">an </span><span class="diff_delete">indirect </span><span class="diff_insert">a </span>free kick for the opposing team.
@@ -2091,6 +2122,10 @@ If this team failed to place the ball as well, the ball is placed by the <a href
 <div class="paragraph">
 <p>配置を担当しない方のチームは<a href="#_ボール配置への干渉_ball_placement_interference">ボール配置に干渉</a>してはいけない。<br>
 The non-placing team must not <a href="#_ボール配置への干渉_ball_placement_interference">interfere the ball placement task</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">チームごとに設けられたボール配置失敗カウンターは配置失敗ごとに増加し、配置成功ごとに減少する。カウンターは負値にはならない。</span><br><span class="diff_insert">
+For </span><span class="diff_insert">each </span><span class="diff_insert">team </span><span class="diff_insert">a </span><span class="diff_insert">ball </span><span class="diff_insert">placement </span><span class="diff_insert">failure </span><span class="diff_insert">counter </span><span class="diff_insert">is </span><span class="diff_insert">incremented </span><span class="diff_insert">on </span><span class="diff_insert">each </span><span class="diff_insert">placement </span><span class="diff_insert">failure </span><span class="diff_insert">and </span><span class="diff_insert">decremented </span><span class="diff_insert">for </span><span class="diff_insert">successful </span><span class="diff_insert">placements. </span><span class="diff_insert">It </span><span class="diff_insert">can </span><span class="diff_insert">not </span><span class="diff_insert">get </span><span class="diff_insert">negative.</span></p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
@@ -2125,7 +2160,7 @@ The <a href="#_主審_referee">referee</a> can decide to disable automatic ball 
 </li>
 <li>
 <p>片方のチームが連続して5回ボールを配置することに失敗した場合、そのハーフが終わるまでボールを配置することは許されない。フィールド外に出てしまった事で発生したすべてのフリーキックは相手チームに与えられる。その他のルール違反や両チームともボールを配置することに失敗した場合、ボールは<a href="#_主審_referee">主審</a>によって配置される<br>
-When a team has failed to place the ball 5 times in a row, it is not allowed to place the ball for the rest of the game half. All free kicks that were a result of the ball leaving the field, are awarded to the opposing team. For all other rule violations or when both teams failed to place the ball, the ball is placed by the <a href="#_主審_referee">referee</a></p>
+When a <span class="diff_delete">team </span><span class="diff_delete">has </span><span class="diff_delete">failed </span><span class="diff_delete">to </span><span class="diff_delete">place </span><span class="diff_delete">the </span><span class="diff_delete">ball </span><span class="diff_delete">5 </span><span class="diff_delete">times </span><span class="diff_delete">in </span><span class="diff_delete">a </span><span class="diff_delete">row, </span><span class="diff_insert">teams </span><span class="diff_insert">placement </span><span class="diff_insert">failure </span><span class="diff_insert">counter </span><span class="diff_insert">reached </span><span class="diff_insert">5, </span>it is not allowed to place the ball for the rest of the game half. All free kicks that were a result of the ball leaving the field, are awarded to the opposing team. For all other rule violations or when both teams failed to place the ball, the ball is placed by the <a href="#_主審_referee">referee</a></p>
 </li>
 <li>
 <p>もしボール配置できるチームがいない場合、ボールは<a href="#_主審_referee">主審</a>か<a href="#_副審_assistant_referee">副審</a>によって配置される。主審または副審は、ボールを動かすために、いわゆるボールハンドラ（長い、できれば黒の棒状のデバイス）を使用することが推奨される。<br>
@@ -2139,10 +2174,13 @@ If no team can place the ball, the ball is placed by the <a href="#_主審_refer
 <td class="icon">
 <i class="fa icon-note" title="注記"></i>
 </td>
-<td class="content">
-ボールがすでに配置位置にある場合（たとえば、他のチームによるフリーキックの失敗後）、ロボットがボールを操作しなくてもボール配置は成功する可能性がある。これは、配置チームによる貢献なしに失敗回数のカウンターのリセットにつながる可能性がある。<br>
-If the ball is already at the placement position (for example after a failed free kick by the other team), the ball placement can be successful without a robot manipulating the ball. This could lead to the counter for failed attempts resetting without a contribution by the placing team.
-</td>
+<td class="content"><span class="diff_delete">
+ボールがすでに配置位置にある場合（たとえば、他のチームによるフリーキックの失敗後）、ロボットがボールを操作しなくてもボール配置は成功する可能性がある。これは、配置チームによる貢献なしに失敗回数のカウンターのリセットにつながる可能性がある。</span><span class="diff_insert">
+placementコマンドが発行された時点では、ボールはまだ動いている可能性がある。</span><br><span class="diff_delete">
+If </span><span class="diff_delete">the </span><span class="diff_insert">
+The </span>ball <span class="diff_delete">is </span><span class="diff_delete">already </span><span class="diff_delete">at </span><span class="diff_insert">may </span><span class="diff_insert">still </span><span class="diff_insert">be </span><span class="diff_insert">moving </span><span class="diff_insert">when </span>the placement <span class="diff_delete">position </span><span class="diff_delete">(for </span><span class="diff_delete">example </span><span class="diff_delete">after </span><span class="diff_delete">a </span><span class="diff_delete">failed </span><span class="diff_delete">free </span><span class="diff_delete">kick </span><span class="diff_delete">by </span><span class="diff_delete">the </span><span class="diff_delete">other </span><span class="diff_delete">team), </span><span class="diff_delete">the </span><span class="diff_delete">ball </span><span class="diff_delete">placement </span><span class="diff_delete">can </span><span class="diff_delete">be </span><span class="diff_delete">successful </span><span class="diff_delete">without </span><span class="diff_delete">a </span><span class="diff_delete">robot </span><span class="diff_delete">manipulating </span><span class="diff_delete">the </span><span class="diff_delete">ball. </span><span class="diff_delete">This </span><span class="diff_delete">could </span><span class="diff_delete">lead </span><span class="diff_delete">to </span><span class="diff_delete">the </span><span class="diff_delete">counter </span><span class="diff_delete">for </span><span class="diff_delete">failed </span><span class="diff_delete">attempts </span><span class="diff_delete">resetting </span><span class="diff_delete">without </span><span class="diff_delete">a </span><span class="diff_delete">contribution </span><span class="diff_delete">by </span><span class="diff_delete">the </span><span class="diff_delete">placing </span><span class="diff_delete">team.
+</span><span class="diff_insert">command </span><span class="diff_insert">is </span><span class="diff_insert">issued.
+</span></td>
 </tr>
 </table>
 </div>
@@ -2152,10 +2190,25 @@ If the ball is already at the placement position (for example after a failed fre
 <td class="icon">
 <i class="fa icon-note" title="注記"></i>
 </td>
-<td class="content">
-placementコマンドが発行された時点では、ボールはまだ動いている可能性がある。<br>
-The ball may still be moving when the placement command is issued.
+<td class="content"><span class="diff_delete">
+placementコマンドが発行された時点では、ボールはまだ動いている可能性がある。</span><span class="diff_insert">
+ゲームはボール配置の直後に開始される。ボールを受け取ったチームは必要に応じて即座にボールを蹴り、相手チームが守備のためのアクションを取る時間をわずかなものに出来る。</span><br>
+The <span class="diff_insert">game </span><span class="diff_insert">commences </span><span class="diff_insert">directly </span><span class="diff_insert">after </span><span class="diff_insert">ball </span><span class="diff_insert">placement. </span><span class="diff_insert">The </span><span class="diff_insert">team </span><span class="diff_insert">receiving </span><span class="diff_insert">the </span>ball may <span class="diff_delete">still </span><span class="diff_delete">be </span><span class="diff_delete">moving </span><span class="diff_delete">when </span><span class="diff_insert">shoot </span><span class="diff_insert">immediately </span><span class="diff_insert">and </span><span class="diff_insert">leave </span>the <span class="diff_delete">placement </span><span class="diff_delete">command </span><span class="diff_insert">opposing </span><span class="diff_insert">team </span><span class="diff_insert">little </span><span class="diff_insert">time </span><span class="diff_insert">to </span><span class="diff_insert">arrange </span><span class="diff_insert">defensive </span><span class="diff_insert">actions </span><span class="diff_insert">if </span><span class="diff_insert">needed.
+</span></td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
 </td>
+<td class="content"><span class="diff_insert">
+ボール配置中はディエンスエリアへの侵入は許される。</span><br><span class="diff_insert">
+It </span>is <span class="diff_delete">issued.
+</span><span class="diff_insert">allowed </span><span class="diff_insert">to </span><span class="diff_insert">enter </span><span class="diff_insert">the </span><span class="diff_insert">defense </span><span class="diff_insert">area </span><span class="diff_insert">during </span><span class="diff_insert">ball </span><span class="diff_insert">placement.
+</span></td>
 </tr>
 </table>
 </div>
@@ -4215,7 +4268,7 @@ There is a smaller time window in division A for taking a free kick before <a hr
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-24 </span><span class="diff_insert">13:21:06 </span>GMT
+最終更新 <span class="diff_delete">2020-03-21 </span><span class="diff_delete">11:35:02 </span><span class="diff_insert">2020-03-24 </span><span class="diff_insert">13:38:14 </span>GMT
 </div>
 </div>
 </body>
