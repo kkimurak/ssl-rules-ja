@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.1">
-<meta name="author" content="2020-04-04">
+<meta name="author" content="2020-04-05">
 <title>RoboCup小型機リーグルール</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -430,7 +430,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCup小型機リーグルール</h1>
 <div class="details">
-<span id="author" class="author">2020-04-04</span><br>
+<span id="author" class="author">2020-04-05</span><br>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">目次</div>
@@ -1009,7 +1009,7 @@ New automatic referee implementations can be provided, given that the source cod
 <p><a href="#_ゲームイベント表_game_event_table">ゲームイベント表</a>はAutomatic Refereeの実装がどのゲームイベントを検出できなけらばならないかを示す。
 <a href="#_技術委員会_technical_committee">技術委員会</a>および両チームが同意すれば、個別のゲームイベントをオートレフェリーでの処理上で、もしくは完全に無効化することができる。<br>
 The <a href="#_ゲームイベント表_game_event_table">Game Event Table</a> shows which game events an automatic referee implementation must be able to detect.
-Individual game events can be disabled completely or in some automatic referee implementations if both teams and the <a href="#Technical Committee">technical committee</a> agree.</p>
+Individual game events can be disabled completely or in some automatic referee implementations if both teams and the <a href="#_技術委員会_technical_committee">technical committee</a> agree.</p>
 </div>
 <div class="paragraph">
 <p>存在する実装はGithubで確認することができる。: <a href="https://github.com/RoboCup-SSL/ssl-autorefs" class="bare">https://github.com/RoboCup-SSL/ssl-autorefs</a><br>
@@ -1040,7 +1040,7 @@ These flags are responsible for communicating various intents, such as: <a href=
 <div class="paragraph">
 <p><a href="#_主審_referee">主審</a>もしくは<a href="#_game_controller_operator">game controller operator</a>がコミュニケーションフラッグを確認する必要がある。
 ジェスチャーや野次は<a href="#_非スポーツマン行為_unsporting_behavior">非スポーツマン行為</a>とみなされ、一度の警告ののちに<a href="#_レッドカード_red_card">レッドカード</a>となる。
-The <a href="#Referee">referee</a> or <a href="#_game_controller_operator">game controller operator</a> has to acknowledge the communication flag.
+The <a href="#_主審_referee">referee</a> or <a href="#_game_controller_operator">game controller operator</a> has to acknowledge the communication flag.
 Any gesturing and yelling will be considered <a href="#_非スポーツマン行為_unsporting_behavior">unsporting behavior</a>, punished by a <a href="#_レッドカード_red_card">red card</a> after the first warning.</p>
 </div>
 <div class="paragraph">
@@ -1482,7 +1482,7 @@ The <a href="#_主審_referee">referee</a> asks both <a href="#_ハンドラ_rob
 </div>
 <div class="paragraph">
 <p>キーパーのIDは、<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">アウトオブプレイ中</a>もしくはボールがフィールドの相手側ハーフにあれば、以下の方法でいつでも変更できる:<br>
-The keeper id can be changed anytime during the game if the ball is either <a href="#Ball In And Out Of Play">out of play</a> or in the opponent&#8217;s field half by:</p>
+The keeper id can be changed anytime during the game if the ball is either <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">out of play</a> or in the opponent&#8217;s field half by:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1967,8 +1967,8 @@ Normal start is used for <a href="#_キックオフ_kick_off">kick-offs</a> and 
 The ball has to be placed in the center of the field by the human referee.</p>
 </div>
 <div class="paragraph">
-<p>kick-offコマンドが発行されたとき、すべてのロボットはセンターサークルを除く自分たちの陣地側のフィールド半面に移動しなければならない。ただし、攻撃側チームのアタッカーロボット1台はセンターサークル内に侵入することが許可される。このロボットはキッカーと呼ばれる。すべてのロボットはボールに触れてはいけない。<br>
-When the kick-off command is issued, all robots have to move to their own half of the field excluding the <a href="#Center Circle">center circle</a>. However, one robot of the attacking team is also allowed to be inside the whole center circle. This robot will be referred to as the kicker. No robot is allowed to touch the ball.</p>
+<p>kick-offコマンドが発行されたとき、すべてのロボットは<a href="#_センターサークル_center_circle">センターサークル</a>を除く自分たちの陣地側のフィールド半面に移動しなければならない。ただし、攻撃側チームのアタッカーロボット1台はセンターサークル内に侵入することが許可される。このロボットはキッカーと呼ばれる。すべてのロボットはボールに触れてはいけない。<br>
+When the kick-off command is issued, all robots have to move to their own half of the field excluding the <a href="#_センターサークル_center_circle">center circle</a>. However, one robot of the attacking team is also allowed to be inside the whole center circle. This robot will be referred to as the kicker. No robot is allowed to touch the ball.</p>
 </div>
 <div class="paragraph">
 <p><a href="#_ノーマルスタート_normal_start">normal start</a>コマンドが送信されたとき、キッカーはボールをシュートすることが許可される。キックオフからゴールを直接獲得することができる。<br>
@@ -2049,7 +2049,7 @@ The ball is placed by the human referee on the <a href="#_ペナルティーマ�
 </li>
 <li>
 <p><a href="#_ペナルティーキック_penalty_kick">ペナルティー</a>コマンドが発行された時、<br>
-When the <a href="#Penalty Kick">penalty</a> command is issued</p>
+When the <a href="#_ペナルティーキック_penalty_kick">penalty</a> command is issued</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2073,11 +2073,11 @@ When the <a href="#_ノーマルスタート_normal_start">normal start</a> comm
 </li>
 <li>
 <p><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>になった時、守備側のキーパーは再び自由に移動できる。<br>
-When the ball is <a href="#Ball In And Out Of Play">in play</a>, the defending keeper may move freely again</p>
+When the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">in play</a>, the defending keeper may move freely again</p>
 </li>
 <li>
 <p>10秒経過した後にボールが引き続き<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>であった場合、試合は停止され<a href="#_ゴールキック_goal_kick">ゴールキック</a>で再開される。<br>
-If the ball is still <a href="#Ball In And Out Of Play">in play</a> after 10 seconds, the game is stopped and then continued by a <a href="#Goal Kick">goal kick</a> for the defending team.</p>
+If the ball is still <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">in play</a> after 10 seconds, the game is stopped and then continued by a <a href="#_ゴールキック_goal_kick">goal kick</a> for the defending team.</p>
 </li>
 </ol>
 </div>
@@ -2089,7 +2089,7 @@ A goal is awarded if:</p>
 <ul>
 <li>
 <p><a href="#_ノーマルスタート_normal_start">ノーマルスタート</a>コマンドが発行されてから、ボールがゴールの内側表面もしくはゴールの地面に接触する<br>
-the ball touches the inner surface of a goal wall or the ground of the goal of the defending team, starting from when the <a href="#Normal Start">normal start</a> command is issued</p>
+the ball touches the inner surface of a goal wall or the ground of the goal of the defending team, starting from when the <a href="#_ノーマルスタート_normal_start">normal start</a> command is issued</p>
 </li>
 <li>
 <p>守備側チームがなんらかのルールに違反する<br>
@@ -2105,7 +2105,7 @@ A goal is not awarded if:</p>
 <ul>
 <li>
 <p>ボールがゴール外の<a href="#_フィールドライン_field_lines">フィールドライン</a>と交差する<br>
-the ball crosses any <a href="#Field Lines">field lines</a> outside the goal</p>
+the ball crosses any <a href="#_フィールドライン_field_lines">field lines</a> outside the goal</p>
 </li>
 <li>
 <p>守備側キーパーがボールに触れ、ボールの速度ベクトルが二次元空間で少なくとも90度方向を変える<br>
@@ -2126,8 +2126,8 @@ the attacking team violates any rule</p>
 <td class="content">
 0.15mのボール高さ制限を含め、<a href="#_ゴールの得点方法_scoring_goals">得点方法</a>に定められた制限はここでは適用されない。
 その他のルール、例えば<a href="#_ドリブルの超過_excessive_dribbling">オーバードリブル</a>の制限などどは適用される。<br>
-The restrictions defined for <a href="#Scoring Goals">scoring goals</a>, including the ball height limit of 0.15 meters, do not apply here.
-Other rules like the <a href="#Excessive Dribbling">excessive dribbling</a> limitation for example do.
+The restrictions defined for <a href="#_ゴールの得点方法_scoring_goals">scoring goals</a>, including the ball height limit of 0.15 meters, do not apply here.
+Other rules like the <a href="#_ドリブルの超過_excessive_dribbling">excessive dribbling</a> limitation for example do.
 </td>
 </tr>
 </table>
@@ -2170,7 +2170,7 @@ the ball moved at least 0.05 meters following a <a href="#_キックオフ_kick_
 </li>
 <li>
 <p><a href="#_フリーキック_free_kick">フリーキック</a>から、ディヴィジョンAでは5秒、ディヴィジョンBでは10秒が経過した時<br>
-5 seconds (Division A) or 10 seconds (Division B) passed following a <a href="#Free Kick">free kick</a>.</p>
+5 seconds (Division A) or 10 seconds (Division B) passed following a <a href="#_フリーキック_free_kick">free kick</a>.</p>
 </li>
 </ul>
 </div>
@@ -2203,7 +2203,7 @@ Upon receipt of a yellow card, the number of robots allowed on the field for the
 </div>
 <div class="paragraph">
 <p>イエローカードは自動的には試合を停止させない。<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>であれば、イエローカードを受けたチームは10秒間で、<a href="#_ロボットの交代_robot_substitution">自動的にロボットを退場</a>させることができる。もしその時間でロボットが退場しなかった場合、ゲームは<a href="#_ロボットの交代_robot_substitution">手動でのロボット退場</a>のため停止させられる。<br>
-A yellow card does not lead to a stop automatically. If the the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">in play</a>, the team will have 10 seconds to <a href="#Robot Substitution">automatically remove the robot</a>. If a robot is not taken out within time, the game is stopped for <a href="#_ロボットの交代_robot_substitution">manual substitution</a>.</p>
+A yellow card does not lead to a stop automatically. If the the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">in play</a>, the team will have 10 seconds to <a href="#_ロボットの交代_robot_substitution">automatically remove the robot</a>. If a robot is not taken out within time, the game is stopped for <a href="#_ロボットの交代_robot_substitution">manual substitution</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2409,7 +2409,7 @@ The ball has to be placed at the position from where the ball was kicked (see th
 </div>
 <div class="paragraph">
 <p>ボールが配置された後、ボールがフィールドから出る前に最後に触れたチームの相手チームに<a href="#_フリーキック_free_kick">フリーキック</a>が与えられる。<br>
-After the ball has been placed, a <a href="#Free Kick">free kick</a> is awarded to the opponent of the team that last touched the ball before it left the field.</p>
+After the ball has been placed, a <a href="#_フリーキック_free_kick">free kick</a> is awarded to the opponent of the team that last touched the ball before it left the field.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
@@ -2476,10 +2476,10 @@ If the goal is considered invalid, the game will be continued as if the ball cro
 <div class="sect2">
 <h3 id="_試合の停滞_no_progress_in_game">8.1. 試合の停滞/No Progress In Game</h3>
 <div class="paragraph">
-<p>両チームが<a href="#_ボールの操作_ball_manipulation">ボールを操作する</a>ことが許されているにもかかわらず5秒 (ディヴィジョンA)もしくは10秒 (ディヴィジョンB)に亘って試合に進展がなかった場合、試合は<a href="#_停止_stop">停止され</a>、<a href="#フォーススタート/Forced Start">フォーススタート</a>で再開される。<br>
+<p>両チームが<a href="#_ボールの操作_ball_manipulation">ボールを操作する</a>ことが許されているにもかかわらず5秒 (ディヴィジョンA)もしくは10秒 (ディヴィジョンB)に亘って試合に進展がなかった場合、試合は<a href="#_停止_stop">停止され</a>、<a href="#_フォーススタート_force_start">フォーススタート</a>で再開される。<br>
 If there is no progress in the game for 5 seconds (Division A) or 10 seconds (Division B) while both teams are allowed to
 <a href="#_ボールの操作_ball_manipulation">manipulate the ball</a>, the game is <a href="#_停止_stop">stopped</a>
-and continued by a <a href="#フォーススタート/Forced Start">forced start</a>.</p>
+and continued by a <a href="#_フォーススタート_force_start">forced start</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2599,7 +2599,7 @@ Violations in this section and its subsections increase the foul counter if not 
 人間の主審は、各セクションに記述された罰則に関係なく、そのファウルが繰り返される場合は<a href="#_イエローカード_yellow_card">イエローカード</a>を、特に極端な場合は<a href="#_レッドカード_red_card">レッドカード</a>を即座に与えることを選択できる。<br>
 Regardless, of the prescribed penalties in this section, if a
 foul is severe or repeated, the referee can choose to immediately
-issue a <a href="#Yellow Card">yellow card</a> or in extreme cases a <a href="#Red Card">red card</a>.
+issue a <a href="#_イエローカード_yellow_card">yellow card</a> or in extreme cases a <a href="#_レッドカード_red_card">red card</a>.
 </td>
 </tr>
 </table>
@@ -2608,8 +2608,8 @@ issue a <a href="#Yellow Card">yellow card</a> or in extreme cases a <a href="#R
 <h4 id="_試合の停止を伴うファウル_stopping_fouls">8.4.1. 試合の停止を伴うファウル/Stopping Fouls</h4>
 <div class="paragraph">
 <p>このセクションにあるファウルは試合を<a href="#_停止_stop">停止</a>させ、反則が発生した時点でボールが置かれていた位置からの<a href="#_フリーキック_free_kick">フリーキック</a>で再開する。<br>
-Fouls in this section cause the game to <a href="#Stop">stop</a> and then resume
-with a <a href="#Free Kick">free kick</a> from the position where the ball was
+Fouls in this section cause the game to <a href="#_停止_stop">stop</a> and then resume
+with a <a href="#_フリーキック_free_kick">free kick</a> from the position where the ball was
 located when the foul began happening.</p>
 </div>
 <div class="sect4">
@@ -2727,7 +2727,7 @@ A robot must not kick the ball over the field boundary such that the ball leaves
 <div class="paragraph">
 <p>ボールはディヴィジョンAであれば5秒、ディヴィジョンBであれば10秒を超えて
 <a href="#_ディフェンスエリア_defense_area">デイフェンスエリア</a>に留まってはならない。<br>
-The ball must not be kept in the <a href="#Defense Area">defense area</a> for more than
+The ball must not be kept in the <a href="#_ディフェンスエリア_defense_area">defense area</a> for more than
 5 seconds (Division A) or 10 seconds (Division B).</p>
 </div>
 </div>
@@ -2769,7 +2769,7 @@ Dribblers can still be used to dribble large distances with the ball as long as 
 <div class="paragraph">
 <p>このセクションにあるファウルは<a href="#_停止_stop">試合を停止しない</a>。
 代わりに、試合は通常どおり続行される。<br>
-Fouls in this section do not cause a <a href="#Stop">stop</a>.
+Fouls in this section do not cause a <a href="#_停止_stop">stop</a>.
 Instead, the game continues normally.</p>
 </div>
 <div class="paragraph">
@@ -2807,7 +2807,7 @@ At the moment of collision of two robots of different teams, the difference of t
 <h4 id="_アウトオブプレイ中のファウル_fouls_while_ball_out_of_play">8.4.3. アウトオブプレイ中のファウル/Fouls While Ball Out Of Play</h4>
 <div class="paragraph">
 <p>このセクションにあるファウルはボールが<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">アウトオブプレイ</a>の時にのみ発生する。<br>
-Fouls in this section can only occur when the ball is <a href="#Ball In And Out Of Play">out of play</a>.</p>
+Fouls in this section can only occur when the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">out of play</a>.</p>
 </div>
 <div class="paragraph">
 <p>各ファウルには、再度ファウルとなるまでチームごとに2秒の猶予時間がある。<br>
@@ -2849,7 +2849,7 @@ While the foul is being committed, the timer of the opponent team for bringing t
 </div>
 <div class="paragraph">
 <p><a href="#_主審_referee">人間の主審</a>は、著しい妨害を受けた<a href="#_キックオフ_kick_off">キックオフ</a>もしくは<a href="#_フリーキック_free_kick">フリーキック</a>をやり直す事ができる。<br>
-The <a href="#Referee">human referee</a> may decide to repeat the <a href="#Kick-Off">kick-off</a> or <a href="#Free Kick">free kick</a> on significant disturbances.</p>
+The <a href="#_主審_referee">human referee</a> may decide to repeat the <a href="#_キックオフ_kick_off">kick-off</a> or <a href="#_フリーキック_free_kick">free kick</a> on significant disturbances.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2977,7 +2977,7 @@ Additionally, robots can be taken out from any position during <a href="#_試合
 <ol class="arabic">
 <li>
 <p><a href="#_ハンドラ_robot_handler">ハンドラ</a>はロボットを外に出す<br>
-The <a href="#Robot Handler">robot handler</a> takes robots out.</p>
+The <a href="#_ハンドラ_robot_handler">robot handler</a> takes robots out.</p>
 </li>
 <li>
 <p><a href="#_ハンドラ_robot_handler">ハンドラ</a>は交代が完了したら<a href="#_主審_referee">主審</a>に連絡する<br>
@@ -3300,8 +3300,8 @@ Note that the information shown in this table here is incomplete. Please read th
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">準備完了<br>
 Prepared</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#ペナルティキック/Penalty Kick">ペナルティキック</a>中<br>
-during  <a href="#_キックオフ_kick_off">Kick-Off</a>, <a href="#ペナルティキック/Penalty Kick">Penalty Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>中<br>
+during  <a href="#_キックオフ_kick_off">Kick-Off</a>, <a href="#_ペナルティーキック_penalty_kick">Penalty Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ノーマルスタート_normal_start">ノーマルスタート</a><br>
 <a href="#_ノーマルスタート_normal_start">Normal Start</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">auto referee</p></td>
@@ -3400,8 +3400,8 @@ always</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">auto referee</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#エイムレスキック/aimless-kick">エイムレスキック</a><br>
-<a href="#エイムレスキック/aimless-kick">Aimless Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#aimless-kick">エイムレスキック</a><br>
+<a href="#aimless-kick">Aimless Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
@@ -3614,8 +3614,8 @@ referee &#8594; game controller</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">auto referee</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#オーバードリブル/Excessive Dribbling">オーバードリブル</a><br>
-<a href="#オーバードリブル/Excessive Dribbling">Excessive Dribbling</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ドリブルの超過_excessive_dribbling">オーバードリブル</a><br>
+<a href="#_ドリブルの超過_excessive_dribbling">Excessive Dribbling</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
@@ -3781,7 +3781,7 @@ placement timer increased by 10 seconds</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_イエローカード_yellow_card">イエローカード</a>によるロボット除去<br>
-Remove robot for <a href="#Yellow Card">[Yellow Card]</a></p></td>
+Remove robot for <a href="#_イエローカード_yellow_card">Yellow Card</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">10 s</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">10 s</p></td>
 </tr>
@@ -3841,8 +3841,8 @@ Division A plays with <a href="#_ロボットの台数_number_of_robots">more ro
 The automatic <a href="#_ボール配置_ball_placement">ball placement</a> procedure is mandatory for division A and optional for division B.</p>
 </li>
 <li>
-<p><a href="#エイムレスキック/aimless-kick">エイムレスキック</a>のルールはディヴィジョンBにのみ適用される。<br>
-The <a href="#エイムレスキック/aimless-kick">aimless kick</a> rule only applies to division B.</p>
+<p><a href="#aimless-kick">エイムレスキック</a>のルールはディヴィジョンBにのみ適用される。<br>
+The <a href="#aimless-kick">aimless kick</a> rule only applies to division B.</p>
 </li>
 <li>
 <p>ディヴィジョンAはいくつかの状況における時間切れまでの時間が短い。<br>
@@ -3861,7 +3861,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2020-04-04 09:50:25 GMT
+最終更新 2020-04-05 11:56:39 GMT
 </div>
 </div>
 </body>
