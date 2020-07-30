@@ -2909,28 +2909,48 @@ A kick-off kick cannot be aimless, as the ball is located at the midline and doe
 <h2 id="_得点_scoring_goals">7. 得点/Scoring Goals</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>ボールがゴールポストの間に入ってゴールした場合には、得点したチームがその直前のプレイにおいていかなるルール違反も犯していないことを条件に得点が認められる。<br>
-A goal is scored if the ball enters the goal between the goal posts, provided that no rule infringement has been committed in the play immediately preceding this event, by the team scoring the goal.</p>
+<p><span class="diff_delete">ボールがゴールポストの間に入ってゴールした場合には、得点したチームがその直前のプレイにおいていかなるルール違反も犯していないことを条件に得点が認められる。</span><span class="diff_insert">チームは、ボールが完全に相手チームのゴールポスト間を通ってゴールに入り、以下の条件を満たした時に得点する:</span><br>
+A <span class="diff_insert">team </span><span class="diff_insert">scores </span><span class="diff_insert">a </span>goal <span class="diff_delete">is </span><span class="diff_delete">scored </span><span class="diff_delete">if </span><span class="diff_insert">when </span>the ball <span class="diff_insert">fully </span>enters the <span class="diff_insert">opponent </span>goal between the goal <span class="diff_delete">posts, </span><span class="diff_delete">provided </span><span class="diff_delete">that </span><span class="diff_delete">no </span><span class="diff_delete">rule </span><span class="diff_delete">infringement </span><span class="diff_delete">has </span><span class="diff_delete">been </span><span class="diff_delete">committed </span><span class="diff_delete">in </span><span class="diff_delete">the </span><span class="diff_delete">play </span><span class="diff_delete">immediately </span><span class="diff_delete">preceding </span><span class="diff_delete">this </span><span class="diff_delete">event, </span><span class="diff_delete">by </span><span class="diff_delete">the </span><span class="diff_delete">team </span><span class="diff_delete">scoring </span><span class="diff_delete">the </span><span class="diff_delete">goal.</span></p>
 </div>
 <div class="paragraph">
-<p>さらに、ゴールは以下の場合のみ有効である。<br>
-Additionally, the goal is only valid if</p>
+<p><span class="diff_delete">さらに、ゴールは以下の場合のみ有効である。</span><br><span class="diff_delete">
+Additionally, </span><span class="diff_delete">the </span><span class="diff_delete">goal </span><span class="diff_delete">is </span><span class="diff_delete">only </span><span class="diff_delete">valid </span><span class="diff_delete">if</span><span class="diff_insert">posts,
+provided </span><span class="diff_insert">that:</span></p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>アタッカーが最後にボールに触れてから、ボールの高さが0.15mを超えていない<br>
-The height of the ball did not exceed 0.15 meters after the last touch of an attacker.</p>
+<p><span class="diff_delete">アタッカーが最後にボールに触れてから、ボールの高さが0.15mを超えていない</span><span class="diff_insert">ボールがゴールに入った時点で、チームは許可された最大台数を超えていない。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">team </span><span class="diff_insert">did </span><span class="diff_insert">not </span><span class="diff_insert">exceed </span><span class="diff_insert">the </span><span class="diff_insert">allowed </span><span class="diff_insert">number </span><span class="diff_insert">of </span><span class="diff_insert">robots </span><span class="diff_insert">when </span><span class="diff_insert">the </span><span class="diff_insert">ball </span><span class="diff_insert">entered </span><span class="diff_insert">the </span><span class="diff_insert">goal.</span></p>
 </li>
 <li>
-<p>ゴール時のキックが行われた時点でのボール位置は、相手チームのディフェンスエリア内ではない<br>
-The ball was not located in the opponent defense area when the goal kick started.</p>
+<p><span class="diff_insert">最後にチームのロボットがボールに触れてから、ボールの高さが0.15mを超えていない。</span><br>
+The height of the ball did not exceed 0.15 meters after the last touch of <span class="diff_delete">an </span><span class="diff_delete">attacker.</span><span class="diff_insert">the </span><span class="diff_insert">teams </span><span class="diff_insert">robots.</span></p>
 </li>
 <li>
-<p>ゴール時のキックにおいて、ボール速度は制限を超えていない<br>
-The ball did not exceed the ball speed limit during the goal kick.</p>
+<p><span class="diff_delete">ゴール時のキックが行われた時点でのボール位置は、相手チームのディフェンスエリア内ではない</span><span class="diff_insert">最後にチームのロボットがボールに触れてから、チームがいかなる</span><a href="#_試合の停止を伴わないファウル_non_stopping_fouls"><span class="diff_insert">試合の停止を伴わないファウル</span></a><span class="diff_insert">も犯していない。</span><br>
+The <span class="diff_delete">ball </span><span class="diff_delete">was </span><span class="diff_delete">not </span><span class="diff_delete">located </span><span class="diff_delete">in </span><span class="diff_delete">the </span><span class="diff_delete">opponent </span><span class="diff_delete">defense </span><span class="diff_delete">area </span><span class="diff_delete">when </span><span class="diff_delete">the </span><span class="diff_delete">goal </span><span class="diff_delete">kick </span><span class="diff_delete">started.</span></p>
+</li>
+<li>
+<p><span class="diff_delete">ゴール時のキックにおいて、ボール速度は制限を超えていない</span><br><span class="diff_delete">
+The </span><span class="diff_delete">ball </span><span class="diff_insert">team </span>did not <span class="diff_delete">exceed </span><span class="diff_insert">commit </span><span class="diff_insert">any </span><a href="#Non Stopping Fouls"><span class="diff_insert">non </span><span class="diff_insert">stopping </span><span class="diff_insert">foul</span></a> <span class="diff_insert">since </span>the <span class="diff_delete">ball </span><span class="diff_delete">speed </span><span class="diff_delete">limit </span><span class="diff_delete">during </span><span class="diff_insert">teams </span><span class="diff_insert">robots </span><span class="diff_insert">last </span><span class="diff_insert">touched </span>the <span class="diff_delete">goal </span><span class="diff_delete">kick.</span><span class="diff_insert">ball.</span></p>
 </li>
 </ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content"><span class="diff_insert">
+”チーム"はボールを蹴ったチームではなく、得点をしたチームを指す。
+例えば、相手チームのフィールド上のロボット台数が規定を超過している間はオウンゴールは認められない。</span><br><span class="diff_insert">
+"The </span><span class="diff_insert">team" </span><span class="diff_insert">refers </span><span class="diff_insert">to </span><span class="diff_insert">the </span><span class="diff_insert">scoring </span><span class="diff_insert">team </span><span class="diff_insert">that </span><span class="diff_insert">is </span><span class="diff_insert">awarded </span><span class="diff_insert">a </span><span class="diff_insert">goal, </span><span class="diff_insert">not </span><span class="diff_insert">the </span><span class="diff_insert">team </span><span class="diff_insert">that </span><span class="diff_insert">kicked </span><span class="diff_insert">the </span><span class="diff_insert">ball.
+For </span><span class="diff_insert">example, </span><span class="diff_insert">an </span><span class="diff_insert">own </span><span class="diff_insert">goal </span><span class="diff_insert">is </span><span class="diff_insert">not </span><span class="diff_insert">possible </span><span class="diff_insert">while </span><span class="diff_insert">the </span><span class="diff_insert">opponent </span><span class="diff_insert">team </span><span class="diff_insert">has </span><span class="diff_insert">too </span><span class="diff_insert">many </span><span class="diff_insert">robots </span><span class="diff_insert">on </span><span class="diff_insert">the </span><span class="diff_insert">field.
+</span></td>
+</tr>
+</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4368,7 +4388,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2020-05-06 </span><span class="diff_delete">17:46:03 </span><span class="diff_insert">2020-07-30 </span><span class="diff_insert">13:27:02 </span>GMT
+最終更新 <span class="diff_delete">2020-05-06 </span><span class="diff_delete">17:46:03 </span><span class="diff_insert">2020-07-30 </span><span class="diff_insert">14:12:13 </span>GMT
 </div>
 </div>
 </body>
