@@ -2516,21 +2516,22 @@ The procedure of a penalty kick is as follows:</p>
 The ball is placed by the human referee on the <a href="#_ペナルティーマーク_penalty_mark">penalty mark</a>.</p>
 </li>
 <li>
-<p><a href="#_ペナルティーキック_penalty_kick">ペナルティー</a>コマンドが発行された時、<br>
-When the <a href="#_ペナルティーキック_penalty_kick">penalty</a> command is issued</p>
+<p><a href="#_ペナルティーキック_penalty_kick">ペナルティー</a><span class="diff_delete">コマンドが発行された時、</span><span class="diff_insert">コマンドが発行された時:</span><br>
+When the <a href="#_ペナルティーキック_penalty_kick">penalty</a> command is <span class="diff_delete">issued</span><span class="diff_insert">issued:</span></p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>守備側のキーパーはゴールラインまで移動し、それに触れ続けなければならない<br>
-The defending keeper has to move to the goal line and keep touching it</p>
+<p><span class="diff_delete">守備側のキーパーはゴールラインまで移動し、それに触れ続けなければならない</span><span class="diff_insert">守備側のキーパーはゴールラインまで移動し、それに触れ続けなければならない。</span><br>
+The defending keeper has to move to the goal line and keep touching <span class="diff_delete">it</span><span class="diff_insert">it.</span></p>
 </li>
 <li>
 <p>攻撃側のロボット1台はボールに近付くことが許されるが、このときボールに触れてはならない。<br>
-One attacking robot is allowed to approach the ball but not allowed to touch the ball</p>
+One attacking robot is allowed to approach the ball but not allowed to touch the <span class="diff_delete">ball</span><span class="diff_insert">ball.</span></p>
 </li>
 <li>
-<p>その他の全てのロボットはペナルティーキックの手順に干渉しないよう、ボールから1m以上後方にいなければならない。<br>
-All other robots have to be 1m behind the ball such that they do not interfere the penalty kick procedure at any time.</p>
+<p><span class="diff_delete">その他の全てのロボットはペナルティーキックの手順に干渉しないよう、ボールから1m以上後方にいなければならない。</span><span class="diff_insert">ペナルティーキックの手順の間、その他の全てのロボットはペナルティーキックの手順に干渉しないよう、ボールから1m以上後方にいなければならない。</span><br><span class="diff_delete">
+All </span><span class="diff_insert">
+Throughout </span><span class="diff_insert">the </span><span class="diff_insert">penalty </span><span class="diff_insert">kick </span><span class="diff_insert">procedure, </span><span class="diff_insert">all </span>other robots have to be 1m behind the ball such that they do not interfere the penalty kick <span class="diff_delete">procedure </span><span class="diff_delete">at </span><span class="diff_delete">any </span><span class="diff_delete">time.</span><span class="diff_insert">procedure.</span></p>
 </li>
 </ol>
 </div>
@@ -2541,11 +2542,11 @@ When the <a href="#_ノーマルスタート_normal_start">normal start</a> comm
 </li>
 <li>
 <p><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>になった時、守備側のキーパーは再び自由に移動できる。<br>
-When the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">in play</a>, the defending keeper may move freely again</p>
+When the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">in play</a>, the defending keeper may move freely <span class="diff_delete">again</span><span class="diff_insert">again.</span></p>
 </li>
 <li>
-<p>10秒経過した後にボールが引き続き<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a>であった場合、試合は停止され守備側チームの<a href="#_ゴールキック_goal_kick">ゴールキック</a>で再開される。<br>
-If the ball is still <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">in play</a> after 10 seconds, the game is stopped and then continued by a <a href="#_ゴールキック_goal_kick">goal kick</a> for the defending team.</p>
+<p>10秒経過した後にボールが引き続き<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><span class="diff_delete">であった場合、試合は停止され守備側チームの</span><a href="#_ゴールキック_goal_kick"><span class="diff_delete">ゴールキック</span><span class="diff_insert">であった場合、試合は</span><a href="#_停止_stop"><span class="diff_insert">停止</span></a><span class="diff_delete">で再開される。</span><span class="diff_insert">される。</span><br>
+If the ball is still <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">in play</a> after 10 seconds, the game is <span class="diff_delete">stopped </span><span class="diff_delete">and </span><span class="diff_delete">then </span><span class="diff_delete">continued </span><span class="diff_delete">by </span><span class="diff_delete">a </span><a href="#_ゴールキック_goal_kick"><span class="diff_delete">goal </span><span class="diff_delete">kick</span><a href="#_停止_stop"><span class="diff_insert">stopped</span></a> <span class="diff_delete">for </span><span class="diff_delete">the </span><span class="diff_delete">defending </span><span class="diff_delete">team.</span><span class="diff_insert">.</span></p>
 </li>
 </ol>
 </div>
@@ -2556,14 +2557,18 @@ A goal is awarded if:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#_ノーマルスタート_normal_start">ノーマルスタート</a>コマンドが発行されてから、ボールがゴールの内側表面もしくはゴールの地面に接触する<br>
-the ball touches the inner surface of a goal wall or the ground of the goal of the defending team, starting from when the <a href="#_ノーマルスタート_normal_start">normal start</a> command is issued</p>
+<p><a href="#_ノーマルスタート_normal_start">ノーマルスタート</a><span class="diff_delete">コマンドが発行されてから、ボールがゴールの内側表面もしくはゴールの地面に接触する</span><span class="diff_insert">コマンドが発行されてから、ボールがゴールの内側表面もしくはゴールの地面に接触する。</span><br>
+the ball touches the inner surface of a goal wall or the ground of the goal of the defending team, starting from when the <a href="#_ノーマルスタート_normal_start">normal start</a> command is <span class="diff_delete">issued</span><span class="diff_insert">issued.</span></p>
 </li>
 <li>
-<p>守備側チームがなんらかのルールに違反する<br>
-the defending team violates any rule</p>
+<p><span class="diff_delete">守備側チームがなんらかのルールに違反する</span><span class="diff_insert">守備側チームがなんらかの</span><a href="#_ファウル_fouls"><span class="diff_insert">ファウル</span></a><span class="diff_insert">を犯す。</span><br>
+the defending team <span class="diff_delete">violates </span><span class="diff_insert">commits </span>any <span class="diff_delete">rule</span><a href="#_ファウル_fouls"><span class="diff_insert">foul</span></a><span class="diff_insert">.</span></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">得点が認められたあと、ゲームは</span><a href="#_キックオフ_kick_off"><span class="diff_insert">キックオフ</span></a><span class="diff_insert">で続行される。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">game </span><span class="diff_insert">is </span><span class="diff_insert">continued </span><span class="diff_insert">with </span><span class="diff_insert">a </span><a href="#_キックオフ_kick_off"><span class="diff_insert">kick-off</span></a> <span class="diff_insert">when </span><span class="diff_insert">a </span><span class="diff_insert">goal </span><span class="diff_insert">is </span><span class="diff_insert">awarded.</span></p>
 </div>
 <div class="paragraph">
 <p>以下の場合は得点が認められない:<br>
@@ -2572,18 +2577,26 @@ A goal is not awarded if:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>ボールがゴール外の<a href="#_フィールドライン_field_lines">フィールドライン</a>と交差する<br>
-the ball crosses any <a href="#_フィールドライン_field_lines">field lines</a> outside the goal</p>
+<p>ボールがゴール外の<a href="#_フィールドライン_field_lines">フィールドライン</a><span class="diff_delete">と交差する</span><span class="diff_insert">と交差する。</span><br>
+the ball crosses any <a href="#_フィールドライン_field_lines">field lines</a> outside the <span class="diff_delete">goal</span><span class="diff_insert">goal.</span></p>
 </li>
 <li>
-<p>守備側キーパーがボールに触れ、ボールの速度ベクトルが二次元空間で少なくとも90度方向を変える<br>
-the defending keeper touches the ball such that the ball speed vector changes direction by at least 90 degrees in 2D space</p>
+<p><span class="diff_delete">守備側キーパーがボールに触れ、ボールの速度ベクトルが二次元空間で少なくとも90度方向を変える</span><span class="diff_insert">守備側キーパーがボールに触れ、ボールの速度ベクトルが二次元空間で少なくとも90度方向を変える。</span><br>
+the defending keeper touches the ball such that the ball speed vector changes direction by at least 90 degrees in 2D <span class="diff_delete">space</span><span class="diff_insert">space.</span></p>
 </li>
 <li>
-<p>攻撃側チームが何らかのルールに違反する<br>
-the attacking team violates any rule</p>
+<p><span class="diff_delete">攻撃側チームが何らかのルールに違反する</span><span class="diff_insert">攻撃側チームが何らかのルールに違反する。</span><br>
+the attacking team violates any <span class="diff_delete">rule</span><span class="diff_insert">rule.</span></p>
+</li>
+<li>
+<p><span class="diff_insert">10秒が経過した後も</span><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><span class="diff_insert">のままある。</span><br><span class="diff_insert">
+the </span><span class="diff_insert">ball </span><span class="diff_insert">is </span><span class="diff_insert">still </span><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">in </span><span class="diff_insert">play</span></a> <span class="diff_insert">after </span><span class="diff_insert">10 </span><span class="diff_insert">seconds.</span></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">得点が認められなかった場合、試合は守備側チームの</span><a href="#_ゴールキック_goal_kick"><span class="diff_insert">ゴールキック</span></a><span class="diff_insert">で続行される。</span><br><span class="diff_insert">
+The </span><span class="diff_insert">game </span><span class="diff_insert">is </span><span class="diff_insert">continued </span><span class="diff_insert">by </span><span class="diff_insert">a </span><a href="#Goal Kick"><span class="diff_insert">goal </span><span class="diff_insert">kick</span></a> <span class="diff_insert">for </span><span class="diff_insert">the </span><span class="diff_insert">defending </span><span class="diff_insert">team </span><span class="diff_insert">when </span><span class="diff_insert">a </span><span class="diff_insert">goal </span><span class="diff_insert">is </span><span class="diff_insert">not </span><span class="diff_insert">awarded.</span></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4355,7 +4368,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2020-05-06 </span><span class="diff_delete">17:46:03 </span><span class="diff_insert">2020-07-30 </span><span class="diff_insert">12:14:18 </span>GMT
+最終更新 <span class="diff_delete">2020-05-06 </span><span class="diff_delete">17:46:03 </span><span class="diff_insert">2020-07-30 </span><span class="diff_insert">13:27:02 </span>GMT
 </div>
 </div>
 </body>
