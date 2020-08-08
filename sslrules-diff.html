@@ -430,7 +430,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.1">
-<meta name="author" content="2020-07-30">
+<meta name="author" content="2020-08-08">
 <title>RoboCup小型機リーグルール</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -855,7 +855,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCup小型機リーグルール</h1>
 <div class="details">
-<span id="author" class="author"><span class="diff_delete">2020-05-06</span><span class="diff_insert">2020-07-30</span></span><br>
+<span id="author" class="author"><span class="diff_delete">2020-05-06</span><span class="diff_insert">2020-08-08</span></span><br>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">目次</div>
@@ -1051,13 +1051,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_ゲームイベント表_game_event_table">付録 B: ゲームイベント表/Game Event Table</a>
 <ul class="sectlevel2">
-<li><a href="#_試合進行に関するイベント_events_for_match_proceeding">B.1. 試合進行に関するイベント/Events For Match Proceeding</a></li>
-<li><a href="#_フィールド外にボールが出た際のイベント_events_for_ball_leaving_the_field">B.2. フィールド外にボールが出た際のイベント/Events For Ball Leaving The Field</a></li>
-<li><a href="#_ゴールに関するイベント_events_for_scoring_goals">B.3. ゴールに関するイベント/Events For Scoring Goals</a></li>
-<li><a href="#_反則に関するイベント_events_for_offenses">B.4. 反則に関するイベント/Events For Offenses</a></li>
-<li><a href="#_試合の停止を伴うファウルに関するイベント_events_for_stopping_fouls">B.5. 試合の停止を伴うファウルに関するイベント/Events For Stopping Fouls</a></li>
-<li><a href="#_試合の停止を伴わないファウルに関するイベント_events_for_non_stopping_fouls">B.6. 試合の停止を伴わないファウルに関するイベント/Events For Non Stopping Fouls</a></li>
-<li><a href="#_アウトオブプレイ中のファウルに関するイベント_events_for_fouls_while_ball_out_of_play">B.7. アウトオブプレイ中のファウルに関するイベント/Events For Fouls While Ball Out Of Play</a></li>
+<li><a href="#_試合進行に関するイベント_events_for_match_proceeding"><a href="#_フィールド外にボールが出た際のイベント_events_for_ball_leaving_the_field">B.1. <span class="diff_delete">試合進行に関するイベント/Events </span><span class="diff_delete">For </span><span class="diff_delete">Match </span><span class="diff_delete">Proceeding</span></a></li>
+<li><a href="#_フィールド外にボールが出た際のイベント_events_for_ball_leaving_the_field"><span class="diff_delete">B.2. </span>フィールド外にボールが出た際のイベント/Events For Ball Leaving The Field</a></li>
+<li><a href="#_ゴールに関するイベント_events_for_scoring_goals"><span class="diff_delete">B.3. </span><span class="diff_delete">ゴールに関するイベント/Events </span><span class="diff_delete">For </span><span class="diff_delete">Scoring </span><span class="diff_delete">Goals</span></a></li>
+<li><a href="#_反則に関するイベント_events_for_offenses"><span class="diff_delete">B.4. </span><span class="diff_delete">反則に関するイベント/Events </span><span class="diff_delete">For </span><span class="diff_delete">Offenses</span></a></li>
+<li><a href="#_試合の停止を伴うファウルに関するイベント_events_for_stopping_fouls"><span class="diff_delete">B.5. </span><span class="diff_insert">B.2. </span>試合の停止を伴うファウルに関するイベント/Events For Stopping Fouls</a></li>
+<li><a href="#_試合の停止を伴わないファウルに関するイベント_events_for_non_stopping_fouls"><span class="diff_delete">B.6. </span><span class="diff_insert">B.3. </span>試合の停止を伴わないファウルに関するイベント/Events For Non Stopping Fouls</a></li>
+<li><a href="#_アウトオブプレイ中のファウルに関するイベント_events_for_fouls_while_ball_out_of_play"><span class="diff_delete">B.7. </span><span class="diff_insert">B.4. </span>アウトオブプレイ中のファウルに関するイベント/Events For Fouls While Ball Out Of Play</a></li>
+<li><a href="#_ゴールに関するイベント_events_for_scoring_goals"><span class="diff_insert">B.5. </span><span class="diff_insert">ゴールに関するイベント/Events </span><span class="diff_insert">For </span><span class="diff_insert">Scoring </span><span class="diff_insert">Goals</span></a></li>
+<li><a href="#_その他のイベント_other_events"><span class="diff_insert">B.6. </span><span class="diff_insert">その他のイベント/Other </span><span class="diff_insert">events</span></a></li>
 </ul>
 </li>
 <li><a href="#_各種時間の概要_overview_of_timings">付録 C: 各種時間の概要/Overview of Timings</a></li>
@@ -1451,8 +1453,8 @@ A game is controlled by the community-maintained ssl-game-controller (<a href="h
 It is operated by the <a href="#_game_controller_operator">game controller operator</a>. The software translates decisions of the <a href="#_主審_referee">referee</a> and the <a href="#_オートレフ_automatic_referee">automatic referee</a> into Ethernet communication signals that are broadcast to the network. It maintains the state of the game, tracks all events and acts as a proxy between all participating parties in the game.</p>
 </div>
 <div class="paragraph">
-<p>game-controllerは試合を行うチームのためにネットワークインターフェースを持っている。各チームは自動的に<a href="#_ゴールキーパーのidの選択_choosing_keeper_id">キーパーのIDを切り替える</a>事ができるほか、次の機会に向けてロボット交代の意図を伝えることができる。<br>
-The game-controller has a network interface for the playing teams. They can automatically <a href="#_ゴールキーパーのidの選択_choosing_keeper_id">change their keeper id</a> and they can signal a robot substitution intent for the next opportunity.</p>
+<p><span class="diff_delete">game-controllerは試合を行うチームのためにネットワークインターフェースを持っている。各チームは自動的に</span><span class="diff_insert">game </span><span class="diff_insert">controllerは試合を行うチームのためにネットワークインターフェースを持っている。各チームは自動的に</span><a href="#_ゴールキーパーのidの選択_choosing_keeper_id">キーパーのIDを切り替える</a>事ができるほか、次の機会に向けてロボット交代の意図を伝えることができる。<br>
+The <span class="diff_delete">game-controller </span><span class="diff_insert">game </span><span class="diff_insert">controller </span>has a network interface for the playing teams. They can automatically <a href="#_ゴールキーパーのidの選択_choosing_keeper_id">change their keeper id</a> and they can signal a robot substitution intent for the next opportunity.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2292,12 +2294,14 @@ the ball is at a position within 0.15 meters radius from the requested position<
 </div>
 <div class="paragraph">
 <p>ボールが正常に配置されるまで、<a href="#_game_controller">game controller</a>によってそれ以外のコマンドは発行されない。
-ボールが上手く配置された場合、試合は<a href="#_game_controller">game controller</a>によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。
+ボールが上手く配置された場合、試合は<a href="#_game_controller">game controller</a><span class="diff_delete">によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。
 配置が失敗した場合、相手チームにフリーキックが与えられる。
-さらにこのチームがボールの配置に失敗した場合、ボールは<a href="#_主審_referee">主審</a>により配置され、試合は元のコマンドによって続行される。<br>
+さらにこのチームがボールの配置に失敗した場合、ボールは</span><span class="diff_insert">によって可能な限り早く再開される(ただし、ボール配置コマンドが発行されてから2秒より早くはならない)。
+配置が失敗した場合、相手チームに</span><a href="#_フリーキック_free_kick"><span class="diff_insert">フリーキック</span></a><span class="diff_insert">が与えられる。
+さらにこのチームがボールの配置に失敗した場合、ボールは</span><a href="#_主審_referee">主審</a>により配置され、試合は元のコマンドによって続行される。<br>
 No further commands will be issued by the <a href="#_game_controller">game controller</a> until the automatic placement is complete.
 The game will be continued by the <a href="#_game_controller">game controller</a> as soon as the ball is successfully placed, but not earlier than 2 seconds after the ball placement command has been issued.
-A failed placement will result in a free kick for the opposing team.
+A failed placement will result in a <a href="#_フリーキック_free_kick">free <span class="diff_delete">kick </span><span class="diff_insert">kick</span></a> for the opposing team.
 If this team failed to place the ball as well, the ball is placed by the <a href="#_主審_referee">referee</a> and game continues with the original command.</p>
 </div>
 <div class="paragraph">
@@ -2473,8 +2477,9 @@ When the ball is <a href="#_インプレイとアウトオブプレイ_ball_in_a
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
-<p>フリーキックは<a href="#_ファウル_fouls">ファウル</a>が発生した後に試合を再開するために使われる。さらに、<a href="#_ゴールキック_goal_kick">ゴールキック</a>と<a href="#_コーナーキック_corner_kick">コーナーキック</a>もフリーキックに割り当てられている。<br>
-free kicks are used to restart the game after a <a href="#_ファウル_fouls">foul</a> has occurred. Additionally, <a href="#_ゴールキック_goal_kick">goal kicks</a> and <a href="#_コーナーキック_corner_kick">corner kicks</a> are mapped to free kicks.</p>
+<p>フリーキックは<a href="#_ファウル_fouls">ファウル</a>が発生した後に試合を再開するために使われる。さらに、<a href="#_ゴールキック_goal_kick">ゴールキック</a>と<a href="#_コーナーキック_corner_kick">コーナーキック</a>もフリーキックに割り当てられている。<br><span class="diff_delete">
+free </span><span class="diff_insert">
+Free </span>kicks are used to restart the game after a <a href="#_ファウル_fouls">foul</a> has occurred. Additionally, <a href="#_ゴールキック_goal_kick">goal kicks</a> and <a href="#_コーナーキック_corner_kick">corner kicks</a> are mapped to free kicks.</p>
 </div>
 </div>
 <div class="sect3">
@@ -2596,7 +2601,7 @@ the </span><span class="diff_insert">ball </span><span class="diff_insert">is </
 </div>
 <div class="paragraph">
 <p><span class="diff_insert">得点が認められなかった場合、試合は守備側チームの</span><a href="#_ゴールキック_goal_kick"><span class="diff_insert">ゴールキック</span></a><span class="diff_insert">で続行される。</span><br><span class="diff_insert">
-The </span><span class="diff_insert">game </span><span class="diff_insert">is </span><span class="diff_insert">continued </span><span class="diff_insert">by </span><span class="diff_insert">a </span><a href="#Goal Kick"><span class="diff_insert">goal </span><span class="diff_insert">kick</span></a> <span class="diff_insert">for </span><span class="diff_insert">the </span><span class="diff_insert">defending </span><span class="diff_insert">team </span><span class="diff_insert">when </span><span class="diff_insert">a </span><span class="diff_insert">goal </span><span class="diff_insert">is </span><span class="diff_insert">not </span><span class="diff_insert">awarded.</span></p>
+The </span><span class="diff_insert">game </span><span class="diff_insert">is </span><span class="diff_insert">continued </span><span class="diff_insert">by </span><span class="diff_insert">a </span><a href="#_ゴールキック_goal_kick"><span class="diff_insert">goal </span><span class="diff_insert">kick</span></a> <span class="diff_insert">for </span><span class="diff_insert">the </span><span class="diff_insert">defending </span><span class="diff_insert">team </span><span class="diff_insert">when </span><span class="diff_insert">a </span><span class="diff_insert">goal </span><span class="diff_insert">is </span><span class="diff_insert">not </span><span class="diff_insert">awarded.</span></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2933,7 +2938,7 @@ The <span class="diff_delete">ball </span><span class="diff_delete">was </span><
 </li>
 <li>
 <p><span class="diff_delete">ゴール時のキックにおいて、ボール速度は制限を超えていない</span><br><span class="diff_delete">
-The </span><span class="diff_delete">ball </span><span class="diff_insert">team </span>did not <span class="diff_delete">exceed </span><span class="diff_insert">commit </span><span class="diff_insert">any </span><a href="#Non Stopping Fouls"><span class="diff_insert">non </span><span class="diff_insert">stopping </span><span class="diff_insert">foul</span></a> <span class="diff_insert">since </span>the <span class="diff_delete">ball </span><span class="diff_delete">speed </span><span class="diff_delete">limit </span><span class="diff_delete">during </span><span class="diff_insert">teams </span><span class="diff_insert">robots </span><span class="diff_insert">last </span><span class="diff_insert">touched </span>the <span class="diff_delete">goal </span><span class="diff_delete">kick.</span><span class="diff_insert">ball.</span></p>
+The </span><span class="diff_delete">ball </span><span class="diff_insert">team </span>did not <span class="diff_delete">exceed </span><span class="diff_insert">commit </span><span class="diff_insert">any </span><a href="#_試合の停止を伴わないファウル_non_stopping_fouls"><span class="diff_insert">non </span><span class="diff_insert">stopping </span><span class="diff_insert">foul</span></a> <span class="diff_insert">since </span>the <span class="diff_delete">ball </span><span class="diff_delete">speed </span><span class="diff_delete">limit </span><span class="diff_delete">during </span><span class="diff_insert">teams </span><span class="diff_insert">robots </span><span class="diff_insert">last </span><span class="diff_insert">touched </span>the <span class="diff_delete">goal </span><span class="diff_delete">kick.</span><span class="diff_insert">ball.</span></p>
 </li>
 </ul>
 </div>
@@ -3345,9 +3350,10 @@ If a robot keeps committing a foul, it will be punished again after the grace pe
 <div class="paragraph">
 <p>相手チームの<a href="#_キックオフ_kick_off">キックオフ</a>もしくは<a href="#_フリーキック_free_kick">フリーキック</a><span class="diff_delete">の間、ロボットはボールから少なくとも0.5m以上離れなければならない。
 ファウルの前に発行されたコマンドと同じコマンドで試合が再開される。</span><span class="diff_insert">の間、ロボットはボールから少なくとも0.5m以上離れなければならない。
-このファウルが犯されている間、相手チームがボールをインプレイにするまでのタイマーはリセットされる。</span><br>
-A robot&#8217;s distance to the ball must be at least 0.5 meters during an opponent <a href="#_キックオフ_kick_off">kick-off</a> or <a href="#_フリーキック_free_kick">free kick</a>.
-While the foul is being committed, the timer of the opponent team for bringing the ball into play is reset.</p>
+このファウルが犯された時、相手チームがボールをインプレイにするまでのタイマーはリセットされる。</span><br>
+A robot&#8217;s distance to the ball must be at least 0.5 meters during an opponent <a href="#_キックオフ_kick_off">kick-off</a> or <a href="#_フリーキック_free_kick">free kick</a><span class="diff_delete">.
+While </span><span class="diff_insert">.
+When </span>the foul is <span class="diff_delete">being </span>committed, the timer of the opponent team for bringing the ball into play is reset.</p>
 </div>
 <div class="paragraph">
 <p><a href="#_主審_referee">人間の主審</a>は、著しい妨害を受けた<a href="#_キックオフ_kick_off">キックオフ</a>もしくは<a href="#_フリーキック_free_kick">フリーキック</a>をやり直す事ができる。<br>
@@ -3496,8 +3502,8 @@ The <a href="#_game_controller_operator">game controller operator</a> performs a
 </ol>
 </div>
 <div class="paragraph">
-<p>いかなる時点でも、フィールド上にある各チームのロボットの台数は指定された最大数を越えてはならない。<br>
-The maximum allowed number of robots of the team on the field must not be exceeded at any time.</p>
+<p><span class="diff_delete">いかなる時点でも、フィールド上にある各チームのロボットの台数は指定された最大数を越えてはならない。</span><span class="diff_insert">ロボットを配置するいかなる時点でも、フィールド上にある各チームのロボットの台数は指定された最大数を越えてはならない。</span><br>
+The maximum allowed number of robots of the team on the field must not be exceeded at any <span class="diff_delete">time.</span><span class="diff_insert">time </span><span class="diff_insert">when </span><span class="diff_insert">putting </span><span class="diff_insert">robots </span><span class="diff_insert">in.</span></p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
@@ -3782,7 +3788,7 @@ Note that the information shown in this table here is incomplete. Please read th
 </table>
 </div>
 <div class="sect2">
-<h3 id="_試合進行に関するイベント_events_for_match_proceeding">B.1. 試合進行に関するイベント/Events For Match Proceeding</h3>
+<h3 id="_試合進行に関するイベント_events_for_match_proceeding"><h3 id="_フィールド外にボールが出た際のイベント_events_for_ball_leaving_the_field">B.1. <span class="diff_delete">試合進行に関するイベント/Events </span><span class="diff_delete">For </span><span class="diff_delete">Match </span><span class="diff_delete">Proceeding</span></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 25%;">
@@ -3792,77 +3798,77 @@ Note that the information shown in this table here is incomplete. Please read th
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">イベント /Event</th>
-<th class="tableblock halign-left valign-top">適用範囲 /Applicability</th>
-<th class="tableblock halign-left valign-top">実行されるコマンド /Command</th>
-<th class="tableblock halign-left valign-top">処理担当 /Handled by</th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">イベント </span><span class="diff_delete">/Event</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">適用範囲 </span><span class="diff_delete">/Applicability</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">実行されるコマンド </span><span class="diff_delete">/Command</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">処理担当 </span><span class="diff_delete">/Handled </span><span class="diff_delete">by</span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">準備完了<br>
-Prepared</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_キックオフ_kick_off">キックオフ</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>中<br>
-during  <a href="#_キックオフ_kick_off">Kick-Off</a>, <a href="#_ペナルティーキック_penalty_kick">Penalty Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ノーマルスタート_normal_start">ノーマルスタート</a><br>
-<a href="#_ノーマルスタート_normal_start">Normal Start</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">準備完了</span><br><span class="diff_delete">
+Prepared</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_キックオフ_kick_off"><span class="diff_delete">キックオフ</span></a><span class="diff_delete">、</span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_delete">ペナルティーキック</span></a><span class="diff_delete">中</span><br><span class="diff_delete">
+during </span> <a href="#_キックオフ_kick_off"><span class="diff_delete">Kick-Off</span></a><span class="diff_delete">, </span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_delete">Penalty </span><span class="diff_delete">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ノーマルスタート_normal_start"><span class="diff_delete">ノーマルスタート</span></a><br>
+<a href="#_ノーマルスタート_normal_start"><span class="diff_delete">Normal </span><span class="diff_delete">Start</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">味方チームの<a href="#_ボール配置_ball_placement">ボール配置</a>失敗<br>
-<a href="#_ボール配置_ball_placement">Ball Placement</a> failed by team in favor</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement">ボール配置</a>中<br>
-during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a> (ディヴィジョンA) / 前のコマンド (ディヴィジョンB)<br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a> (div A) / previous command (div B)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">味方チームの</span><a href="#_ボール配置_ball_placement"><span class="diff_delete">ボール配置</span></a><span class="diff_delete">失敗</span><br>
+<a href="#_ボール配置_ball_placement"><span class="diff_delete">Ball </span><span class="diff_delete">Placement</span></a> <span class="diff_delete">failed </span><span class="diff_delete">by </span><span class="diff_delete">team </span><span class="diff_delete">in </span><span class="diff_delete">favor</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement"><span class="diff_delete">ボール配置</span></a><span class="diff_delete">中</span><br><span class="diff_delete">
+during </span><a href="#_ボール配置_ball_placement"><span class="diff_delete">Ball </span><span class="diff_delete">Placement</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">フリーキック</span></a> <span class="diff_delete">(ディヴィジョンA) </span><span class="diff_delete">/ </span><span class="diff_delete">前のコマンド </span><span class="diff_delete">(ディヴィジョンB)</span><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">Free </span><span class="diff_delete">Kick</span></a> <span class="diff_delete">(div </span><span class="diff_delete">A) </span><span class="diff_delete">/ </span><span class="diff_delete">previous </span><span class="diff_delete">command </span><span class="diff_delete">(div </span><span class="diff_delete">B)</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">相手チームの<a href="#_ボール配置_ball_placement">ボール配置</a>失敗<br>
-<a href="#_ボール配置_ball_placement">Ball Placement</a> failed by opponent</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement">ボール配置</a>中<br>
-during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a><br>
-<a href="#_停止_stop">Stop</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">相手チームの</span><a href="#_ボール配置_ball_placement"><span class="diff_delete">ボール配置</span></a><span class="diff_delete">失敗</span><br>
+<a href="#_ボール配置_ball_placement"><span class="diff_delete">Ball </span><span class="diff_delete">Placement</span></a> <span class="diff_delete">failed </span><span class="diff_delete">by </span><span class="diff_delete">opponent</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement"><span class="diff_delete">ボール配置</span></a><span class="diff_delete">中</span><br><span class="diff_delete">
+during </span><a href="#_ボール配置_ball_placement"><span class="diff_delete">Ball </span><span class="diff_delete">Placement</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement">ボール配置</a>成功<br>
-<a href="#_ボール配置_ball_placement">Ball Placement</a> successful</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement">ボール配置</a>中<br>
-during <a href="#_ボール配置_ball_placement">Ball Placement</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">続行<br>
-continue</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement"><span class="diff_delete">ボール配置</span></a><span class="diff_delete">成功</span><br>
+<a href="#_ボール配置_ball_placement"><span class="diff_delete">Ball </span><span class="diff_delete">Placement</span></a> <span class="diff_delete">successful</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement"><span class="diff_delete">ボール配置</span></a><span class="diff_delete">中</span><br><span class="diff_delete">
+during </span><a href="#_ボール配置_ball_placement"><span class="diff_delete">Ball </span><span class="diff_delete">Placement</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">続行</span><br><span class="diff_delete">
+continue</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ロボットの交代_robot_substitution">ロボットの交代</a>意志の表明<br>
-<a href="#_ロボットの交代_robot_substitution">Robot Substitution</a> Intent</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">常時<br>
-always</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">次のストップで<a href="#_ハルト_halt">ハルト</a>、次いで<a href="#_停止_stop">ストップ</a><br>
-<a href="#_ハルト_halt">Halt</a> (after next stoppage), then <a href="#_停止_stop">Stop</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">game controller</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ロボットの交代_robot_substitution"><span class="diff_delete">ロボットの交代</span></a><span class="diff_delete">意志の表明</span><br>
+<a href="#_ロボットの交代_robot_substitution"><span class="diff_delete">Robot </span><span class="diff_delete">Substitution</span></a> <span class="diff_delete">Intent</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">常時</span><br><span class="diff_delete">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">次のストップで</span><a href="#_ハルト_halt"><span class="diff_delete">ハルト</span></a><span class="diff_delete">、次いで</span><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a><br>
+<a href="#_ハルト_halt"><span class="diff_delete">Halt</span></a> <span class="diff_delete">(after </span><span class="diff_delete">next </span><span class="diff_delete">stoppage), </span><span class="diff_delete">then </span><a href="#_停止_stop"><span class="diff_delete">Stop</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">game </span><span class="diff_delete">controller</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ロボットの台数_number_of_robots">ロボットの台数</a>制限超過<br>
-<a href="#_ロボットの台数_number_of_robots">Number Of Robots</a> exceeded</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">常時<br>
-always</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a><br>
-<a href="#_停止_stop">Stop</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ロボットの台数_number_of_robots"><span class="diff_delete">ロボットの台数</span></a><span class="diff_delete">制限超過</span><br>
+<a href="#_ロボットの台数_number_of_robots"><span class="diff_delete">Number </span><span class="diff_delete">Of </span><span class="diff_delete">Robots</span></a> <span class="diff_delete">exceeded</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">常時</span><br><span class="diff_delete">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_フィールド外にボールが出た際のイベント_events_for_ball_leaving_the_field">B.2. フィールド外にボールが出た際のイベント/Events For Ball Leaving The Field</h3>
+<h3 id="_フィールド外にボールが出た際のイベント_events_for_ball_leaving_the_field"><span class="diff_delete">B.2. </span>フィールド外にボールが出た際のイベント/Events For Ball Leaving The Field</h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 25%;">
@@ -3880,9 +3886,9 @@ auto referee</p></td>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_スローイン_throw_in">スローイン</a><br>
-<a href="#_スローイン_throw_in">Throw-In</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_スローイン_throw_in"><span class="diff_delete">スローイン</span><a href="#_タッチラインとの交差_touch_line_crossing"><span class="diff_insert">タッチラインとの交差</span></a><br>
+<a href="#_スローイン_throw_in"><span class="diff_delete">Throw-In</span><a href="#_タッチラインとの交差_touch_line_crossing"><span class="diff_insert">Touch </span><span class="diff_insert">Line </span><span class="diff_insert">Crossing</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span><span class="diff_insert">インプレイ中</span></a><br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
 <a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
@@ -3890,19 +3896,19 @@ auto referee</p></td>
 auto referee</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ゴールキック_goal_kick">ゴールキック</a><br>
-<a href="#_ゴールキック_goal_kick">Goal Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
-<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ゴールキック_goal_kick"><span class="diff_delete">ゴールキック</span><a href="#_ゴールラインとの交差_goal_line_crossing"><span class="diff_insert">ゴールラインとの交差</span></a><br>
+<a href="#_ゴールキック_goal_kick"><a href="#_ゴールラインとの交差_goal_line_crossing">Goal <span class="diff_delete">Kick</span><span class="diff_insert">Line </span><span class="diff_insert">Crossing</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">ball </span><span class="diff_delete">in </span><span class="diff_delete">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">Free </span><span class="diff_delete">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_コーナーキック_corner_kick">コーナーキック</a><br>
-<a href="#_コーナーキック_corner_kick">Corner Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_コーナーキック_corner_kick"><span class="diff_delete">コーナーキック</span></a><br>
+<a href="#_コーナーキック_corner_kick"><span class="diff_delete">Corner </span><span class="diff_delete">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span><span class="diff_insert">インプレイ中</span></a><br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
 <a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
@@ -3923,7 +3929,7 @@ auto referee</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_ゴールに関するイベント_events_for_scoring_goals">B.3. ゴールに関するイベント/Events For Scoring Goals</h3>
+<h3 id="_ゴールに関するイベント_events_for_scoring_goals"><span class="diff_delete">B.3. </span><span class="diff_delete">ゴールに関するイベント/Events </span><span class="diff_delete">For </span><span class="diff_delete">Scoring </span><span class="diff_delete">Goals</span></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 25%;">
@@ -3933,38 +3939,38 @@ auto referee</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">イベント /Event</th>
-<th class="tableblock halign-left valign-top">適用範囲 /Applicability</th>
-<th class="tableblock halign-left valign-top">実行されるコマンド /Command</th>
-<th class="tableblock halign-left valign-top">処理担当 /Handled by</th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">イベント </span><span class="diff_delete">/Event</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">適用範囲 </span><span class="diff_delete">/Applicability</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">実行されるコマンド </span><span class="diff_delete">/Command</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">処理担当 </span><span class="diff_delete">/Handled </span><span class="diff_delete">by</span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_得点_scoring_goals">ゴール</a><br>
-<a href="#_得点_scoring_goals">Goal</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
-<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_キックオフ_kick_off">キックオフ</a><br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_キックオフ_kick_off">Kick-Off</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(オートレフ)<br>
-(auto referee) <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_得点_scoring_goals"><span class="diff_delete">ゴール</span></a><br>
+<a href="#_得点_scoring_goals"><span class="diff_delete">Goal</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">ball </span><span class="diff_delete">in </span><span class="diff_delete">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_キックオフ_kick_off"><span class="diff_delete">キックオフ</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_キックオフ_kick_off"><span class="diff_delete">Kick-Off</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">(オートレフ)</span><br><span class="diff_delete">
+(auto </span><span class="diff_delete">referee) </span><sup class="footnote"><span class="diff_delete">[</span><a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote."><span class="diff_delete">1</span></a><span class="diff_delete">]</span></sup></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_得点_scoring_goals">無効なゴール</a><br>
-<a href="#_得点_scoring_goals">Invalid Goal</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
-<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_得点_scoring_goals"><span class="diff_delete">無効なゴール</span></a><br>
+<a href="#_得点_scoring_goals"><span class="diff_delete">Invalid </span><span class="diff_delete">Goal</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">ball </span><span class="diff_delete">in </span><span class="diff_delete">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">Free </span><span class="diff_delete">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_反則に関するイベント_events_for_offenses">B.4. 反則に関するイベント/Events For Offenses</h3>
+<h3 id="_反則に関するイベント_events_for_offenses"><span class="diff_delete">B.4. </span><span class="diff_delete">反則に関するイベント/Events </span><span class="diff_delete">For </span><span class="diff_delete">Offenses</span></h3>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 25%;">
@@ -3974,66 +3980,66 @@ auto referee</p></td>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">イベント /Event</th>
-<th class="tableblock halign-left valign-top">適用範囲 /Applicability</th>
-<th class="tableblock halign-left valign-top">実行されるコマンド /Command</th>
-<th class="tableblock halign-left valign-top">処理担当 /Handled by</th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">イベント </span><span class="diff_delete">/Event</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">適用範囲 </span><span class="diff_delete">/Applicability</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">実行されるコマンド </span><span class="diff_delete">/Command</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_delete">処理担当 </span><span class="diff_delete">/Handled </span><span class="diff_delete">by</span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_試合の停滞_no_progress_in_game">試合の停滞</a><br>
-<a href="#_試合の停滞_no_progress_in_game">No Progress In Game</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
-<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フォーススタート_force_start">フォーススタート</a><br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_フォーススタート_force_start">Force Start</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_試合の停滞_no_progress_in_game"><span class="diff_delete">試合の停滞</span></a><br>
+<a href="#_試合の停滞_no_progress_in_game"><span class="diff_delete">No </span><span class="diff_delete">Progress </span><span class="diff_delete">In </span><span class="diff_delete">Game</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">ball </span><span class="diff_delete">in </span><span class="diff_delete">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_フォーススタート_force_start"><span class="diff_delete">フォーススタート</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_フォーススタート_force_start"><span class="diff_delete">Force </span><span class="diff_delete">Start</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ダブルタッチ_double_touch">ダブルタッチ</a><br>
-<a href="#_ダブルタッチ_double_touch">Double Touch</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
-<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ダブルタッチ_double_touch"><span class="diff_delete">ダブルタッチ</span></a><br>
+<a href="#_ダブルタッチ_double_touch"><span class="diff_delete">Double </span><span class="diff_delete">Touch</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">ball </span><span class="diff_delete">in </span><span class="diff_delete">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">Free </span><span class="diff_delete">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_非スポーツマン行為_unsporting_behavior">非スポーツマン行為</a><br>
-<a href="#_非スポーツマン行為_unsporting_behavior">Unsporting Behavior</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">常時<br>
-always</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_イエローカード_yellow_card">イエローカード</a>、<a href="#_レッドカード_red_card">レッドカード</a>、<a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a>、<a href="#_強制的な試合放棄_forced_forfeit">強制的な試合放棄</a>、<a href="#_失格_disqualification">失格</a>のいずれか<br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_イエローカード_yellow_card">Yellow Card</a>, <a href="#_レッドカード_red_card">Red Card</a>, <a href="#_ペナルティーキック_penalty_kick">Penalty Kick</a>, <a href="#_強制的な試合放棄_forced_forfeit">Forced Forfeit</a> or <a href="#_失格_disqualification">Disqualification</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">主審 &#8594; game controller<br>
-referee &#8594; game controller</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_非スポーツマン行為_unsporting_behavior"><span class="diff_delete">非スポーツマン行為</span></a><br>
+<a href="#_非スポーツマン行為_unsporting_behavior"><span class="diff_delete">Unsporting </span><span class="diff_delete">Behavior</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">常時</span><br><span class="diff_delete">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_イエローカード_yellow_card"><span class="diff_delete">イエローカード</span></a><span class="diff_delete">、</span><a href="#_レッドカード_red_card"><span class="diff_delete">レッドカード</span></a><span class="diff_delete">、</span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_delete">ペナルティーキック</span></a><span class="diff_delete">、</span><a href="#_強制的な試合放棄_forced_forfeit"><span class="diff_delete">強制的な試合放棄</span></a><span class="diff_delete">、</span><a href="#_失格_disqualification"><span class="diff_delete">失格</span></a><span class="diff_delete">のいずれか</span><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_イエローカード_yellow_card"><span class="diff_delete">Yellow </span><span class="diff_delete">Card</span></a><span class="diff_delete">, </span><a href="#_レッドカード_red_card"><span class="diff_delete">Red </span><span class="diff_delete">Card</span></a><span class="diff_delete">, </span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_delete">Penalty </span><span class="diff_delete">Kick</span></a><span class="diff_delete">, </span><a href="#_強制的な試合放棄_forced_forfeit"><span class="diff_delete">Forced </span><span class="diff_delete">Forfeit</span></a> <span class="diff_delete">or </span><a href="#_失格_disqualification"><span class="diff_delete">Disqualification</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">主審 </span><span class="diff_delete">&#8594; </span><span class="diff_delete">game </span><span class="diff_delete">controller</span><br><span class="diff_delete">
+referee </span><span class="diff_delete">&#8594; </span><span class="diff_delete">game </span><span class="diff_delete">controller</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">複数回の<a href="#_ファウル_fouls">ファウル</a><br>
-Multiple <a href="#_ファウル_fouls">Fouls</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">常時<br>
-always</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_イエローカード_yellow_card">イエローカード</a><br>
-<a href="#_イエローカード_yellow_card">Yellow Card</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">game controller</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">複数回の</span><a href="#_ファウル_fouls"><span class="diff_delete">ファウル</span></a><br><span class="diff_delete">
+Multiple </span><a href="#_ファウル_fouls"><span class="diff_delete">Fouls</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">常時</span><br><span class="diff_delete">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_イエローカード_yellow_card"><span class="diff_delete">イエローカード</span></a><br>
+<a href="#_イエローカード_yellow_card"><span class="diff_delete">Yellow </span><span class="diff_delete">Card</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">game </span><span class="diff_delete">controller</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">複数枚の<a href="#_イエローカード_yellow_card">イエローカード</a><br>
-Multiple <a href="#_イエローカード_yellow_card">Yellow Cards</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">常時<br>
-always</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_レッドカード_red_card">レッドカード</a><br>
-<a href="#_レッドカード_red_card">Red Card</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">game controller</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">複数枚の</span><a href="#_イエローカード_yellow_card"><span class="diff_delete">イエローカード</span></a><br><span class="diff_delete">
+Multiple </span><a href="#_イエローカード_yellow_card"><span class="diff_delete">Yellow </span><span class="diff_delete">Cards</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">常時</span><br><span class="diff_delete">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_レッドカード_red_card"><span class="diff_delete">レッドカード</span></a><br>
+<a href="#_レッドカード_red_card"><span class="diff_delete">Red </span><span class="diff_delete">Card</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">game </span><span class="diff_delete">controller</span></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_試合の停止を伴うファウルに関するイベント_events_for_stopping_fouls">B.5. 試合の停止を伴うファウルに関するイベント/Events For Stopping Fouls</h3>
+<h3 id="_試合の停止を伴うファウルに関するイベント_events_for_stopping_fouls"><span class="diff_delete">B.5. </span><span class="diff_insert">B.2. </span>試合の停止を伴うファウルに関するイベント/Events For Stopping Fouls</h3>
 <div class="paragraph">
 <p>全ての<a href="#_試合の停止を伴うファウル_stopping_fouls">試合の停止を伴うファウル</a>は次の結果をもたらす:<br>
 All <a href="#_試合の停止を伴うファウル_stopping_fouls">Stopping Fouls</a> result in:</p>
@@ -4067,6 +4073,45 @@ Incrementing the foul counter (except for <a href="#_マルチプルディフェ
 <a href="#_ロボットの相手ディフェンスエリアへの極端な接近_robot_too_close_to_opponent_defense_area">Robot Too Close To Opponent Defense Area</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ中</a>、ならびに<a href="#_フリーキック_free_kick">フリーキック中</a><br>
 during <a href="#_停止_stop">Stop</a> and <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">Free </span><span class="diff_insert">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">オートレフ</span><br><span class="diff_insert">
+auto </span><span class="diff_insert">referee</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_マルチプルディフェンス_multiple_defenders"><span class="diff_insert">マルチプルディフェンス</span></a><br>
+<a href="#_マルチプルディフェンス_multiple_defenders"><span class="diff_insert">Multiple </span><span class="diff_insert">Defenders</span></a><br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">ball </span><span class="diff_insert">in </span><span class="diff_insert">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_insert">ペナルティーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_insert">Penalty </span><span class="diff_insert">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">オートレフ</span><br><span class="diff_insert">
+auto </span><span class="diff_insert">referee</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_境界線との交差_boundary_crossing"><span class="diff_insert">境界線との交差</span></a><br>
+<a href="#_境界線との交差_boundary_crossing"><span class="diff_insert">Boundary </span><span class="diff_insert">Crossing</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">ball </span><span class="diff_insert">in </span><span class="diff_insert">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">Free </span><span class="diff_insert">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">オートレフ</span><br><span class="diff_insert">
+auto </span><span class="diff_insert">referee</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ディフェンスエリア_defense_area"><span class="diff_insert">ディフェンスエリア</span></a><span class="diff_insert">内での</span><a href="#_キーパーによるボール保持_keeper_held_ball"><span class="diff_insert">キーパーによるボール保持</span></a><br>
+<a href="#_キーパーによるボール保持_keeper_held_ball"><span class="diff_insert">Keeper </span><span class="diff_insert">Held </span><span class="diff_insert">Ball</span></a> <span class="diff_insert">in </span><a href="#_ディフェンスエリア_defense_area"><span class="diff_insert">defense </span><span class="diff_insert">area</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">ball </span><span class="diff_insert">in </span><span class="diff_insert">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">Free </span><span class="diff_insert">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ドリブルの超過_excessive_dribbling"><span class="diff_insert">オーバードリブル</span></a><br>
+<a href="#_ドリブルの超過_excessive_dribbling"><span class="diff_insert">Excessive </span><span class="diff_insert">Dribbling</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">ball </span><span class="diff_insert">in </span><span class="diff_insert">play</span></a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
 <a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
@@ -4103,50 +4148,50 @@ always</p></td>
 referee &#8594; game controller</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_マルチプルディフェンス_multiple_defenders">マルチプルディフェンス</a><br>
-<a href="#_マルチプルディフェンス_multiple_defenders">Multiple Defenders</a><br></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
-<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_ペナルティーキック_penalty_kick">ペナルティーキック</a><br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_ペナルティーキック_penalty_kick">Penalty Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_マルチプルディフェンス_multiple_defenders"><span class="diff_delete">マルチプルディフェンス</span></a><br>
+<a href="#_マルチプルディフェンス_multiple_defenders"><span class="diff_delete">Multiple </span><span class="diff_delete">Defenders</span></a><br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">ball </span><span class="diff_delete">in </span><span class="diff_delete">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_delete">ペナルティーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_delete">Penalty </span><span class="diff_delete">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_境界線との交差_boundary_crossing">境界線との交差</a><br>
-<a href="#_境界線との交差_boundary_crossing">Boundary Crossing</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
-<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_境界線との交差_boundary_crossing"><span class="diff_delete">境界線との交差</span></a><br>
+<a href="#_境界線との交差_boundary_crossing"><span class="diff_delete">Boundary </span><span class="diff_delete">Crossing</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">ball </span><span class="diff_delete">in </span><span class="diff_delete">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">Free </span><span class="diff_delete">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ディフェンスエリア_defense_area">ディフェンスエリア</a>内での<a href="#_キーパーによるボール保持_keeper_held_ball">キーパーによるボール保持</a><br>
-<a href="#_キーパーによるボール保持_keeper_held_ball">Keeper Held Ball</a> in <a href="#_ディフェンスエリア_defense_area">defense area</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
-<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ディフェンスエリア_defense_area"><span class="diff_delete">ディフェンスエリア</span></a><span class="diff_delete">内での</span><a href="#_キーパーによるボール保持_keeper_held_ball"><span class="diff_delete">キーパーによるボール保持</span></a><br>
+<a href="#_キーパーによるボール保持_keeper_held_ball"><span class="diff_delete">Keeper </span><span class="diff_delete">Held </span><span class="diff_delete">Ball</span></a> <span class="diff_delete">in </span><a href="#_ディフェンスエリア_defense_area"><span class="diff_delete">defense </span><span class="diff_delete">area</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">ball </span><span class="diff_delete">in </span><span class="diff_delete">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">Free </span><span class="diff_delete">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ドリブルの超過_excessive_dribbling">オーバードリブル</a><br>
-<a href="#_ドリブルの超過_excessive_dribbling">Excessive Dribbling</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">インプレイ</a><br>
-<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop">ストップ</a> &#8594; <a href="#_フリーキック_free_kick">フリーキック</a><br>
-<a href="#_停止_stop">Stop</a> &#8594; <a href="#_フリーキック_free_kick">Free Kick</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
-auto referee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ドリブルの超過_excessive_dribbling"><span class="diff_delete">オーバードリブル</span></a><br>
+<a href="#_ドリブルの超過_excessive_dribbling"><span class="diff_delete">Excessive </span><span class="diff_delete">Dribbling</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_delete">ball </span><span class="diff_delete">in </span><span class="diff_delete">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_delete">ストップ</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_delete">Stop</span></a> <span class="diff_delete">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_delete">Free </span><span class="diff_delete">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">オートレフ</span><br><span class="diff_delete">
+auto </span><span class="diff_delete">referee</span></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_試合の停止を伴わないファウルに関するイベント_events_for_non_stopping_fouls">B.6. 試合の停止を伴わないファウルに関するイベント/Events For Non Stopping Fouls</h3>
+<h3 id="_試合の停止を伴わないファウルに関するイベント_events_for_non_stopping_fouls"><span class="diff_delete">B.6. </span><span class="diff_insert">B.3. </span>試合の停止を伴わないファウルに関するイベント/Events For Non Stopping Fouls</h3>
 <div class="paragraph">
 <p>全ての<a href="#_試合の停止を伴わないファウル_non_stopping_fouls">試合の停止を伴わないファウル</a>は以下の結果をもたらす:<br>
 All <a href="#_試合の停止を伴わないファウル_non_stopping_fouls">Non Stopping Fouls</a> result in:</p>
@@ -4219,7 +4264,7 @@ auto referee</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_アウトオブプレイ中のファウルに関するイベント_events_for_fouls_while_ball_out_of_play">B.7. アウトオブプレイ中のファウルに関するイベント/Events For Fouls While Ball Out Of Play</h3>
+<h3 id="_アウトオブプレイ中のファウルに関するイベント_events_for_fouls_while_ball_out_of_play"><span class="diff_delete">B.7. </span><span class="diff_insert">B.4. </span>アウトオブプレイ中のファウルに関するイベント/Events For Fouls While Ball Out Of Play</h3>
 <div class="paragraph">
 <p>全ての<a href="#_アウトオブプレイ中のファウル_fouls_while_ball_out_of_play">アウトオブプレイ中のファウル</a>は以下の結果をもたらす:<br>
 All <a href="#_アウトオブプレイ中のファウル_fouls_while_ball_out_of_play">Fouls While Ball Out Of Play</a> result in:</p>
@@ -4261,7 +4306,8 @@ Only once per foul, team and 2 seconds.<br></p>
 <a href="#_ディフェンダーのボールへの極端な接近_defender_too_close_to_ball">Defender Too Close To Ball</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">アウトオブプレイ中</a><br>
 <a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play">ball out of play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_delete">-</span><span class="diff_insert">インプレイにするまでのタイマーをリセット</span><br><span class="diff_insert">
+timer </span><span class="diff_insert">for </span><span class="diff_insert">bringing </span><span class="diff_insert">the </span><span class="diff_insert">ball </span><span class="diff_insert">into </span><span class="diff_insert">play </span><span class="diff_insert">is </span><span class="diff_insert">reset</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">オートレフ<br>
 auto referee</p></td>
 </tr>
@@ -4286,6 +4332,213 @@ auto referee</p></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect2">
+<h3 id="_ゴールに関するイベント_events_for_scoring_goals"><span class="diff_insert">B.5. </span><span class="diff_insert">ゴールに関するイベント/Events </span><span class="diff_insert">For </span><span class="diff_insert">Scoring </span><span class="diff_insert">Goals</span></h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><span class="diff_insert">イベント </span><span class="diff_insert">/Event</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_insert">適用範囲 </span><span class="diff_insert">/Applicability</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_insert">実行されるコマンド </span><span class="diff_insert">/Command</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_insert">処理担当 </span><span class="diff_insert">/Handled </span><span class="diff_insert">by</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_得点_scoring_goals"><span class="diff_insert">審議を要するゴール</span></a>
+<a href="#_得点_scoring_goals"><span class="diff_insert">Possible </span><span class="diff_insert">Goal</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ中</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">ball </span><span class="diff_insert">in </span><span class="diff_insert">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ハルト_halt"><span class="diff_insert">ハルト</span></a><br>
+<a href="#_ハルト_halt"><span class="diff_insert">Halt</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">オートレフ</span><br><span class="diff_insert">
+auto </span><span class="diff_insert">referee</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_得点_scoring_goals"><span class="diff_insert">ゴール</span></a><br>
+<a href="#_得点_scoring_goals"><span class="diff_insert">Goal</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">ball </span><span class="diff_insert">in </span><span class="diff_insert">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_キックオフ_kick_off"><span class="diff_insert">キックオフ</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_キックオフ_kick_off"><span class="diff_insert">Kick-Off</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">主審 </span><span class="diff_insert">&#8594; </span><span class="diff_insert">game </span><span class="diff_insert">controller</span><br><span class="diff_insert">
+referee </span><span class="diff_insert">&#8594; </span><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_得点_scoring_goals"><span class="diff_insert">無効なゴール</span></a><br>
+<a href="#_得点_scoring_goals"><span class="diff_insert">Invalid </span><span class="diff_insert">Goal</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">ball </span><span class="diff_insert">in </span><span class="diff_insert">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">Free </span><span class="diff_insert">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_その他のイベント_other_events"><span class="diff_insert">B.6. </span><span class="diff_insert">その他のイベント/Other </span><span class="diff_insert">events</span></h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><span class="diff_insert">イベント </span><span class="diff_insert">/Event</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_insert">適用範囲 </span><span class="diff_insert">/Applicability</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_insert">実行されるコマンド </span><span class="diff_insert">/Command</span></th>
+<th class="tableblock halign-left valign-top"><span class="diff_insert">処理担当 </span><span class="diff_insert">/Handled </span><span class="diff_insert">by</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ダブルタッチ_double_touch"><span class="diff_insert">ダブルタッチ</span></a><br>
+<a href="#_ダブルタッチ_double_touch"><span class="diff_insert">Double </span><span class="diff_insert">Touch</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">ball </span><span class="diff_insert">in </span><span class="diff_insert">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">Free </span><span class="diff_insert">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">オートレフ</span><br><span class="diff_insert">
+auto </span><span class="diff_insert">referee</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement"><span class="diff_insert">ボール配置</span></a><span class="diff_insert">成功</span><br>
+<a href="#_ボール配置_ball_placement"><span class="diff_insert">Ball </span><span class="diff_insert">Placement</span></a> <span class="diff_insert">successful</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement"><span class="diff_insert">ボール配置</span></a><span class="diff_insert">中</span><br><span class="diff_insert">
+during </span><a href="#_ボール配置_ball_placement"><span class="diff_insert">Ball </span><span class="diff_insert">Placement</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">続行</span><br><span class="diff_insert">
+continue</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">オートレフ</span><br><span class="diff_insert">
+auto </span><span class="diff_insert">referee</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ペナルティーキック_penalty_kick"><span class="diff_insert">ペナルティーキック</span></a> <span class="diff_insert">失敗</span><br>
+<a href="#_ペナルティーキック_penalty_kick"><span class="diff_insert">Penalty </span><span class="diff_insert">Kick</span></a> <span class="diff_insert">failed</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">during </span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_insert">ペナルティーキック</span></a><br><span class="diff_insert">
+during </span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_insert">Penalty </span><span class="diff_insert">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">フリーキック</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">Free </span><span class="diff_insert">Kick</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">オートレフ、game </span><span class="diff_insert">controller</span><br><span class="diff_insert">
+auto </span><span class="diff_insert">referee, </span><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_試合の停滞_no_progress_in_game"><span class="diff_insert">試合の停滞</span></a><br>
+<a href="#_試合の停滞_no_progress_in_game"><span class="diff_insert">No </span><span class="diff_insert">Progress </span><span class="diff_insert">In </span><span class="diff_insert">Game</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">インプレイ</span></a><br>
+<a href="#_インプレイとアウトオブプレイ_ball_in_and_out_of_play"><span class="diff_insert">ball </span><span class="diff_insert">in </span><span class="diff_insert">play</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_フォーススタート_force_start"><span class="diff_insert">フォーススタート</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_フォーススタート_force_start"><span class="diff_insert">Force </span><span class="diff_insert">Start</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">味方チームの</span><a href="#_ボール配置_ball_placement"><span class="diff_insert">ボール配置</span></a><span class="diff_insert">失敗</span><br>
+<a href="#_ボール配置_ball_placement"><span class="diff_insert">Ball </span><span class="diff_insert">Placement</span></a> <span class="diff_insert">failed </span><span class="diff_insert">by </span><span class="diff_insert">team </span><span class="diff_insert">in </span><span class="diff_insert">favor</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement"><span class="diff_insert">ボール配置</span></a><span class="diff_insert">中</span><br><span class="diff_insert">
+during </span><a href="#_ボール配置_ball_placement"><span class="diff_insert">Ball </span><span class="diff_insert">Placement</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">フリーキック</span></a> <span class="diff_insert">(ディヴィジョンA) </span><span class="diff_insert">/ </span><span class="diff_insert">前のコマンド </span><span class="diff_insert">(ディヴィジョンB)</span><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_フリーキック_free_kick"><span class="diff_insert">Free </span><span class="diff_insert">Kick</span></a> <span class="diff_insert">(div </span><span class="diff_insert">A) </span><span class="diff_insert">/ </span><span class="diff_insert">previous </span><span class="diff_insert">command </span><span class="diff_insert">(div </span><span class="diff_insert">B)</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">相手チームの</span><a href="#_ボール配置_ball_placement"><span class="diff_insert">ボール配置</span></a><span class="diff_insert">失敗</span><br>
+<a href="#_ボール配置_ball_placement"><span class="diff_insert">Ball </span><span class="diff_insert">Placement</span></a> <span class="diff_insert">failed </span><span class="diff_insert">by </span><span class="diff_insert">opponent</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ボール配置_ball_placement"><span class="diff_insert">ボール配置</span></a><span class="diff_insert">中</span><br><span class="diff_insert">
+during </span><a href="#_ボール配置_ball_placement"><span class="diff_insert">Ball </span><span class="diff_insert">Placement</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">複数回の</span><a href="#_ファウル_fouls"><span class="diff_insert">ファウル</span></a><br><span class="diff_insert">
+Multiple </span><a href="#_ファウル_fouls"><span class="diff_insert">Fouls</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">常時</span><br><span class="diff_insert">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_イエローカード_yellow_card"><span class="diff_insert">イエローカード</span></a><br>
+<a href="#_イエローカード_yellow_card"><span class="diff_insert">Yellow </span><span class="diff_insert">Card</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">複数枚の</span><a href="#_イエローカード_yellow_card"><span class="diff_insert">イエローカード</span></a><br><span class="diff_insert">
+Multiple </span><a href="#_イエローカード_yellow_card"><span class="diff_insert">Yellow </span><span class="diff_insert">Cards</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">常時</span><br><span class="diff_insert">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_レッドカード_red_card"><span class="diff_insert">レッドカード</span></a><br>
+<a href="#_レッドカード_red_card"><span class="diff_insert">Red </span><span class="diff_insert">Card</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">手動での</span><a href="#_ロボットの交代_robot_substitution"><span class="diff_insert">ロボット交代</span></a><br><span class="diff_insert">
+Perform </span><span class="diff_insert">manual </span><a href="#_ロボットの交代_robot_substitution"><span class="diff_insert">Robot </span><span class="diff_insert">Substitution</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a><span class="diff_insert">中</span><br><span class="diff_insert">
+during </span><a href="#_停止_stop"><span class="diff_insert">Stop</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">次のストップで</span><a href="#_ハルト_halt"><span class="diff_insert">ハルト</span></a><span class="diff_insert">、次いで</span><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a><br>
+<a href="#_ハルト_halt"><span class="diff_insert">Halt</span></a> <span class="diff_insert">(after </span><span class="diff_insert">next </span><span class="diff_insert">stoppage), </span><span class="diff_insert">then </span><a href="#_停止_stop"><span class="diff_insert">Stop</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ロボットの台数_number_of_robots"><span class="diff_insert">ロボットの台数</span></a><span class="diff_insert">制限超過</span><br>
+<a href="#_ロボットの台数_number_of_robots"><span class="diff_insert">Number </span><span class="diff_insert">Of </span><span class="diff_insert">Robots</span></a> <span class="diff_insert">exceeded</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">常時</span><br><span class="diff_insert">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">オートレフ</span><br><span class="diff_insert">
+auto </span><span class="diff_insert">referee</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_チャレンジフラッグ_challenge_flags"><span class="diff_insert">チャレンジフラッグ</span></a><span class="diff_insert">の使用</span><br><span class="diff_insert">
+Raise </span><a href="#_チャレンジフラッグ_challenge_flags"><span class="diff_insert">Challenge </span><span class="diff_insert">flag</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">常時</span><br><span class="diff_insert">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">リモートコントロール </span><span class="diff_insert">&#8594; </span><span class="diff_insert">game </span><span class="diff_insert">controller</span><br><span class="diff_insert">
+remote </span><span class="diff_insert">control </span><span class="diff_insert">&#8594; </span><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_非常停止_emergency_stop"><span class="diff_insert">非常停止</span></a><br><span class="diff_insert">
+Perform </span><a href="#_非常停止_emergency_stop"><span class="diff_insert">Emergency </span><span class="diff_insert">stop</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">常時</span><br><span class="diff_insert">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ハルト_halt"><span class="diff_insert">ハルト</span></a><br>
+<a href="#_ハルト_halt"><span class="diff_insert">Halt</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">リモートコントロール </span><span class="diff_insert">&#8594; </span><span class="diff_insert">game </span><span class="diff_insert">controller</span><br><span class="diff_insert">
+remote </span><span class="diff_insert">control </span><span class="diff_insert">&#8594; </span><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_非スポーツマン行為_unsporting_behavior"><span class="diff_insert">非スポーツマン行為</span></a><br>
+<a href="#_非スポーツマン行為_unsporting_behavior"><span class="diff_insert">Unsporting </span><span class="diff_insert">Behavior</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">常時</span><br><span class="diff_insert">
+always</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止_stop"><span class="diff_insert">ストップ</span></a> <span class="diff_insert">&#8594; </span><a href="#_イエローカード_yellow_card"><span class="diff_insert">イエローカード</span></a><span class="diff_insert">、</span><a href="#_レッドカード_red_card"><span class="diff_insert">レッドカード</span></a><span class="diff_insert">、</span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_insert">ペナルティーキック</span></a><span class="diff_insert">、</span><a href="#_強制的な試合放棄_forced_forfeit"><span class="diff_insert">強制的な試合放棄</span></a><span class="diff_insert">、</span><a href="#_失格_disqualification"><span class="diff_insert">失格</span></a><span class="diff_insert">のいずれか</span><br>
+<a href="#_停止_stop"><span class="diff_insert">Stop</span></a> <span class="diff_insert">&#8594; </span><a href="#_イエローカード_yellow_card"><span class="diff_insert">Yellow </span><span class="diff_insert">Card</span></a><span class="diff_insert">, </span><a href="#_レッドカード_red_card"><span class="diff_insert">Red </span><span class="diff_insert">Card</span></a><span class="diff_insert">, </span><a href="#_ペナルティーキック_penalty_kick"><span class="diff_insert">Penalty </span><span class="diff_insert">Kick</span></a><span class="diff_insert">, </span><a href="#_強制的な試合放棄_forced_forfeit"><span class="diff_insert">Forced </span><span class="diff_insert">Forfeit</span></a> <span class="diff_insert">or </span><a href="#_失格_disqualification"><span class="diff_insert">Disqualification</span></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="diff_insert">主審 </span><span class="diff_insert">&#8594; </span><span class="diff_insert">game </span><span class="diff_insert">controller</span><br><span class="diff_insert">
+referee </span><span class="diff_insert">&#8594; </span><span class="diff_insert">game </span><span class="diff_insert">controller</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content"><span class="diff_insert">
+(訳者注記) </span><span class="diff_insert">「リモートコントロール」は大会運営者により提供され、ソフトウェアではなく物理的な旗、その他何らかのデバイスである可能性もある。詳細は</span><a href="#_コミュニケーションフラッグ_communication_flags"><span class="diff_insert">コミュニケーションフラッグに関するルール</span></a><span class="diff_insert">を参照すること。</span><br>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -4383,12 +4636,12 @@ Division A has shorter timeouts in some situations</p>
 <div id="footnotes">
 <hr>
 <div class="footnote" id="_footnote_1">
-<a href="#_footnoteref_1">1</a>. game controller operatorが試合を続行させる必要がある / the game controller operator has to continue the game
-</div>
+<a href="#_footnoteref_1"><span class="diff_delete">1</span></a><span class="diff_delete">. </span><span class="diff_delete">game </span><span class="diff_delete">controller </span><span class="diff_delete">operatorが試合を続行させる必要がある </span><span class="diff_delete">/ </span><span class="diff_delete">the </span><span class="diff_delete">game </span><span class="diff_delete">controller </span><span class="diff_delete">operator </span><span class="diff_delete">has </span><span class="diff_delete">to </span><span class="diff_delete">continue </span><span class="diff_delete">the </span><span class="diff_delete">game
+</span></div>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2020-05-06 </span><span class="diff_delete">17:46:03 </span><span class="diff_insert">2020-07-30 </span><span class="diff_insert">14:12:13 </span>GMT
+最終更新 <span class="diff_delete">2020-05-06 </span><span class="diff_delete">17:46:03 </span><span class="diff_insert">2020-08-08 </span><span class="diff_insert">15:16:16 </span>GMT
 </div>
 </div>
 </body>
