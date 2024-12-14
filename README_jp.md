@@ -13,18 +13,18 @@
 
 ### ネイティブ版AsciDoctorの使用
 
-[AsciiDoctor](https://asciidoctor.org/)をインストールしてください。その後、以下のコマンドでHTML5版をビルドできます :
+[AsciiDoctor](https://asciidoctor.org/)をインストールしてください。その後、以下のコマンドでHTML5版をビルドできます。日本語などを含む文章の場合、 attribute `scripts=cjk` を設定することで改行などが改善されます :
 
 ```sh
 # HTML5版のビルド
-asciidoctor -a allow-uri-read sslrules.adoc
+asciidoctor -a allow-uri-read -a scripts=cjk sslrules.adoc
 ```
 
-日本語を含むPDFを生成する場合、asciidoctor-pdf-cjk-kai_gen_gothicを使うと良いでしょう :
+日本語を含むPDFを生成する場合、日本語フォントを指定したテーマ(特にこだわりがなければデフォルトテーマ)を使うと良いでしょう :
 
 ```sh
 # Build the PDF version
-asciidoctor-pdf -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-style=KaiGenGothicJP -a allow-uri-read sslrules.adoc
+asciidoctor-pdf -a allow-uri-read -a scripts=cjk -a pdf-theme=default-with-font-fallbacks sslrules.adoc
 ```
 
 ### dockerイメージの使用
