@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="2025-02-08">
+<meta name="author" content="2025-02-28">
 <title>RoboCup小型機リーグルール</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCup小型機リーグルール</h1>
 <div class="details">
-<span id="author" class="author">2025-02-08</span><br>
+<span id="author" class="author">2025-02-28</span><br>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">目次</div>
@@ -2933,9 +2933,9 @@ issue a <a href="#_イエローカードyellow_card">yellow card</a> or in extre
 <div class="sect3">
 <h4 id="_試合の停止を伴うファウルstopping_fouls">8.4.1. 試合の停止を伴うファウル/Stopping Fouls</h4>
 <div class="paragraph">
-<p>このセクションにあるファウルは試合を<a href="#_停止stop">停止</a>させ、反則が発生した時点でボールがあった位置からの<a href="#_フリーキックfree_kick">フリーキック</a>で再開する。<br>
+<p>このセクションにあるファウルは試合を<a href="#_停止stop">停止</a>させ、反則が発生した時点でボールがあった位置から相手チームの<a href="#_フリーキックfree_kick">フリーキック</a>で再開する。<br>
 Fouls in this section cause the game to <a href="#_停止stop">stop</a> and then resume
-with a <a href="#_フリーキックfree_kick">free kick</a> from the position where the ball was
+with a <a href="#_フリーキックfree_kick">free kick</a> for the opposite team from the position where the ball was
 located when the foul began happening.</p>
 </div>
 <div class="sect4">
@@ -2947,6 +2947,29 @@ During <a href="#_停止stop">stop</a> and <a href="#_フリーキックfree_kic
 <div class="paragraph">
 <p>ロボットが相手ディフェンスエリアから離れるため、2秒間の猶予が設けられる。<br>
 There is a grace period of 2 seconds for the robots to move away from the opponent defense area.</p>
+</div>
+<div class="paragraph">
+<p>試合が停止(stop)状態もしくは<a href="#_フリーキックfree_kick">フリーキック</a>中で、インプレイになる前に同じチームによる2度目の反則があった場合は、試合は直ちに停止(halt)される。<br>
+The game is immediately halted after the second such foul committed by the same team while the game is stopped or during a <a href="#_フリーキックfree_kick">free kick</a>, before the ball has entered play.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content">
+最初の反則が<a href="#_フリーキックfree_kick">フリーキック</a>中に発生した場合、試合は通常通りに停止(stop)される。
+猶予時間は同チームによる最初の反則後から再開される。
+いずれの反則も、ファウルのカウンターを進める。
+ロボットごとに個別の反則を取られることはない。<br>
+If the first foul is committed during a <a href="#_フリーキックfree_kick">free kick</a>, the game is still stopped regularly.
+The grace period is restarted after the first foul of the same team.
+Both fouls count towards the foul counter.
+There are no individual fouls per robot.
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect4">
@@ -4140,7 +4163,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2025-02-08 11:07:59 UTC
+最終更新 2025-02-28 17:51:10 UTC
 </div>
 </div>
 </body>
