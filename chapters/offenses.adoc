@@ -42,11 +42,11 @@ If the referee is not sure which sanction to choose, he may confer with the <<�
 Some examples of unsporting behavior are listed below.
 
 ==== 他ロボットへの傷害/Damaging Other Robots
-他のチームのロボットを傷つけたり変形させてはならない。 +
+他のチームのロボットを傷つけたり変形させたりしてはならない。 +
 It is not allowed to damage or modify robots of other teams.
 
 ==== ボールやフィールドの損傷/Damaging The Field Or The Ball
-フィールドやボールを損傷させたり変形させてはならない。 +
+フィールドやボールを損傷させたり変形させたりしてはならない。 +
 It is not allowed to damage or modify the field or the ball.
 
 ==== 手順の軽視/Disrespect Procedures
@@ -129,7 +129,7 @@ Robots must not surround the ball to prevent access by others.
 NOTE: (訳者注記)一般的に「ホールディング」と呼称されることが多い。
 
 ===== 転倒や部品の脱落/Tipping Over Or Dropping Parts
-ロボットは他のロボットに潜在的な脅威を与えるように、フィールドで転倒したり、部品を脱落させてはならない。 +
+ロボットは他のロボットに潜在的な脅威を与えるように、フィールドで転倒したり、部品を脱落させたりしてはならない。 +
 A robot must not tip over, break or drop parts on the field that pose a potential threat to other robots.
 
 ロボットがこのルールに違反した場合、<<ロボットの交代/Robot Substitution, ロボットの交代>>を行わなければならない。 +
