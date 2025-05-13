@@ -11,7 +11,7 @@ The height of the ball did not exceed 0.15 meters after the last touch of the te
 The team did not commit any <<試合の停止を伴わないファウル/Non Stopping Fouls, non stopping foul>> in the last two seconds before the ball entered the goal.
 
 NOTE: ”チーム"はボールを蹴ったチームではなく、得点をしたチームを指す。
-例えば、相手チームのフィールド上のロボット台数が規定を超過している間はオウンゴールは認められない。 +
+例えば、相手チームのフィールド上のロボット台数が規定を超過している間、オウンゴールは認められない。 +
 "The team" refers to the scoring team that is awarded a goal, not the team that kicked the ball.
 For example, an own goal is not possible while the opponent team has too many robots on the field.
 
