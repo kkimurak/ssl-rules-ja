@@ -112,7 +112,7 @@ For official matches, the <<組織委員会/Organizing Committee, organizing com
 The shared software used in the Small Size League is maintained by the <<技術委員会/Technical Committee, technical committee>>, though everyone is encouraged to contribute. The <<技術委員会/Technical Committee, technical committee>> members however guarantee that any changes made less than three months before the next RoboCup do not break compatibility.
 
 ==== Vision
-それぞれのフィールドには共有のビジョンサーバーと共有のカメラが設置されている。この共有ビジョン機器はコミュニティにメンテナンスされているSSL-Vision ソフトウェア(https://github.com/RoboCup-SSL/ssl-vision) が使用される。SSL-Visionはイーサーネット経由で競技会の前に共有ビジョンシステム開発者によって通達されたパケット形式で位置情報を各チームに提供する。各チームはシステムが共有ビジョンシステムと互換性があり、システムが共有ビジョンシステムによって提供される実際のセンサーのデータの(ノイズ、レイテンシ、誤検出、欠落を含む)典型的な特性を処理できることを確認する必要がある。ロボット最上部にあるビジョンパターンはSSL-Visionの仕様に準拠している必要があり、SSL-Visionのマニュアルで指定されている標準のカラーペーパーでなければならない。 +
+それぞれのフィールドには共有のビジョンサーバーと共有のカメラが設置されている。この共有ビジョン機器はコミュニティーにメンテナンスされているSSL-Vision ソフトウェア(https://github.com/RoboCup-SSL/ssl-vision) が使用される。SSL-Visionはイーサーネット経由で競技会の前に共有ビジョンシステム開発者によって通達されたパケット形式で位置情報を各チームに提供する。各チームはシステムが共有ビジョンシステムと互換性があり、システムが共有ビジョンシステムによって提供される実際のセンサーのデータの(ノイズ、レイテンシ、誤検出、欠落を含む)典型的な特性を処理できることを確認する必要がある。ロボット最上部にあるビジョンパターンはSSL-Visionの仕様に準拠している必要があり、SSL-Visionのマニュアルで指定されている標準のカラーペーパーでなければならない。 +
 Each field is provided with a shared central vision server and a set of shared cameras. This shared vision equipment uses the community-maintained SSL-Vision software (https://github.com/RoboCup-SSL/ssl-vision) to provide localization data to teams via Ethernet in a packet format that is to be announced by the shared vision system developers before the competition. Teams need to ensure that their systems are compatible with the shared vision system output and that their systems are able to handle the typical properties of real-world sensory data as provided by the shared vision system (including noise, latency, or occasional failed detections and misclassifications). The vision patterns on the top of the robots must adhere to the specifications of SSL-Vision, and must be of the standard color paper as specified in the SSL-Vision documentation.
 
 競技会の主催者からの発表があった場合や特別に許可されている場合を除いて、共有ビジョン機器のそばに、チーム独自のカメラや外部のセンサーを取り付けることは許されない。 +
@@ -126,7 +126,7 @@ It is meant to be used by the <<Game Controller, game controller>> and by teams 
 NOTE: (訳者注記)一般的に「ビジョン」と呼称されることが多い。
 
 ==== Game Controller
-試合はコミュニティにメンテナンスされているssl-game-controller (https://github.com/RoboCup-SSL/ssl-game-controller) によってコントロールされている。このソフトウェアは<<Game Controller Operator, game controller operator>>によって操作されている。ソフトウェアは<<主審/Referee, 主審>>と<<オートレフ/Automatic Referee, オートレフ>>の決定をネットワークにブロードキャストされるイーサーネット通信の信号に変換する。これは、試合の状態を維持し、すべてのイベントを追跡し、試合に参加するすべての関係者間の代理として振る舞う。 +
+試合はコミュニティーにメンテナンスされているssl-game-controller (https://github.com/RoboCup-SSL/ssl-game-controller) によってコントロールされている。このソフトウェアは<<Game Controller Operator, game controller operator>>によって操作されている。ソフトウェアは<<主審/Referee, 主審>>と<<オートレフ/Automatic Referee, オートレフ>>の決定をネットワークにブロードキャストされるイーサーネット通信の信号に変換する。これは、試合の状態を維持し、すべてのイベントを追跡し、試合に参加するすべての関係者間の代理として振る舞う。 +
 A game is controlled by the community-maintained ssl-game-controller (https://github.com/RoboCup-SSL/ssl-game-controller).
 It is operated by the <<Game Controller Operator, game controller operator>>. The software translates decisions of the <<主審/Referee, referee>> and the <<オートレフ/Automatic Referee, automatic referee>> into Ethernet communication signals that are broadcast to the network. It maintains the state of the game, tracks all events and acts as a proxy between all participating parties in the game.
 
