@@ -197,7 +197,7 @@ The ball must not be touched by a robot, while the robot is partially or fully i
 A robot must not accelerate the ball faster than 6.5 meters per second in 3D space.
 
 ===== 衝突/Crashing
-異なるチームの2つのロボットの衝突の瞬間に、両方のロボットの速度ベクトルの差が取られ、両方のロボットの位置によって定義される線上に投影される。この投影の長さが1.5m/sを超えるた場合、より速いロボットにファウルを与える。ロボットの絶対速度の差が0.3m/s未満であれば、どちらにもファウルを与える。 +
+異なるチームの2つのロボットの衝突の瞬間に、両方のロボットの速度ベクトルの差が取られ、両方のロボットの位置によって定義される線上に投影される。この投影の長さが1.5m/sを超えた場合、より速いロボットにファウルを与える。ロボットの絶対速度の差が0.3m/s未満であれば、どちらにもファウルを与える。 +
 At the moment of collision of two robots of different teams, the difference of the speed vectors of both robots is taken and projected onto the line that is defined by the position of both robots. If the length of this projection is greater than 1.5 meters per second, the faster robot committed a foul. If the absolute robot speed difference is less than 0.3 meters per second, both conduct a foul.
 
 
