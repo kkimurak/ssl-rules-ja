@@ -43,8 +43,8 @@ The Small Size League is divided into two divisions with separate tournaments, n
 出場資格審査で使う資料を提出する時、各チームは簡潔な理由をつけてどちらのディヴィジョンで競技したいかも選択すること。<<組織委員会/Organizing Committee, 組織委員会>>のメンバーは最終的な決定をする。出場資格審査の方法に関する情報はロボカップ小型機リーグの公式ウェブサイト(https://ssl.robocup.org) で確認できる。 +
 When submitting the qualification material, the team also chooses a preferred division including a short rationale. The members of the <<組織委員会/Organizing Committee, organizing committee>> will have the final word. Information about the qualification process can be found on the official RoboCup Small Size League website (https://ssl.robocup.org).
 
-二つのディビジョンの違いに関する要約は<<ディヴィジョンごとの違い/Differences Between Divisions, 付録>>で確認できる。 +
+二つのディヴィジョンの違いに関する要約は<<ディヴィジョンごとの違い/Differences Between Divisions, 付録>>で確認できる。 +
 A summary of differences between the two divisions can be found in the <<ディヴィジョンごとの違い/Differences Between Divisions, Appendix>>.
 
-NOTE: ディヴィジョン制を導入することによって、新しいチームの参入障壁を大幅に引き上げることなく、小型機リーグのより急速な進歩を可能にする。また、ディビジョンの導入によって、同じような強さのチームとの試合を大幅に増やすことができる。 +
+NOTE: ディヴィジョン制を導入することによって、新しいチームの参入障壁を大幅に引き上げることなく、小型機リーグのより急速な進歩を可能にする。また、ディヴィジョンの導入によって、同じような強さのチームとの試合を大幅に増やすことができる。 +
 Divisions allow for more radical advancements in the Small Size League without drastically raising the entry barrier for new teams. Additionally, they also considerably increase the amount of matches between teams of similar skill.
