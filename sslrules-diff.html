@@ -1226,7 +1226,7 @@ The Small Size League is divided into two divisions with separate tournaments, n
 When submitting the qualification material, the team also chooses a preferred division including a short rationale. The members of the <a href="#_組織委員会organizing_committee">organizing committee</a> will have the final word. Information about the qualification process can be found on the official RoboCup Small Size League website (<a href="https://ssl.robocup.org" class="bare">https://ssl.robocup.org</a>).</p>
 </div>
 <div class="paragraph">
-<p>二つのディビジョンの違いに関する要約は<a href="#_ディヴィジョンごとの違いdifferences_between_divisions">付録</a>で確認できる。<br>
+<p><span class="diff_delete">二つのディビジョンの違いに関する要約は</span><span class="diff_insert">二つのディヴィジョンの違いに関する要約は</span><a href="#_ディヴィジョンごとの違いdifferences_between_divisions">付録</a>で確認できる。<br>
 A summary of differences between the two divisions can be found in the <a href="#_ディヴィジョンごとの違いdifferences_between_divisions">Appendix</a>.</p>
 </div>
 <div class="admonitionblock note">
@@ -1235,8 +1235,9 @@ A summary of differences between the two divisions can be found in the <a href="
 <td class="icon">
 <i class="fa icon-note" title="注記"></i>
 </td>
-<td class="content">
-ディヴィジョン制を導入することによって、新しいチームの参入障壁を大幅に引き上げることなく、小型機リーグのより急速な進歩を可能にする。また、ディビジョンの導入によって、同じような強さのチームとの試合を大幅に増やすことができる。<br>
+<td class="content"><span class="diff_delete">
+ディヴィジョン制を導入することによって、新しいチームの参入障壁を大幅に引き上げることなく、小型機リーグのより急速な進歩を可能にする。また、ディビジョンの導入によって、同じような強さのチームとの試合を大幅に増やすことができる。</span><span class="diff_insert">
+ディヴィジョン制を導入することによって、新しいチームの参入障壁を大幅に引き上げることなく、小型機リーグのより急速な進歩を可能にする。また、ディヴィジョンの導入によって、同じような強さのチームとの試合を大幅に増やすことができる。</span><br>
 Divisions allow for more radical advancements in the Small Size League without drastically raising the entry barrier for new teams. Additionally, they also considerably increase the amount of matches between teams of similar skill.
 </td>
 </tr>
@@ -1461,11 +1462,11 @@ The shared software used in the Small Size League is maintained by the <a href="
 <div class="sect3">
 <h4 id="_vision">2.3.1. Vision</h4>
 <div class="paragraph">
-<p>それぞれのフィールドには共有のビジョンサーバーと共有のカメラが設置されている。この共有ビジョン機器はコミュニティにメンテナンスされているSSL-Vision ソフトウェア(<a href="https://github.com/RoboCup-SSL/ssl-vision" class="bare">https://github.com/RoboCup-SSL/ssl-vision</a>) が使用される。SSL-Visionはイーサーネット経由で競技会の前に共有ビジョンシステム開発者によって通達されたパケット形式で位置情報を各チームに提供する。各チームはシステムが共有ビジョンシステムと互換性があり、システムが共有ビジョンシステムによって提供される実際のセンサーのデータの(ノイズ、レイテンシ、誤検出、欠落を含む)典型的な特性を処理できることを確認する必要がある。ロボット最上部にあるビジョンパターンはSSL-Visionの仕様に準拠している必要があり、SSL-Visionのマニュアルで指定されている標準のカラーペーパーでなければならない。<br>
+<p><span class="diff_delete">それぞれのフィールドには共有のビジョンサーバーと共有のカメラが設置されている。この共有ビジョン機器はコミュニティにメンテナンスされているSSL-Vision </span><span class="diff_insert">それぞれのフィールドには共有のビジョンサーバーと共有のカメラが設置されている。この共有ビジョン機器はコミュニティーにメンテナンスされているSSL-Vision </span>ソフトウェア(<a href="https://github.com/RoboCup-SSL/ssl-vision" class="bare">https://github.com/RoboCup-SSL/ssl-vision</a>) が使用される。SSL-Visionはイーサーネット経由で競技会の前に共有ビジョンシステム開発者によって通達されたパケット形式で位置情報を各チームに提供する。各チームはシステムが共有ビジョンシステムと互換性があり、システムが共有ビジョンシステムによって提供される実際のセンサーのデータの(ノイズ、レイテンシ、誤検出、欠落を含む)典型的な特性を処理できることを確認する必要がある。ロボット最上部にあるビジョンパターンはSSL-Visionの仕様に準拠している必要があり、SSL-Visionのマニュアルで指定されている標準のカラーペーパーでなければならない。<br>
 Each field is provided with a shared central vision server and a set of shared cameras. This shared vision equipment uses the community-maintained SSL-Vision software (<a href="https://github.com/RoboCup-SSL/ssl-vision" class="bare">https://github.com/RoboCup-SSL/ssl-vision</a>) to provide localization data to teams via Ethernet in a packet format that is to be announced by the shared vision system developers before the competition. Teams need to ensure that their systems are compatible with the shared vision system output and that their systems are able to handle the typical properties of real-world sensory data as provided by the shared vision system (including noise, latency, or occasional failed detections and misclassifications). The vision patterns on the top of the robots must adhere to the specifications of SSL-Vision, and must be of the standard color paper as specified in the SSL-Vision documentation.</p>
 </div>
 <div class="paragraph">
-<p>競技会の主催者からの発表があった場合や特別に許可されている場合を除いて、共有ビジョン機器のそばに、チーム独自のカメラや外部のセンサを取り付けることは許されない。<br>
+<p><span class="diff_delete">競技会の主催者からの発表があった場合や特別に許可されている場合を除いて、共有ビジョン機器のそばに、チーム独自のカメラや外部のセンサを取り付けることは許されない。</span><span class="diff_insert">競技会の主催者からの発表があった場合や特別に許可されている場合を除いて、共有ビジョン機器のそばに、チーム独自のカメラや外部のセンサーを取り付けることは許されない。</span><br>
 Besides the shared vision equipment, teams are not allowed to mount their own cameras or other external sensors, unless specifically announced or permitted by the respective competition organizers.</p>
 </div>
 <div class="paragraph">
@@ -1490,7 +1491,7 @@ It is meant to be used by the <a href="#_game_controller">game controller</a> an
 <div class="sect3">
 <h4 id="_game_controller">2.3.2. Game Controller</h4>
 <div class="paragraph">
-<p>試合はコミュニティにメンテナンスされているssl-game-controller (<a href="https://github.com/RoboCup-SSL/ssl-game-controller" class="bare">https://github.com/RoboCup-SSL/ssl-game-controller</a>) によってコントロールされている。このソフトウェアは<a href="#_game_controller_operator">game controller operator</a>によって操作されている。ソフトウェアは<a href="#_主審referee">主審</a>と<a href="#_オートレフautomatic_referee">オートレフ</a>の決定をネットワークにブロードキャストされるイーサーネット通信の信号に変換する。これは、試合の状態を維持し、すべてのイベントを追跡し、試合に参加するすべての関係者間の代理として振る舞う。<br>
+<p><span class="diff_delete">試合はコミュニティにメンテナンスされているssl-game-controller </span><span class="diff_insert">試合はコミュニティーにメンテナンスされているssl-game-controller </span>(<a href="https://github.com/RoboCup-SSL/ssl-game-controller" class="bare">https://github.com/RoboCup-SSL/ssl-game-controller</a>) によってコントロールされている。このソフトウェアは<a href="#_game_controller_operator">game controller operator</a>によって操作されている。ソフトウェアは<a href="#_主審referee">主審</a>と<a href="#_オートレフautomatic_referee">オートレフ</a>の決定をネットワークにブロードキャストされるイーサーネット通信の信号に変換する。これは、試合の状態を維持し、すべてのイベントを追跡し、試合に参加するすべての関係者間の代理として振る舞う。<br>
 A game is controlled by the community-maintained ssl-game-controller (<a href="https://github.com/RoboCup-SSL/ssl-game-controller" class="bare">https://github.com/RoboCup-SSL/ssl-game-controller</a>).
 It is operated by the <a href="#_game_controller_operator">game controller operator</a>. The software translates decisions of the <a href="#_主審referee">referee</a> and the <a href="#_オートレフautomatic_referee">automatic referee</a> into Ethernet communication signals that are broadcast to the network. It maintains the state of the game, tracks all events and acts as a proxy between all participating parties in the game.</p>
 </div>
@@ -2939,8 +2940,9 @@ This rule implies that after receiving a yellow card, the game might not be auto
 <td class="icon">
 <i class="fa icon-note" title="注記"></i>
 </td>
-<td class="content">
-時間内にロボットを外に出せなかった場合もペナルティーは無い。しかしながら将来的には、(たとえば次に示すような)何らかのペナルティが発生する可能性がある: ロボットを手動で取り除いた場合には、ボールは当該チームのディフェンスエリアから1.5mの<a href="#_ゴールトゥゴールラインgoal_to_goal_line">ゴール・トゥ・ゴールライン</a>上に配置され、相手チームのフリーキックとなる。<br>
+<td class="content"><span class="diff_delete">
+時間内にロボットを外に出せなかった場合もペナルティーは無い。しかしながら将来的には、(たとえば次に示すような)何らかのペナルティが発生する可能性がある: </span><span class="diff_insert">
+時間内にロボットを外に出せなかった場合もペナルティーは無い。しかしながら将来的には、(たとえば次に示すような)何らかのペナルティーが発生する可能性がある: </span>ロボットを手動で取り除いた場合には、ボールは当該チームのディフェンスエリアから1.5mの<a href="#_ゴールトゥゴールラインgoal_to_goal_line">ゴール・トゥ・ゴールライン</a>上に配置され、相手チームのフリーキックとなる。<br>
 NOTE: No penalty will be given to the team that couldn&#8217;t get the robot out of the field in time. However, in the future there will likely be some penalty: If the robot gets manually substituted, the ball is placed on the <a href="#_ゴールトゥゴールラインgoal_to_goal_line">goal-to-goal line</a> and 1.5 meters away from the teams defense area and the opposing team gets a free kick.
 </td>
 </tr>
@@ -4597,7 +4599,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2024-05-26 </span><span class="diff_delete">23:08:47 </span><span class="diff_insert">2025-06-25 </span><span class="diff_insert">15:16:56 </span>UTC
+最終更新 <span class="diff_delete">2024-05-26 </span><span class="diff_delete">23:08:47 </span><span class="diff_insert">2025-06-25 </span><span class="diff_insert">15:18:25 </span>UTC
 </div>
 </div>
 </body>
