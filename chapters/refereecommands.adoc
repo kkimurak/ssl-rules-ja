@@ -244,7 +244,7 @@ the ball is still <<インプレイとアウトオブプレイ/Ball In And Out O
 The game is continued by a <<ゴールキック/Goal Kick, goal kick>> for the defending team when a goal is not awarded.
 
 NOTE: 0.15mのボール高さ制限を含め、<<得点/Scoring Goals, 得点方法>>に定められた制限はここでは適用されない。
-その他のルール、例えば<<ドリブルの超過/Excessive Dribbling, オーバードリブル>>の制限などどは適用される。 +
+その他のルール、例えば<<ドリブルの超過/Excessive Dribbling, オーバードリブル>>の制限などは適用される。 +
 The restrictions defined for <<得点/Scoring Goals, scoring goals>>, including the ball height limit of 0.15 meters, do not apply here.
 Other rules like the <<ドリブルの超過/Excessive Dribbling, excessive dribbling>> limitation for example do.
 
