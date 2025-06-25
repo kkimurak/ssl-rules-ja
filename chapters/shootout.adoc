@@ -21,7 +21,7 @@ If a team is clearly not able to prepare for a <<ペナルティーキック/Pen
 Robots may be <<ロボットの交代/Robot Substitution, substituted>> between shoot-out attempts. 
 The new robot may be put in right away.
 
-NOTE: シュートアウト中は<<タイムアウト/Timeouts, タイムアウト>>は許可されていない事に注意する事。 +
+NOTE: シュートアウト中、<<タイムアウト/Timeouts, タイムアウト>>は許可されていない事に注意する事。 +
 Note that <<タイムアウト/Timeouts, timeouts>> are not allowed during shoot-out.
 
 NOTE: (10回のシュートアウトを終える、両チームがシュートアウトの制限時間を使い切るなどして)勝者を決めるにあたっての明確な進展が見られない場合、人間の主審はいつでも各チームが彼らのシステムを変更するための時間を(たとえば5分、など)設けることができる。これは最終的に勝者を決めるために必要であれば複数回にわたって適用できる。 +

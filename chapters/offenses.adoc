@@ -228,7 +228,7 @@ NOTE: <<停止/Stop, ストップゲーム>>中は、ボールに近すぎる事
 During <<停止/Stop, stop>>, there is no automatic sanction for being too close to the ball. The referee may still punish a team for <<非スポーツマン行為/Unsporting Behavior,unsporting behavior>> by issuing a <<イエローカード/Yellow Card, yellow card>> if it does not respect the required distance. See <<停止/Stop, stop>> for further explanation.
 
 ===== ストップ中のロボットの速度/Robot Stop Speed
-ロボットはストップゲーム中は1.5m/s以上で動いてはならない。このルールの反則は<<停止/Stop, ストップゲーム>>1回につき1台のロボットに対してカウントされる。 +
+ロボットはストップゲーム中、1.5m/s以上で動いてはならない。このルールの反則は<<停止/Stop, ストップゲーム>>1回につき1台のロボットに対してカウントされる。 +
 A robot must not move faster than 1.5 meters per second during <<停止/Stop, stop>>. A violation of this rule is only counted once per robot and stoppage.
 
 ロボットが減速する猶予時間は2秒である。 +
