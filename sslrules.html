@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="2025-06-25">
+<meta name="author" content="2025-06-28">
 <title>RoboCup小型機リーグルール</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCup小型機リーグルール</h1>
 <div class="details">
-<span id="author" class="author">2025-06-25</span><br>
+<span id="author" class="author">2025-06-28</span><br>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">目次</div>
@@ -495,7 +495,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_安全性safety">3.2.1. 安全性/Safety</a></li>
 <li><a href="#_形状shape">3.2.2. 形状/Shape</a></li>
-<li><a href="#_ロボット外装の色hull_color_of_robots">3.2.3. ロボット外装の色/Hull Color of Robots</a></li>
+<li><a href="#_ロボットの色color_of_robots">3.2.3. ロボットの色/Color of Robots</a></li>
 <li><a href="#_ドリブルデバイスdribbling_device">3.2.4. ドリブルデバイス/Dribbling Device</a></li>
 <li><a href="#_vision_pattern">3.2.5. Vision Pattern</a></li>
 <li><a href="#_無線通信radio_communication">3.2.6. 無線通信/Radio Communication</a></li>
@@ -1226,62 +1226,58 @@ A robot must fit inside a 0.18 meters wide and 0.15 meters high cylinder at any 
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ロボット外装の色hull_color_of_robots">3.2.3. ロボット外装の色/Hull Color of Robots</h4>
+<h4 id="_ロボットの色color_of_robots">3.2.3. ロボットの色/Color of Robots</h4>
 <div class="paragraph">
-<p>試合中の明瞭さと効果的な識別を確保するために、ロボット外装の色付けには次のルールが適用される:<br>
-To ensure clarity and effective identification during gameplay, the following rules apply to the coloring of robot hulls:</p>
+<p>試合中に明確に識別できるようにするため、ロボットは視覚的に相手チームと区別できる必要がある。以下のルールが適用される:<br>
+To ensure clear identification during gameplay, robots must be visually distinguishable from the opposing team. The following rules apply:</p>
 </div>
 <div class="paragraph">
-<p>暗配色と明配色:<br>
-Bright and dark color scheme:</p>
+<p>配色の要求仕様:<br>
+Color scheme requirements:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>チームの全ロボットは、明配色と暗配色それぞれ1種類の交換可能な外装を備えなければならない。<br>
-All robots from a team must have interchangeable hull colors: one bright and one dark.</p>
+<p>ロボットの周囲20%以上に特徴的なカラーリングが施されていること(底面と上面はカウントしない)。<br>
+Robots must have distinctive coloring covering at least 20% of the robot&#8217;s surrounding area (bottom and top surfaces do not count).</p>
 </li>
 <li>
-<p>この2色はチーム内の全ロボットについて同一でなければならない。<br>
-These two colors must be the same for all robots in a team.</p>
+<p>カラーリングは各面から部分的にでも視認できること。<br>
+The color must be partially visible from all sides.</p>
 </li>
 <li>
-<p>その色はロボットの最大高さのうち、少なくとも6cmを垂直方向に覆わなくてはならない。<br>
-The color must vertically cover at least 6 cm of the robot&#8217;s maximum height.</p>
+<p>チームのすべてのロボットは、明色と暗色の交換が可能であること。<br>
+All robots from a team must have interchangeable colors: one bright and one dark.</p>
+</li>
+<li>
+<p>これらの2色は、同一チーム内のすべてのロボットについて統一されていること。<br>
+These two colors must be consistent across all robots on the same team.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>被覆率の要求仕様:<br>
-Coverage requirements:</p>
+<p>デザインと耐久性の要求仕様:<br>
+Design and durability requirements:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>visionシステムへの干渉を防ぐため、ロボット外装は反射性であってはならない。<br>
-The robot hull must not be reflective to avoid interfering with the vision system.</p>
+<p>チームは他チームのロボットと区別するために、独創的なパターンを使用してもよい。<br>
+Teams may use creative patterns to distinguish their robots from other teams.</p>
 </li>
 <li>
-<p>ロボット外装の色は<a href="#_vision_pattern">Visionパターン</a>や<a href="#_ボールball">ボール</a>に用いられる色と近しい色であってはならない。<br>
-The robot hull must avoid colors close to the ones used at <a href="#_vision_pattern">vision pattern</a> and <a href="#_ボールball">ball</a>.</p>
+<p>ロボットの色は反射性であってはならず、また上面はvisionシステムの干渉を避けるため黒色であるべきである。<br>
+Robot color must not be reflective, and the top surface should be black to avoid vision system interference.</p>
 </li>
 <li>
-<p>試合中に落ちたりはがれたりしないように、色は適切に付着し、耐久性を維持しなければならない。カラーカバーが落下した場合は、それに応じた罰則が課せられる (「<a href="#_転倒や部品の脱落tipping_over_or_dropping_parts">転倒や部品の脱落</a>」を参照)。<br>
-Colors must adhere properly and remain durable to prevent dropping or peeling during the match. If the color cover drops, it will be penalized accordingly (see <a href="#_転倒や部品の脱落tipping_over_or_dropping_parts">Tipping Over Or Dropping Parts</a>).</p>
+<p>ロボットの側面色は<a href="#_vision_pattern">Visionパターン</a>や<a href="#_ボールball">ボール</a>に使用されているものと似た色を避けなければならない。<br>
+Robot sides must avoid colors similar to those used in the <a href="#_vision_pattern">vision pattern</a> and <a href="#_ボールball">ball</a>.</p>
+</li>
+<li>
+<p>剥脱や剥離を防ぐため、ロボットの色は適切に塗布され、試合を通じて耐久性がなければならない。試合中にカラーが剥がれた場合、罰則が適用される(「<a href="#_転倒や部品の脱落tipping_over_or_dropping_parts">転倒や部品の脱落</a>」を参照)。<br>
+Colors must be properly applied and durable throughout the match to prevent peeling or detachment. If color covering detaches during play, penalties will apply (see <a href="#_転倒や部品の脱落tipping_over_or_dropping_parts">Tipping Over Or Dropping Parts</a>).</p>
 </li>
 </ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="注記"></i>
-</td>
-<td class="content">
-(訳者注記) ここで「外装(hull)」とは「ガワ」「カバー」「シェル」などと呼称される場合もある、ロボット外観のうち上面をのぞいた側面を覆っている箇所を指す。
-</td>
-</tr>
-</table>
 </div>
 </div>
 <div class="sect3">
@@ -1670,8 +1666,8 @@ However, if both teams prefer the same color, the referee assigns the colors by 
 <div class="sect3">
 <h4 id="_ロボット外装色の選択choosing_robot_hull_colors">4.3.4. ロボット外装色の選択/Choosing Robot Hull Colors</h4>
 <div class="paragraph">
-<p>チームは試合前に<a href="#_ロボット外装の色hull_color_of_robots">ロボット外装の色</a> (暗もしくは明)を選択してよい。両チームが同じ色を選択した場合、<a href="#_主審referee">主審</a>は試合開始前に任意に色を割り当てる。選択された外装色は試合を通して使用されなければならない。<br>
-Teams are encouraged to choose their preferred <a href="#_ロボット外装の色hull_color_of_robots">robot hull color</a> (dark or bright) before the match. If both teams choose the same color, the <a href="#_主審referee">referee</a> assigns the colors by chance before the game starts. The selected hull color must be used throughout the game.</p>
+<p>チームは試合前に<a href="#_ロボットの色color_of_robots">ロボット外装の色</a> (暗もしくは明)を選択してよい。両チームが同じ色を選択した場合、<a href="#_主審referee">主審</a>は試合開始前に任意に色を割り当てる。選択された外装色は試合を通して使用されなければならない。<br>
+Teams are encouraged to choose their preferred <a href="#_ロボットの色color_of_robots">robot hull color</a> (dark or bright) before the match. If both teams choose the same color, the <a href="#_主審referee">referee</a> assigns the colors by chance before the game starts. The selected hull color must be used throughout the game.</p>
 </div>
 </div>
 <div class="sect3">
@@ -4163,7 +4159,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2025-06-25 15:25:18 UTC
+最終更新 2025-06-28 13:48:07 UTC
 </div>
 </div>
 </body>
