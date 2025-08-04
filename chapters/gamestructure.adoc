@@ -237,8 +237,8 @@ unlimited
 
 |===
 
-競技のタイマーは両チームとも<<ボールの操作/Ball Manipulation,ボールを操作する>>ことが許されない場合に一時停止される。これには<<停止/Stop, ストップゲーム>>、<<ハルト/Halt, ハルト>>、<<キックオフ/Kick-Off, キックオフ>>と<<ペナルティーキック/Penalty Kick,ペナルティーキック>>の準備時間が含まれる。さらに<<ボール配置/Ball Placement, ボール配置中>>もタイマーは一時停止される。 +
-The match timer is paused whenever no team is allowed to <<ボールの操作/Ball Manipulation, manipulate the ball>>. This includes <<停止/Stop, stop>>, <<ハルト/Halt, halt>> and the preparation states of <<キックオフ/Kick-Off, kick-off>> and <<ペナルティーキック/Penalty Kick, penalty kick>>. Additionally, it is paused during <<ボール配置/Ball Placement, ball placement>>.
+競技のタイマーは両チームとも<<ボールの操作/Ball Manipulation,ボールを操作する>>ことが許されない場合に一時停止される。これには<<停止/Stop, ストップゲーム>>、<<Halt>>、<<キックオフ/Kick-Off, キックオフ>>と<<ペナルティーキック/Penalty Kick,ペナルティーキック>>の準備時間が含まれる。さらに<<ボール配置/Ball Placement, ボール配置中>>もタイマーは一時停止される。 +
+The match timer is paused whenever no team is allowed to <<ボールの操作/Ball Manipulation, manipulate the ball>>. This includes <<停止/Stop, stop>>, <<Halt, halt>> and the preparation states of <<キックオフ/Kick-Off, kick-off>> and <<ペナルティーキック/Penalty Kick, penalty kick>>. Additionally, it is paused during <<ボール配置/Ball Placement, ball placement>>.
 
 NOTE: この結果、試合に必要な時間は競技時間よりもはるかに長くなる。 +
 As a result, the time needed for a match is much greater than the playing time.
