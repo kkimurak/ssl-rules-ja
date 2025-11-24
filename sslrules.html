@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="2025-06-28">
+<meta name="generator" content="Asciidoctor 2.0.26">
+<meta name="author" content="2025-11-24">
 <title>RoboCup小型機リーグルール</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -117,7 +117,6 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
-pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
@@ -220,6 +219,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCup小型機リーグルール</h1>
 <div class="details">
-<span id="author" class="author">2025-06-28</span><br>
+<span id="author" class="author">2025-11-24</span><br>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">目次</div>
@@ -543,7 +543,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_試合の停止stopping_the_game">5.1. 試合の停止/Stopping The Game</a>
 <ul class="sectlevel3">
 <li><a href="#_停止stop">5.1.1. 停止/Stop</a></li>
-<li><a href="#_ハルトhalt">5.1.2. ハルト/Halt</a></li>
+<li><a href="#_halt">5.1.2. Halt</a></li>
 </ul>
 </li>
 <li><a href="#_ボール配置ball_placement">5.2. ボール配置/Ball Placement</a></li>
@@ -1840,8 +1840,8 @@ unlimited</p></td>
 </tbody>
 </table>
 <div class="paragraph">
-<p>競技のタイマーは両チームとも<a href="#_ボールの操作ball_manipulation">ボールを操作する</a>ことが許されない場合に一時停止される。これには<a href="#_停止stop">ストップゲーム</a>、<a href="#_ハルトhalt">ハルト</a>、<a href="#_キックオフkick_off">キックオフ</a>と<a href="#_ペナルティーキックpenalty_kick">ペナルティーキック</a>の準備時間が含まれる。さらに<a href="#_ボール配置ball_placement">ボール配置中</a>もタイマーは一時停止される。<br>
-The match timer is paused whenever no team is allowed to <a href="#_ボールの操作ball_manipulation">manipulate the ball</a>. This includes <a href="#_停止stop">stop</a>, <a href="#_ハルトhalt">halt</a> and the preparation states of <a href="#_キックオフkick_off">kick-off</a> and <a href="#_ペナルティーキックpenalty_kick">penalty kick</a>. Additionally, it is paused during <a href="#_ボール配置ball_placement">ball placement</a>.</p>
+<p>競技のタイマーは両チームとも<a href="#_ボールの操作ball_manipulation">ボールを操作する</a>ことが許されない場合に一時停止される。これには<a href="#_停止stop">ストップゲーム</a>、<a href="#_halt">Halt</a>、<a href="#_キックオフkick_off">キックオフ</a>と<a href="#_ペナルティーキックpenalty_kick">ペナルティーキック</a>の準備時間が含まれる。さらに<a href="#_ボール配置ball_placement">ボール配置中</a>もタイマーは一時停止される。<br>
+The match timer is paused whenever no team is allowed to <a href="#_ボールの操作ball_manipulation">manipulate the ball</a>. This includes <a href="#_停止stop">stop</a>, <a href="#_halt">halt</a> and the preparation states of <a href="#_キックオフkick_off">kick-off</a> and <a href="#_ペナルティーキックpenalty_kick">penalty kick</a>. Additionally, it is paused during <a href="#_ボール配置ball_placement">ball placement</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1953,7 +1953,7 @@ If the ball moves very quickly, it is hard to always keep the required distance 
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
-<p>「ストップ」コマンドはボールが(ゴールを含む)<a href="#_フィールドラインfield_lines">フィールドライン</a>を超えた後や反則が発生した後に競技を一時停止するために使われ、ハルトやタイムアウト、自動的なボール配置の再開を準備するために使われる。ロボットの速度制限とボールとの最小距離によって、主審や副審がボールを安全に干渉なく配置することができる。<br>
+<p>「ストップ」コマンドはボールが(ゴールを含む)<a href="#_フィールドラインfield_lines">フィールドライン</a>を超えた後や反則が発生した後に競技を一時停止するために使われ、Haltやタイムアウト、自動的なボール配置の再開を準備するために使われる。ロボットの速度制限とボールとの最小距離によって、主審や副審がボールを安全に干渉なく配置することができる。<br>
 The stop command is used to pause the game after the ball crossed the <a href="#_フィールドラインfield_lines">field lines</a> (including goals) or an offense occurred as well as to prepare the start or resumption of the game after halt, timeouts and automatic ball placement. The robot speed limit and the minimum distance to the ball allow the referee or assistant referee to place the ball safely and without interference.</p>
 </div>
 <div class="admonitionblock note">
@@ -1970,10 +1970,10 @@ The stop command is used to pause the game after the ball crossed the <a href="#
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ハルトhalt">5.1.2. ハルト/Halt</h4>
+<h4 id="_halt">5.1.2. Halt</h4>
 <div class="paragraph">
 <div class="title">定義/Definition</div>
-<p>「ハルト」コマンドが発行されると、すべてのロボットは動作を停止し、<a href="#_ボールの操作ball_manipulation">ボールを操作</a>してはならない。<br>
+<p>「Halt」コマンドが発行されると、すべてのロボットは動作を停止し、<a href="#_ボールの操作ball_manipulation">ボールを操作</a>してはならない。<br>
 When the halt command is issued, no robot is allowed to move or <a href="#_ボールの操作ball_manipulation">manipulate the ball</a>.</p>
 </div>
 <div class="paragraph">
@@ -1982,12 +1982,12 @@ There is a grace period of 2 seconds for the robots to brake.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
-<p>(例えばロボットが制御不能になった時など)緊急事態が発生した時に主審は「ハルト」コマンドで試合を中断させることができる。また、Vision expertが必要と判断した場合にはVisionソフトウェアの再キャリブレーションにも使われ、主審が同意する場合には<a href="#_ロボットの交代robot_substitution">ロボットの交代</a>にも使われる。さらに、主審は自由に「ハルト」コマンドを発行することができる。<br>
+<p>(例えばロボットが制御不能になった時など)緊急事態が発生した時に主審は「Halt」コマンドで試合を中断させることができる。また、Vision expertが必要と判断した場合にはVisionソフトウェアの再キャリブレーションにも使われ、主審が同意する場合には<a href="#_ロボットの交代robot_substitution">ロボットの交代</a>にも使われる。さらに、主審は自由に「Halt」コマンドを発行することができる。<br>
 The halt command allows the referee to interrupt the game immediately whenever an emergency occurs (for example when a robot gets out of control). It is
 also used to recalibrate the vision software during a game if the vision expert considers it necessary and the referee agrees and for <a href="#_ロボットの交代robot_substitution">robot substitution</a>. Additionally, the referee is free to issue the halt command at will.</p>
 </div>
 <div class="paragraph">
-<p>「ハルト」コマンドの後は常に「ストップ」コマンドが送信される。試合が続行される前に、各チームに十分な準備時間が与えられる。<a href="#_game_controller">Game Controller</a>は「ハルト」コマンドから最大で10秒間だけ待機するが、ロボットの準備ができていれば試合は続行できる。<br>
+<p>「Halt」コマンドの後は常に「ストップ」コマンドが送信される。試合が続行される前に、各チームに十分な準備時間が与えられる。<a href="#_game_controller">Game Controller</a>は「Halt」コマンドから最大で10秒間だけ待機するが、ロボットの準備ができていれば試合は続行できる。<br>
 The halt command is always followed up by stop.
 Enough preparation time should be given to teams, before the game is continued.
 The <a href="#_game_controller">game controller</a> will wait for up to 10 seconds after a halt command, but the game can be continued if robots are prepared already.</p>
@@ -1999,8 +1999,20 @@ The <a href="#_game_controller">game controller</a> will wait for up to 10 secon
 <i class="fa icon-note" title="注記"></i>
 </td>
 <td class="content">
-経験則として、審判以外の人間がフィールドに立ち入る場合には、試合は常に「ハルト」コマンドで停止されるべきである。<br>
+経験則として、審判以外の人間がフィールドに立ち入る場合には、試合は常に「Halt」コマンドで停止されるべきである。<br>
 As a rule of thumb, the game should always be halted when humans other than the referees are entering the field.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="注記"></i>
+</td>
+<td class="content">
+発音記号は <code>/hˈɔːlt/</code> (ホルト、ホールト) である。誤りではあるが、日本ではローマ字読みで「ハルト」と発音される場合もある。
 </td>
 </tr>
 </table>
@@ -2469,8 +2481,8 @@ see <a href="#_ダブルタッチdouble_touch">double touch</a> for the rational
 <h4 id="_イエローカードyellow_card">5.5.1. イエローカード/Yellow Card</h4>
 <div class="paragraph">
 <div class="title">定義/Definition</div>
-<p>イエローカードが非スポーツマン行為の結果として示された場合、主審は直ちに試合を<a href="#_ハルトhalt">中断</a>することができる。この場合、もう片方のチームのフリーキックで試合が継続される。<br>
-If the yellow card is shown as a result of <a href="#_非スポーツマン行為unsporting_behavior">unsporting behavior</a>, the referee may decide to immediately <a href="#_ハルトhalt">halt</a> the match. In this case, the match continues with a free kick for the other team.</p>
+<p>イエローカードが非スポーツマン行為の結果として示された場合、主審は直ちに試合を<a href="#_halt">中断</a>することができる。この場合、もう片方のチームのフリーキックで試合が継続される。<br>
+If the yellow card is shown as a result of <a href="#_非スポーツマン行為unsporting_behavior">unsporting behavior</a>, the referee may decide to immediately <a href="#_halt">halt</a> the match. In this case, the match continues with a free kick for the other team.</p>
 </div>
 <div class="paragraph">
 <p>イエローカードを受け取ると、ペナルティーを受けたチームがフィールドに出場させて良いロボットの数が1台減少する。この減少のあと、チームがフィールドに出場させて良い台数よりも多くのロボットが出場している場合、<a href="#_ロボットの交代robot_substitution">ロボットを退場</a>させなければならない。<br>
@@ -3351,11 +3363,11 @@ Additionally, robots can be taken out from any position on request using the pro
 The <a href="#_ハンドラーrobot_handler">robot handler</a> requests robot substitution at any time.</p>
 </li>
 <li>
-<p><a href="#_game_controller">Game Controller</a>が次の機会に<a href="#_ハルトhalt">ハルト</a>により試合を停止させる。<br>
-The <a href="#_game_controller">game controller</a> will <a href="#_ハルトhalt">halt</a> the game at the next opportunity.</p>
+<p><a href="#_game_controller">Game Controller</a>が次の機会に<a href="#_halt">Halt</a>により試合を停止させる。<br>
+The <a href="#_game_controller">game controller</a> will <a href="#_halt">halt</a> the game at the next opportunity.</p>
 </li>
 <li>
-<p><a href="#_ハンドラーrobot_handler">ハンドラー</a>は試合が<a href="#_ハルトhalt">ハルト</a>により停止している間、必要に応じてフィールドに入りロボットに触れる。<br>
+<p><a href="#_ハンドラーrobot_handler">ハンドラー</a>は試合が<a href="#_halt">Halt</a>により停止している間、必要に応じてフィールドに入りロボットに触れる。<br>
 The <a href="#_ハンドラーrobot_handler">robot handler</a> may enter the field and touch robots now.</p>
 </li>
 <li>
@@ -3416,12 +3428,12 @@ The <a href="#_game_controller">game controller</a> itself if a team exceeds the
 </ol>
 </div>
 <div class="paragraph">
-<p>片方のチームの交代の意図のために試合がハルトされた場合、少なくとも一台のロボットが除去されなければならない。交代のために試合がハルトされていない場合に限り交代の意図を取り消すことができる。<br>
+<p>片方のチームの交代の意図のために試合がHaltされた場合、少なくとも一台のロボットが除去されなければならない。交代のために試合がHaltされていない場合に限り交代の意図を取り消すことができる。<br>
 If the game was halted due to a substitution intent by a team, at least one robot must be taken out by this team. A substitution intent can be revoked unless the game was not already halted for substitution.</p>
 </div>
 <div class="paragraph">
-<p>ボール配置後、試合が継続する直前にどちらかのチームがロボットを交代する意思がある場合、<a href="#_game_controller">game controller</a>は自動的に試合を<a href="#_ハルトhalt">ハルト</a>する。<br>
-If a robot substitution intent for either team is present just before the game would continue after ball placement, the <a href="#_game_controller">game controller</a> automatically <a href="#_ハルトhalt">halts</a> the game.</p>
+<p>ボール配置後、試合が継続する直前にどちらかのチームがロボットを交代する意思がある場合、<a href="#_game_controller">game controller</a>は自動的に試合を<a href="#_halt">Halt</a>する。<br>
+If a robot substitution intent for either team is present just before the game would continue after ball placement, the <a href="#_game_controller">game controller</a> automatically <a href="#_halt">halts</a> the game.</p>
 </div>
 </div>
 </div>
@@ -3742,7 +3754,7 @@ The information shown in this table here may be incomplete. Please read the sect
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_得点scoring_goals">POSSIBLE_GOAL</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_インプレイとアウトオブプレイball_in_and_out_of_play">ball in play</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ハルトhalt">ハルト/Halt</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_halt">Halt</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">auto referee</p></td>
 </tr>
@@ -3974,8 +3986,8 @@ during <a href="#_ボール配置ball_placement">Ball Placement</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ロボットの交代robot_substitution">BOT_SUBSTITUTION</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_停止stop">停止</a>中<br>
 during <a href="#_停止stop">Stop</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(次の停止時に)<a href="#_ハルトhalt">ハルト</a>、次いで<a href="#_停止stop">停止</a><br>
-<a href="#_ハルトhalt">Halt</a> (after next stoppage), then <a href="#_停止stop">Stop</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(次の停止時に)<a href="#_halt">Halt</a>、次いで<a href="#_停止stop">停止</a><br>
+<a href="#_halt">Halt</a> (after next stoppage), then <a href="#_停止stop">Stop</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">remote control</p></td>
 </tr>
@@ -3991,7 +4003,7 @@ during <a href="#_停止stop">Stop</a></p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_非常停止emergency_stop">EMERGENCY_STOP</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">常時/always</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_ハルトhalt">ハルト/Halt</a> &#8594; <a href="#_タイムアウトtimeouts">Timeout</a> + <a href="#_イエローカードyellow_card">イエローカード/Yellow Card</a>&gt;&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_halt">Halt</a> &#8594; <a href="#_タイムアウトtimeouts">Timeout</a> + <a href="#_イエローカードyellow_card">イエローカード/Yellow Card</a>&gt;&gt;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">remote control</p></td>
 </tr>
@@ -4159,7 +4171,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2025-06-28 13:48:07 UTC
+最終更新 2025-11-24 12:08:56 UTC
 </div>
 </div>
 </body>
