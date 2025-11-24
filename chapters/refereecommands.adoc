@@ -13,32 +13,33 @@ NOTE: ボールが高速に転がる場合、特にストップ中はロボッ�
 If the ball moves very quickly, it is hard to always keep the required distance to the ball, especially since the speed of the robots is limited during stop. Therefore, it is sufficient if it is obvious to the referee that the robots try their best to follow the distance rule.
 
 .用途/Usage
-「ストップ」コマンドはボールが(ゴールを含む)<<フィールドライン/Field Lines, フィールドライン>>を超えた後や反則が発生した後に競技を一時停止するために使われ、ハルトやタイムアウト、自動的なボール配置の再開を準備するために使われる。ロボットの速度制限とボールとの最小距離によって、主審や副審がボールを安全に干渉なく配置することができる。 +
+「ストップ」コマンドはボールが(ゴールを含む)<<フィールドライン/Field Lines, フィールドライン>>を超えた後や反則が発生した後に競技を一時停止するために使われ、Haltやタイムアウト、自動的なボール配置の再開を準備するために使われる。ロボットの速度制限とボールとの最小距離によって、主審や副審がボールを安全に干渉なく配置することができる。 +
 The stop command is used to pause the game after the ball crossed the <<フィールドライン/Field Lines, field lines>> (including goals) or an offense occurred as well as to prepare the start or resumption of the game after halt, timeouts and automatic ball placement. The robot speed limit and the minimum distance to the ball allow the referee or assistant referee to place the ball safely and without interference.
 
 NOTE: (訳者注記)一般的に「ストップゲーム」もしくは単に「ストップ」と呼称されることが多い。
 
-==== ハルト/Halt
+==== Halt
 .定義/Definition
-「ハルト」コマンドが発行されると、すべてのロボットは動作を停止し、<<ボールの操作/Ball Manipulation, ボールを操作>>してはならない。 +
+「Halt」コマンドが発行されると、すべてのロボットは動作を停止し、<<ボールの操作/Ball Manipulation, ボールを操作>>してはならない。 +
 When the halt command is issued, no robot is allowed to move or <<ボールの操作/Ball Manipulation, manipulate the ball>>.
 
 ロボットが減速するために2秒間の猶予がある。 +
 There is a grace period of 2 seconds for the robots to brake.
 
 .用途/Usage
-(例えばロボットが制御不能になった時など)緊急事態が発生した時に主審は「ハルト」コマンドで試合を中断させることができる。また、Vision expertが必要と判断した場合にはVisionソフトウェアの再キャリブレーションにも使われ、主審が同意する場合には<<ロボットの交代/Robot Substitution, ロボットの交代>>にも使われる。さらに、主審は自由に「ハルト」コマンドを発行することができる。 +
+(例えばロボットが制御不能になった時など)緊急事態が発生した時に主審は「Halt」コマンドで試合を中断させることができる。また、Vision expertが必要と判断した場合にはVisionソフトウェアの再キャリブレーションにも使われ、主審が同意する場合には<<ロボットの交代/Robot Substitution, ロボットの交代>>にも使われる。さらに、主審は自由に「Halt」コマンドを発行することができる。 +
 The halt command allows the referee to interrupt the game immediately whenever an emergency occurs (for example when a robot gets out of control). It is
 also used to recalibrate the vision software during a game if the vision expert considers it necessary and the referee agrees and for <<ロボットの交代/Robot Substitution, robot substitution>>. Additionally, the referee is free to issue the halt command at will.
 
-「ハルト」コマンドの後は常に「ストップ」コマンドが送信される。試合が続行される前に、各チームに十分な準備時間が与えられる。<<Game Controller, Game Controller>>は「ハルト」コマンドから最大で10秒間だけ待機するが、ロボットの準備ができていれば試合は続行できる。 +
+「Halt」コマンドの後は常に「ストップ」コマンドが送信される。試合が続行される前に、各チームに十分な準備時間が与えられる。<<Game Controller, Game Controller>>は「Halt」コマンドから最大で10秒間だけ待機するが、ロボットの準備ができていれば試合は続行できる。 +
 The halt command is always followed up by stop.
 Enough preparation time should be given to teams, before the game is continued.
 The <<Game Controller, game controller>> will wait for up to 10 seconds after a halt command, but the game can be continued if robots are prepared already.
 
-NOTE: 経験則として、審判以外の人間がフィールドに立ち入る場合には、試合は常に「ハルト」コマンドで停止されるべきである。 +
+NOTE: 経験則として、審判以外の人間がフィールドに立ち入る場合には、試合は常に「Halt」コマンドで停止されるべきである。 +
 As a rule of thumb, the game should always be halted when humans other than the referees are entering the field.
 
+NOTE: 発音記号は `/hˈɔːlt/` (ホルト、ホールト) である。誤りではあるが、日本ではローマ字読みで「ハルト」と発音される場合もある。
 
 === ボール配置/Ball Placement
 .定義/Definition
@@ -282,8 +283,8 @@ see <<ダブルタッチ/Double Touch, double touch>> for the rationale of the 0
 ==== イエローカード/Yellow Card
 .定義/Definition
 
-イエローカードが非スポーツマン行為の結果として示された場合、主審は直ちに試合を<<ハルト/Halt, 中断>>することができる。この場合、もう片方のチームのフリーキックで試合が継続される。 +
-If the yellow card is shown as a result of <<非スポーツマン行為/Unsporting Behavior, unsporting behavior>>, the referee may decide to immediately <<ハルト/Halt, halt>> the match. In this case, the match continues with a free kick for the other team.
+イエローカードが非スポーツマン行為の結果として示された場合、主審は直ちに試合を<<Halt, 中断>>することができる。この場合、もう片方のチームのフリーキックで試合が継続される。 +
+If the yellow card is shown as a result of <<非スポーツマン行為/Unsporting Behavior, unsporting behavior>>, the referee may decide to immediately <<Halt, halt>> the match. In this case, the match continues with a free kick for the other team.
 
 イエローカードを受け取ると、ペナルティーを受けたチームがフィールドに出場させて良いロボットの数が1台減少する。この減少のあと、チームがフィールドに出場させて良い台数よりも多くのロボットが出場している場合、<<ロボットの交代/Robot Substitution, ロボットを退場>>させなければならない。 +
 Upon receipt of a yellow card, the number of robots allowed on the field for the penalized team decreases by one. If, after this decrease, the team has more robots than permitted on the field, a robot must be <<ロボットの交代/Robot Substitution, taken out>>.

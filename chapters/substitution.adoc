@@ -21,9 +21,9 @@ Additionally, robots can be taken out from any position on request using the pro
 
 . 任意の時点で<<ハンドラー/Robot Handler, ハンドラー>>がロボットの交代を要求する。 +
 The <<ハンドラー/Robot Handler, robot handler>> requests robot substitution at any time.
-. <<Game Controller, Game Controller>>が次の機会に<<ハルト/Halt, ハルト>>により試合を停止させる。 +
-The <<Game Controller, game controller>> will <<ハルト/Halt, halt>> the game at the next opportunity.
-. <<ハンドラー/Robot Handler, ハンドラー>>は試合が<<ハルト/Halt, ハルト>>により停止している間、必要に応じてフィールドに入りロボットに触れる。 +
+. <<Game Controller, Game Controller>>が次の機会に<<Halt>>により試合を停止させる。 +
+The <<Game Controller, game controller>> will <<Halt, halt>> the game at the next opportunity.
+. <<ハンドラー/Robot Handler, ハンドラー>>は試合が<<Halt>>により停止している間、必要に応じてフィールドに入りロボットに触れる。 +
 The <<ハンドラー/Robot Handler, robot handler>> may enter the field and touch robots now.
 . <<ハンドラー/Robot Handler, ハンドラー>>はロボットを外に出す +
 The <<ハンドラー/Robot Handler, robot handler>> takes robots out.
@@ -59,8 +59,8 @@ A team software by sending a request to the <<Game Controller, game controller>>
 . <<Game Controller, game controller>>は当該チームに許された最大ロボット数を超えていないかを確認し(例えばチームが<<イエローカード/Yellow Card, イエロー>>か<<レッドカード/Red Card, レッドカード>>を受け取ったあと等)、リクエストを処理する。 +
 The <<Game Controller, game controller>> itself if a team exceeds the maximum number of robots (for example after a team receives a <<イエローカード/Yellow Card, yellow>> or <<レッドカード/Red Card, red card>>).
 
-片方のチームの交代の意図のために試合がハルトされた場合、少なくとも一台のロボットが除去されなければならない。交代のために試合がハルトされていない場合に限り交代の意図を取り消すことができる。 +
+片方のチームの交代の意図のために試合がHaltされた場合、少なくとも一台のロボットが除去されなければならない。交代のために試合がHaltされていない場合に限り交代の意図を取り消すことができる。 +
 If the game was halted due to a substitution intent by a team, at least one robot must be taken out by this team. A substitution intent can be revoked unless the game was not already halted for substitution.
 
-ボール配置後、試合が継続する直前にどちらかのチームがロボットを交代する意思がある場合、<<Game Controller, game controller>>は自動的に試合を<<ハルト/Halt, ハルト>>する。 +
-If a robot substitution intent for either team is present just before the game would continue after ball placement, the <<Game Controller, game controller>> automatically <<ハルト/Halt, halts>> the game.
+ボール配置後、試合が継続する直前にどちらかのチームがロボットを交代する意思がある場合、<<Game Controller, game controller>>は自動的に試合を<<Halt>>する。 +
+If a robot substitution intent for either team is present just before the game would continue after ball placement, the <<Game Controller, game controller>> automatically <<Halt, halts>> the game.

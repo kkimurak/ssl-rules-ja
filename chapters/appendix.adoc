@@ -93,7 +93,7 @@ The information shown in this table here may be incomplete. Please read the sect
 || <<ダブルタッチ/Double Touch, ATTACKER_DOUBLE_TOUCHED_BALL>> | <<インプレイとアウトオブプレイ/Ball In And Out Of Play, ball in play>> | <<停止/Stop>> -> <<フリーキック/Free Kick>> | no | auto referee
 
 | 5+| *ボールがフィールド外に出た時/Ball Leaving the Field*
-|| <<得点/Scoring Goals, POSSIBLE_GOAL>> | <<インプレイとアウトオブプレイ/Ball In And Out Of Play, ball in play>> | <<ハルト/Halt>> | no | auto referee
+|| <<得点/Scoring Goals, POSSIBLE_GOAL>> | <<インプレイとアウトオブプレイ/Ball In And Out Of Play, ball in play>> | <<Halt>> | no | auto referee
 || <<タッチラインとの交差/Touch Line Crossing, BALL_LEFT_FIELD_TOUCH_LINE>> | <<インプレイとアウトオブプレイ/Ball In And Out Of Play, ball in play>> | <<停止/Stop>> -> <<フリーキック/Free Kick>> | no | auto referee
 || <<ゴールラインとの交差/Goal Line Crossing, BALL_LEFT_FIELD_GOAL_LINE>> | <<インプレイとアウトオブプレイ/Ball In And Out Of Play, ball in play>> | <<停止/Stop>> -> <<フリーキック/Free Kick>> | no | auto referee
 || <<aimless-kick, AIMLESS_KICK>> | <<インプレイとアウトオブプレイ/Ball In And Out Of Play, ball in play>> | <<停止/Stop>> -> <<フリーキック/Free Kick>> | no | auto referee
@@ -167,10 +167,10 @@ during <<ボール配置/Ball Placement, Ball Placement>>
 || <<ロボットの交代/Robot Substitution, BOT_SUBSTITUTION>> 
 | <<停止/Stop, 停止>>中 +
 during <<停止/Stop, Stop>>
-| (次の停止時に)<<ハルト/Halt, ハルト>>、次いで<<停止/Stop, 停止>> +
-<<ハルト/Halt, Halt>> (after next stoppage), then <<停止/Stop, Stop>> | no | remote control
+| (次の停止時に)<<Halt>>、次いで<<停止/Stop, 停止>> +
+<<Halt>> (after next stoppage), then <<停止/Stop, Stop>> | no | remote control
 || <<チャレンジフラッグ/Challenge Flags, CHALLENGE_FLAG>> | 常時/always | - | no | remote control
-|| <<非常停止/Emergency stop, EMERGENCY_STOP>> | 常時/always | <<ハルト/Halt>> -> <<タイムアウト/Timeouts, Timeout>> + <<イエローカード/Yellow Card>>>> | no | remote control
+|| <<非常停止/Emergency stop, EMERGENCY_STOP>> | 常時/always | <<Halt>> -> <<タイムアウト/Timeouts, Timeout>> + <<イエローカード/Yellow Card>>>> | no | remote control
 
 6+| *手動/Manual*
 || <<得点/Scoring Goals, GOAL>> | - | <<停止/Stop>> -> <<キックオフ/Kick-Off>> | no | human referee
