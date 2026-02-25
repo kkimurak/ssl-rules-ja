@@ -35,11 +35,17 @@ https://www.jfa.jp/documents/pdf/soccer/lawsofthegame_201819.pdf)
 
 ==== フィールドの表面/Field Surface
 競技フィールドの表面は緑色のフェルトマットかカーペットである。カーペット下の床は固く平坦で水平である。 +
-The playing surface is green felt mat or carpet. The floor under the carpet is level, flat, and hard.
+The playing surface is a green felt mat or carpet. The floor under the carpet is level, flat, and hard.
 
 フィールドはすべての<<フィールドライン/Field Lines, フィールドライン>>から0.7mまで続いている。フィールドの外周0.4mは高さ0.1mの黒色のフェンスでロボットエリアと分離され、<<主審/Referee, 主審>>と<<副審/Assistant Referee, 副審>>が通行するエリアとして使用される。 残りの0.3mはフィールドのマージンである。 +
-The field surface will continue for 0.7 meters beyond the <<フィールドライン/Field Lines, field lines>> on all sides. The outer 0.4 meters of this runoff area, separated from the robot area by a 0.1 meters tall black wall, is used as a designated walking area for the <<主審/Referee, referee>> and the <<副審/Assistant Referee, assistant referee>>. The remaining 0.3 meters are the field margins.
+The field surface continues for at least 0.7 meters beyond the <<フィールドライン/Field Lines, field lines>> on all sides. The field margin extends from the field lines to the surrounding walls:
 
+* Division A: 0.3 meters along the touch lines, 0.6 meters behind the goal lines.
+* Division B: 0.3 meters on all sides.
+
+Any area beyond the walls is used as a designated walking area for the <<主審/Referee, referee>> and the <<副審/Assistant Referee, assistant referee>>.
+
+The extra field margin behind each goal line in Division A is used for <<Robot Substitution>>.
 
 ==== フィールドのマーキング/Field Markings
 競技フィールドにはラインが引いてある。すべてのラインは太さ0.01mで白色(塗装、スプレー、白色カーペット、または強力なテープなどいずれか)である。エリアの境界を示すラインはエリアの一部である。
@@ -86,6 +92,7 @@ Goals must be placed on the center of each goal line and anchored securely to th
 
 サイドウォールの間の距離はディヴィジョンAであれば1.8mでディヴィジョンBであれば1mで、奥行は0.18mである。ゴールウォールの厚さは0.02mでゴールラインと接している。ただし、フィールドラインやフィールドに対して侵入したり重なったりしないようにしている。<<goal-detail-a, 図3>>と<<goal-detail-b, 図4>>にディヴィジョンAとディヴィジョンBの詳細をそれぞれ示す。 +
 The distance between the side walls is 1.8 meters for division A and 1 meter for division B, and the goal is 0.18 meters deep. The goal walls are 0.02 meters thick and touch the goal line, but do not overlap or encroach on the field lines or the field. <<goal-detail-a, Figure 3>> and <<goal-detail-b, figure 4>> show these details for division A and division B respectively.
+The goal side walls extend to the outside wall.
 
 NOTE: 図中の数値はミリメートル表示の距離である +
 The numbers in the figures below show the distances in millimeters.
