@@ -37,15 +37,19 @@ https://www.jfa.jp/documents/pdf/soccer/lawsofthegame_201819.pdf)
 競技フィールドの表面は緑色のフェルトマットかカーペットである。カーペット下の床は固く平坦で水平である。 +
 The playing surface is a green felt mat or carpet. The floor under the carpet is level, flat, and hard.
 
-フィールドはすべての<<フィールドライン/Field Lines, フィールドライン>>から0.7mまで続いている。フィールドの外周0.4mは高さ0.1mの黒色のフェンスでロボットエリアと分離され、<<主審/Referee, 主審>>と<<副審/Assistant Referee, 副審>>が通行するエリアとして使用される。 残りの0.3mはフィールドのマージンである。 +
+フィールドはすべての<<フィールドライン/Field Lines, フィールドライン>>から少なくとも0.7mまで続いている。フィールドのマージンはフィールドラインからフィールドを囲む壁まで広がっている: +
 The field surface continues for at least 0.7 meters beyond the <<フィールドライン/Field Lines, field lines>> on all sides. The field margin extends from the field lines to the surrounding walls:
 
-* Division A: 0.3 meters along the touch lines, 0.6 meters behind the goal lines.
-* Division B: 0.3 meters on all sides.
+* ディヴィジョン A: タッチラインに沿って0.3m、ゴールラインから後ろに0.6m +
+  Division A: 0.3 meters along the touch lines, 0.6 meters behind the goal lines.
+* ディヴィジョン B: すべての辺から0.3m +
+  Division B: 0.3 meters on all sides.
 
+壁の外側のエリアは<<主審/Referee, 主審>>と<<副審/Assistant Referee, 副審>>が通行するエリアとして使用される。 +
 Any area beyond the walls is used as a designated walking area for the <<主審/Referee, referee>> and the <<副審/Assistant Referee, assistant referee>>.
 
-The extra field margin behind each goal line in Division A is used for <<Robot Substitution>>.
+ディヴィジョンAにおけるゴール後ろ側のフィールドのマージンは <<ロボットの交代/Robot Substitution, ロボットの交代>> に使用される。 +
+The extra field margin behind each goal line in Division A is used for <<ロボットの交代/Robot Substitution, Robot Substitution>>.
 
 ==== フィールドのマーキング/Field Markings
 競技フィールドにはラインが引いてある。すべてのラインは太さ0.01mで白色(塗装、スプレー、白色カーペット、または強力なテープなどいずれか)である。エリアの境界を示すラインはエリアの一部である。

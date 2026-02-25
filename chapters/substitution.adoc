@@ -1,20 +1,21 @@
 == ロボットの交代/Robot Substitution
 
-=== Substitution Areas
+=== 交代エリア/Substitution Areas
 
 [[goal-substitution-area]]
-==== Goal Substitution Area (Division A only)
+==== ゴール側交代エリア/Goal Substitution Area (Division A only)
 A robot is considered to be in the Goal Substitution Area if it is at least 0.3 meters outside the field, behind its own goal line.
 
 Robots are allowed to remain in the Goal Substitution Area while the game is running.
 They are allowed to move freely and must comply with the following rules:
 
-* Minimum ball distance during <<Stop, stop>> or <<Free Kick, free kick>>
-* Must not interfere with <<Ball Placement, ball placement>>
+* Minimum ball distance during <<停止/Stop, stop>> or <<フリーキック/Free Kick, free kick>>
+* Must not interfere with <<ボール配置/Ball Placement, ball placement>>
 
 [[center-substitution-area]]
-==== Center Substitution Area
-A robot is considered to be in the Center Substitution Area if it is at least partially inside the field margin and at a distance of at most 1 meter from the <<Halfway Line, halfway line>>.
+==== センター交代エリア/Center Substitution Area
+ロボットが少なくとも部分的にフィールドのマージン内にあり、かつ<<ハーフウェーライン/Halfway Line, ハーフウェーライン>>から最大1mの距離にあれば、ロボットはセンター交代エリア内にあるとみなされる。 +
+A robot is considered to be in the Center Substitution Area if it is at least partially inside the field margin and at a distance of at most 1 meter from the <<ハーフウェーライン/Halfway Line, halfway line>>.
 
 === Rules
 .定義/Definition
