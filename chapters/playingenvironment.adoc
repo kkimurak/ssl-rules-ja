@@ -94,7 +94,8 @@ The penalty mark defines the point from which a team executes a penalty kick aga
 ゴールはそれぞれのゴールラインの中央に配置し、しっかりと固定されなければならない。ゴールは高さ0.16mの2枚の垂直なサイドウォールと1枚の垂直なリヤウォールがつながって構成されている。ゴールの内側は、ボールの衝撃を吸収し偏向速度を減じるための材質 - 例えば発泡材など - で覆われる必要がある。ゴールの内壁は白色で、外壁と角および上面は黒色で塗装される。 +
 Goals must be placed on the center of each goal line and anchored securely to the field surface. They consist of two 0.16 meters high vertical side walls joined at the back by a 0.16 meters high vertical rear wall. The inner face of the goal has to be covered with an energy absorbing material such as foam to help absorb ball impacts and lessen the speed of deflections. The inner goal walls are white, the outer goal walls, edges, and tops are black.
 
-サイドウォールの間の距離はディヴィジョンAであれば1.8mでディヴィジョンBであれば1mで、奥行は0.18mである。ゴールウォールの厚さは0.02mでゴールラインと接している。ただし、フィールドラインやフィールドに対して侵入したり重なったりしないようにしている。<<goal-detail-a, 図3>>と<<goal-detail-b, 図4>>にディヴィジョンAとディヴィジョンBの詳細をそれぞれ示す。 +
+サイドウォールの間の距離はディヴィジョンAであれば1.8mでディヴィジョンBであれば1mで、奥行は0.18mである。ゴールウォールの厚さは0.02mでゴールラインと接している。ただし、フィールドラインやフィールドに対して侵入したり重なったりしないようにしている。<<goal-detail-a, 図3>>と<<goal-detail-b, 図4>>にディヴィジョンAとディヴィジョンBの詳細をそれぞれ示す。
+ゴールのサイドウォールはフィールド外周の壁まで伸びている。 +
 The distance between the side walls is 1.8 meters for division A and 1 meter for division B, and the goal is 0.18 meters deep. The goal walls are 0.02 meters thick and touch the goal line, but do not overlap or encroach on the field lines or the field. <<goal-detail-a, Figure 3>> and <<goal-detail-b, figure 4>> show these details for division A and division B respectively.
 The goal side walls extend to the outside wall.
 
