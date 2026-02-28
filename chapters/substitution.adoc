@@ -22,7 +22,7 @@ Must not interfere with <<ボール配置/Ball Placement, ball placement>>
 ロボットが少なくとも部分的にフィールドのマージン内にあり、かつ<<ハーフウェーライン/Halfway Line, ハーフウェーライン>>から最大1mの距離にあれば、ロボットはセンター交代エリア内にあるとみなされる。 +
 A robot is considered to be in the Center Substitution Area if it is at least partially inside the field margin and at a distance of at most 1 meter from the <<ハーフウェーライン/Halfway Line, halfway line>>.
 
-=== Rules
+=== ルール/Rules
 .定義/Definition
 ロボットはそれぞれのチームの<<ハンドラー/Robot Handler, ハンドラー>>によって交代される。他のいかなるチームメンバーもロボットを出し入れすることは許可されない。 +
 Robots are substituted by the <<ハンドラー/Robot Handler, robot handler>> of the respective team. No other team member is allowed to take robots out or put robots in.
