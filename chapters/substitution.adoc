@@ -1,4 +1,28 @@
 == ロボットの交代/Robot Substitution
+
+=== 交代エリア/Substitution Areas
+
+[[goal-substitution-area]]
+==== ゴール側交代エリア/Goal Substitution Area (Division A only)
+ロボットが自陣側ゴールラインから少なくとも 0.3m フィールド外に出ているとき、ロボットはゴール側交代エリア内にあるとみなされる。 +
+A robot is considered to be in the Goal Substitution Area if it is at least 0.3 meters outside the field, behind its own goal line.
+
+ロボットは試合中、ゴール側交代エリアにいてよい。
+これらは自由に移動することができ、以下のルールに従う必要がある: +
+Robots are allowed to remain in the Goal Substitution Area while the game is running.
+They are allowed to move freely and must comply with the following rules:
+
+* <<停止/Stop, 「停止」>>中、もしくは<<フリーキック/Free Kick, フリーキック>>中におけるボールとの最小距離制約を満たすこと +
+Minimum ball distance during <<停止/Stop, stop>> or <<フリーキック/Free Kick, free kick>>
+* <<ボール配置/Ball Placement, ボール配置>>に干渉しないこと +
+Must not interfere with <<ボール配置/Ball Placement, ball placement>>
+
+[[center-substitution-area]]
+==== センター交代エリア/Center Substitution Area
+ロボットが少なくとも部分的にフィールドのマージン内にあり、かつ<<ハーフウェーライン/Halfway Line, ハーフウェーライン>>から最大1mの距離にあれば、ロボットはセンター交代エリア内にあるとみなされる。 +
+A robot is considered to be in the Center Substitution Area if it is at least partially inside the field margin and at a distance of at most 1 meter from the <<ハーフウェーライン/Halfway Line, halfway line>>.
+
+=== ルール/Rules
 .定義/Definition
 ロボットはそれぞれのチームの<<ハンドラー/Robot Handler, ハンドラー>>によって交代される。他のいかなるチームメンバーもロボットを出し入れすることは許可されない。 +
 Robots are substituted by the <<ハンドラー/Robot Handler, robot handler>> of the respective team. No other team member is allowed to take robots out or put robots in.
@@ -9,10 +33,8 @@ The <<ハンドラー/Robot Handler, robot handler>> should prefer to use long s
 以下のすべての条件に適合する場合は、ゲーム中のいつでも<<主審/Referee, 主審>>に確認を取ることなくロボットを投入もしくは除去することができる: +
 Robots can always be taken in and out during game play without notifying the <<主審/Referee, referee>> if all the following conditions are met:
 
-. ロボットは少なくとも部分的に<<フィールドの表面/Field Surface, フィールドのマージン部分>>にある。 +
-The robot is at least partially inside the <<フィールドの表面/Field Surface, field margin>>.
-. ロボットは<<ハーフウェーライン/Halfway Line, ハーフウェーライン>>から1mを超えない位置にある。 +
-The robot is at a distance from the <<ハーフウェーライン/Halfway Line, halfway line>> that must not exceed 1 meter.
+. ロボットが各チームの交代エリアにある。 +
+The robot is in its team's substitution area.
 . ボールはロボットから少なくとも0.5m離れた地点にある。 +
 The ball must be at least 0.5 meters away from the robot.
 

@@ -1,8 +1,12 @@
 == ロボット/Robots
 
 === ロボットの台数/Number Of Robots
-試合は1台のキーパーを含んだディヴィジョンAなら11台以下、ディヴィジョンBなら6台以下のロボットを使用する2つのチームで行われる。試合中に審判がロボットを識別できるように、各ロボットにはVision patternに従って明確に番号が与えられていなければならない。ゴールキーパーのIDは試合が始まる前に指定されていなければならない(「<<ゴールキーパーのIDの選択/Choosing Keeper Id,ゴールキーパーのIDの選択>>」を参照)。 +
-A match is played by two teams, with each team consisting of not more than 11 robots in division A and not more than 6 robots in division B, one of which may be the keeper. Each robot must be clearly numbered according to its vision pattern so that the referee can identify it during the match. The id of the keeper must be chosen before the match starts (see <<ゴールキーパーのIDの選択/Choosing Keeper Id, Choosing Keeper ID>>).
+試合は1台のキーパーを含んだディヴィジョンAなら11台以下、ディヴィジョンBなら6台以下のロボットを使用する2つのチームで行われる。
+<<goal-substitution-area, ゴール側交代エリア>> にあるロボットはこの制限に計上しない。
+試合中に審判がロボットを識別できるように、各ロボットにはVision patternに従って明確に番号が与えられていなければならない。ゴールキーパーのIDは試合が始まる前に指定されていなければならない(「<<ゴールキーパーのIDの選択/Choosing Keeper Id,ゴールキーパーのIDの選択>>」を参照)。 +
+A match is played by two teams, with each team consisting of not more than 11 robots in division A and not more than 6 robots in division B, one of which may be the keeper.
+Robots in the <<goal-substitution-area, Goal Substitution Area>> do not count towards this limit.
+Each robot must be clearly numbered according to its vision pattern so that the referee can identify it during the match. The id of the keeper must be chosen before the match starts (see <<ゴールキーパーのIDの選択/Choosing Keeper Id, Choosing Keeper ID>>).
 
 ディヴィジョンAの予選段階では例外として、2チームのうち少なくとも一方のチームが希望すれば、ロボットの台数は8台に制限される。 +
 An exception is made during the Division A group phase, where the number of robots is limited to 8 if at least one of the two teams prefers it.
