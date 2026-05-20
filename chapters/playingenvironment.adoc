@@ -169,7 +169,8 @@ It is a physical device that allows entering the following commands:
 
 - タイムアウトを要求する +
 Request a timeout
-- Request a forced timeout
+- 強制タイムアウトを要求する +
+Request a forced timeout
 - ロボットの交代を要求する +
 Request robot substitution
 - キーパーのIDを変更する +
@@ -196,9 +197,9 @@ The official implementation for the league can be found on GitHub: https://githu
 === コミュニケーションフラッグ/Communication Flags
 
 コミュニケーションフラッグは、試合中の<<主審/Referee, 主審>>に対するジェスチャーや野次を回避するために用いられる。
-これらのフラッグは<<タイムアウト/Timeouts, タイムアウト>>や<<非常停止/Forced Timeout, 非常停止>>、<<ロボットの交代/Robot Substitution, 手動でのロボットの交代>>、<<チャレンジフラッグ/Challenge Flags, チャレンジ>>など、さまざまな場面で用いられる。 +
+これらのフラッグは<<タイムアウト/Timeouts, タイムアウト>>や<<強制タイムアウト/Forced Timeout, 非常停止>>、<<ロボットの交代/Robot Substitution, 手動でのロボットの交代>>、<<チャレンジフラッグ/Challenge Flags, チャレンジ>>など、さまざまな場面で用いられる。 +
 The communication flags are used to avoid gesturing and yelling with the <<主審/Referee, referee>> during a match.
-These flags are responsible for communicating various intents, such as: <<タイムアウト/Timeouts, timeouts>>, <<非常停止/Forced Timeout, forced timeout>>, <<ロボットの交代/Robot Substitution, manual robot substitution>> and <<チャレンジフラッグ/Challenge Flags, challenges>>.
+These flags are responsible for communicating various intents, such as: <<タイムアウト/Timeouts, timeouts>>, <<強制タイムアウト/Forced Timeout, forced timeout>>, <<ロボットの交代/Robot Substitution, manual robot substitution>> and <<チャレンジフラッグ/Challenge Flags, challenges>>.
 
 <<主審/Referee, 主審>>もしくは<<Game Controller Operator, game controller operator>>がコミュニケーションフラッグを確認する必要がある。
 ジェスチャーや野次は<<非スポーツマン行為/Unsporting Behavior, 非スポーツマン行為>>とみなされ、一度の警告ののちに<<レッドカード/Red Card, レッドカード>>となる。 +
