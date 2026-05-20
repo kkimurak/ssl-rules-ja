@@ -167,16 +167,15 @@ Individual game events can be disabled completely or in some automatic referee i
 A remote control for each team can optionally be provided by the tournament organizers.
 It is a physical device that allows entering the following commands:
 
-- チャレンジフラッグを揚げる +
-Raise a challenge flag
 - タイムアウトを要求する +
 Request a timeout
+- Request a forced timeout
 - ロボットの交代を要求する +
 Request robot substitution
-- 非常停止を要求する +
-Request emergency stop
 - キーパーのIDを変更する +
 Change the keeper id
+- チャレンジフラッグを揚げる +
+Raise a challenge flag
 
 また、これは次のようなフィードバック情報を提供するかもしれない: +
 It may also provide feedback information, like:
@@ -197,9 +196,9 @@ The official implementation for the league can be found on GitHub: https://githu
 === コミュニケーションフラッグ/Communication Flags
 
 コミュニケーションフラッグは、試合中の<<主審/Referee, 主審>>に対するジェスチャーや野次を回避するために用いられる。
-これらのフラッグは<<タイムアウト/Timeouts, タイムアウト>>や<<非常停止/Emergency stop, 非常停止>>、<<ロボットの交代/Robot Substitution, 手動でのロボットの交代>>、<<チャレンジフラッグ/Challenge Flags, チャレンジ>>など、さまざまな場面で用いられる。 +
+これらのフラッグは<<タイムアウト/Timeouts, タイムアウト>>や<<非常停止/Forced Timeout, 非常停止>>、<<ロボットの交代/Robot Substitution, 手動でのロボットの交代>>、<<チャレンジフラッグ/Challenge Flags, チャレンジ>>など、さまざまな場面で用いられる。 +
 The communication flags are used to avoid gesturing and yelling with the <<主審/Referee, referee>> during a match.
-These flags are responsible for communicating various intents, such as: <<タイムアウト/Timeouts, timeouts>>, <<非常停止/Emergency stop, emergency stops>>, <<ロボットの交代/Robot Substitution, manual robot substitution>> and <<チャレンジフラッグ/Challenge Flags, challenges>>.
+These flags are responsible for communicating various intents, such as: <<タイムアウト/Timeouts, timeouts>>, <<非常停止/Forced Timeout, forced timeout>>, <<ロボットの交代/Robot Substitution, manual robot substitution>> and <<チャレンジフラッグ/Challenge Flags, challenges>>.
 
 <<主審/Referee, 主審>>もしくは<<Game Controller Operator, game controller operator>>がコミュニケーションフラッグを確認する必要がある。
 ジェスチャーや野次は<<非スポーツマン行為/Unsporting Behavior, 非スポーツマン行為>>とみなされ、一度の警告ののちに<<レッドカード/Red Card, レッドカード>>となる。 +

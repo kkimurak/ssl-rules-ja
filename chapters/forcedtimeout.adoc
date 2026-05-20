@@ -1,15 +1,15 @@
-== 非常停止/Emergency stop
+== 非常停止/Forced Timeout
 
 .定義/Definition
 チームは現在の状況に関係なく、10秒の猶予時間後もしくは次のストップのいずれか早い時点でゲームを停止するよう要求できる。
 これはイエローカードとなり、直ちにタイムアウトの取得となる。
 非常停止を要求したチームにタイムアウトが残されていない場合でもフィールド上からロボットを取り除くことはできるが、残りのタイムアウト時間を使用することはできない。 +
-A team can ask to stop the game immediately after a grace period of 10 seconds or at the next stoppage, whichever happens first regardless of the current situation.
+A team can ask to stop the game after a grace period of 10 seconds or at the next stoppage, whichever happens first regardless of the current situation.
 It will receive a yellow card for this and must take a timeout immediately.
 If the team is out of timeouts, it is still allowed to remove robots from the field, but can not use any remaining timeout time.
 
 NOTE: このルールは極端な - 例えばソフトウェアがクラッシュした、ロボットが自分自身にダメージを与えている、といった - 状況でのみ使用されることを想定する。 +
-This rule is supposed to be used in extreme situations only, e.g. a software crash or when robots are damaging themselves significantly.
+This rule is supposed to be used in extreme situations only, e.g. a software crash or when robots are damaging themselves significantly. If robots are failing to the extent they are endangering the participants, the referee should immediatley invoke Halt, and may choose to penalize the team for <<Unsafe Operations, unsafe operations>>.
 
 このルールで試合が停止された場合、以下の3つの可能性が考えられる: +
 When the game is stopped due to this rule, there are three possibilities that may have happened:
@@ -31,7 +31,7 @@ For *3*, the game is continued like after a regular timeout.
 
 .用途/Usage
 非常停止の意図は<<コミュニケーションフラッグ/Communication Flags, コミュニケーションフラッグ>>を使用して伝えらえる。 +
-An emergency stop intent can be made using <<コミュニケーションフラッグ/Communication Flags, communication flags>>.
+A forced timeout intent can be made using <<コミュニケーションフラッグ/Communication Flags, communication flags>>.
 
 NOTE: 主審は、有望なプレイが行われていない場合は猶予時間より早く試合を停止することができる。 +
 The referee may stop the game earlier if there is no promising play in action.
