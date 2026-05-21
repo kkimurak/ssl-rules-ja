@@ -9,7 +9,7 @@ It will receive a yellow card for this and must take a timeout immediately.
 If the team is out of timeouts, it is still allowed to remove robots from the field, but can not use any remaining timeout time.
 
 NOTE: このルールは極端な - 例えばソフトウェアがクラッシュした、ロボットが自分自身にダメージを与えている、といった - 状況でのみ使用されることを想定する。ロボットが参加者を危険にさらすほど故障した場合、審判は直ちに試合をHaltさせ、当該チームに「<<危険操作/Unsafe Operations, 危険操作>>」としてペナルティを科すことができる。 +
-This rule is supposed to be used in extreme situations only, e.g. a software crash or when robots are damaging themselves significantly. If robots are failing to the extent they are endangering the participants, the referee should immediatley invoke Halt, and may choose to penalize the team for <<危険操作/Unsafe Operations, unsafe operations>>.
+This rule is supposed to be used in extreme situations only, e.g. a software crash or when robots are damaging themselves significantly. If robots are failing to the extent they are endangering the participants, the referee should immediately invoke Halt, and may choose to penalize the team for <<危険操作/Unsafe Operations, unsafe operations>>.
 
 このルールで試合が停止された場合、以下の3つの可能性が考えられる: +
 When the game is stopped due to this rule, there are three possibilities that may have happened:
