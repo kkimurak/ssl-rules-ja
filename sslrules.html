@@ -1278,6 +1278,14 @@ The <a href="#_主審referee">referee</a> has to force a team to remove a robot 
 <p>ロボットはいかなる時点においても、直径0.18m、高さ0.15m以下の大きさでなければならない。さらに、ロボットの上面はstandard patternのサイズおよび表面の制約を満たさなければならない。<br>
 A robot must fit inside a 0.18 meters wide and 0.15 meters high cylinder at any point in time. Additionally, the top of the robot must adhere to the standard pattern size and surface constraints.</p>
 </div>
+<div class="paragraph">
+<p>試合に参加する同一チームの全てのロボットの高さの差は、互いに0.02m以内でなければならない(たとえば、ロボットの高さの最高値と最低値の差は0.02m以内とする)。共有ビジョンシステムはチーム内でのロボットの高さの差異を補正せず、リーグはそのような機能をサポートすることを意図しない。ロボットの高さを同程度に保つことで、共有される位置データが正確になり、競技に参加するすべてのチームにとって公平性が確保される。<br>
+The height of all robots of one team participating in a match must be within 0.02 meters of each other (e.g. the maximum and minimum robot heights may differ by no more than 0.02 meters). The shared vision system does not support correcting for different robot heights, and the league does not intend to support this feature. Keeping robot heights similar ensures shared localization data is accurate and fair for all participating teams.</p>
+</div>
+<div class="paragraph">
+<p>ビジョンシステムにおけるロボットの高さは次のように指定される: h<sub>min</sub> + 0.5 * (h<sub>max</sub> - h<sub>min</sub>)+
+The robot height in the vision system shall be specified as: h<sub>min</sub> + 0.5 * (h<sub>max</sub> - h<sub>min</sub>).</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_ロボットの色color_of_robots">3.2.3. ロボットの色/Color of Robots</h4>
@@ -4259,7 +4267,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2026-05-24 12:25:46 UTC
+最終更新 2026-05-24 12:30:24 UTC
 </div>
 </div>
 </body>
