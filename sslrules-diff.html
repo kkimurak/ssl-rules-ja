@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
-<meta name="author" content="2026-04-24">
+<meta name="author" content="2026-05-24">
 <title>RoboCup小型機リーグルール</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -873,7 +873,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>RoboCup小型機リーグルール</h1>
 <div class="details">
-<span id="author" class="author"><span class="diff_delete">2025-11-24</span><span class="diff_insert">2026-04-24</span></span><br>
+<span id="author" class="author"><span class="diff_delete">2025-11-24</span><span class="diff_insert">2026-05-24</span></span><br>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">目次</div>
@@ -1493,8 +1493,26 @@ The shared software used in the Small Size League is maintained by the <a href="
 <div class="sect3">
 <h4 id="_vision">2.3.1. Vision</h4>
 <div class="paragraph">
-<p>それぞれのフィールドには共有のビジョンサーバーと共有のカメラが設置されている。この共有ビジョン機器はコミュニティーにメンテナンスされているSSL-Vision ソフトウェア(<a href="https://github.com/RoboCup-SSL/ssl-vision" class="bare">https://github.com/RoboCup-SSL/ssl-vision</a>) が使用される。SSL-Visionはイーサーネット経由で競技会の前に共有ビジョンシステム開発者によって通達されたパケット形式で位置情報を各チームに提供する。各チームはシステムが共有ビジョンシステムと互換性があり、システムが共有ビジョンシステムによって提供される実際のセンサーのデータの(ノイズ、レイテンシ、誤検出、欠落を含む)典型的な特性を処理できることを確認する必要がある。ロボット最上部にあるビジョンパターンはSSL-Visionの仕様に準拠している必要があり、SSL-Visionのマニュアルで指定されている標準のカラーペーパーでなければならない。<br>
-Each field is provided with a shared central vision server and a set of shared cameras. This shared vision equipment uses the community-maintained SSL-Vision software (<a href="https://github.com/RoboCup-SSL/ssl-vision" class="bare">https://github.com/RoboCup-SSL/ssl-vision</a>) to provide localization data to teams via Ethernet in a packet format that is to be announced by the shared vision system developers before the competition. Teams need to ensure that their systems are compatible with the shared vision system output and that their systems are able to handle the typical properties of real-world sensory data as provided by the shared vision system (including noise, latency, or occasional failed detections and misclassifications). The vision patterns on the top of the robots must adhere to the specifications of SSL-Vision, and must be of the standard color paper as specified in the SSL-Vision documentation.</p>
+<p><span class="diff_delete">それぞれのフィールドには共有のビジョンサーバーと共有のカメラが設置されている。この共有ビジョン機器はコミュニティーにメンテナンスされているSSL-Vision </span><span class="diff_delete">ソフトウェア(</span><a href="https://github.com/RoboCup-SSL/ssl-vision" class="bare"><span class="diff_delete">https://github.com/RoboCup-SSL/ssl-vision</span></a><span class="diff_delete">) </span><span class="diff_delete">が使用される。SSL-Visionはイーサーネット経由で競技会の前に共有ビジョンシステム開発者によって通達されたパケット形式で位置情報を各チームに提供する。各チームはシステムが共有ビジョンシステムと互換性があり、システムが共有ビジョンシステムによって提供される実際のセンサーのデータの(ノイズ、レイテンシ、誤検出、欠落を含む)典型的な特性を処理できることを確認する必要がある。ロボット最上部にあるビジョンパターンはSSL-Visionの仕様に準拠している必要があり、SSL-Visionのマニュアルで指定されている標準のカラーペーパーでなければならない。</span><span class="diff_insert">それぞれのフィールドには共有のビジョンと共有のカメラが設置されている。この共有ビジョン機器はイーサーネット経由で競技会の前に共有ビジョンシステム開発者によって通達されたパケット形式で位置情報を各チームに提供する。複数のビジョンシステムが競技イベントでの使用を承認されている場合、主催者はどのシステムが使用可能であるかを事前に説明する。</span><br>
+Each field is provided with a shared <span class="diff_delete">central </span>vision <span class="diff_delete">server </span><span class="diff_insert">system </span>and a set of shared cameras. This shared vision equipment <span class="diff_delete">uses </span><span class="diff_delete">the </span><span class="diff_delete">community-maintained </span><span class="diff_delete">SSL-Vision </span><span class="diff_delete">software </span><span class="diff_delete">(</span><a href="https://github.com/RoboCup-SSL/ssl-vision" class="bare"><span class="diff_delete">https://github.com/RoboCup-SSL/ssl-vision</span></a><span class="diff_delete">) </span><span class="diff_delete">to </span><span class="diff_delete">provide </span><span class="diff_insert">provides </span>localization data to teams via Ethernet in a packet format that is to be announced by the shared vision system developers before the competition. <span class="diff_insert">If </span><span class="diff_insert">multiple </span><span class="diff_insert">vision </span><span class="diff_insert">systems </span><span class="diff_insert">are </span><span class="diff_insert">approved </span><span class="diff_insert">for </span><span class="diff_insert">a </span><span class="diff_insert">competitive </span><span class="diff_insert">event, </span><span class="diff_insert">the </span><span class="diff_insert">organizers </span><span class="diff_insert">will </span><span class="diff_insert">describe </span><span class="diff_insert">in </span><span class="diff_insert">advance </span><span class="diff_insert">which </span><span class="diff_insert">one(s) </span><span class="diff_insert">will </span><span class="diff_insert">be </span><span class="diff_insert">available </span><span class="diff_insert">for </span><span class="diff_insert">use.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">競技イベントでの使用を承認されたソフトウェア実装は現時点で2種類存在する。</span><br><span class="diff_insert">
+There </span><span class="diff_insert">are </span><span class="diff_insert">currently </span><span class="diff_insert">two </span><span class="diff_insert">software </span><span class="diff_insert">implementations </span><span class="diff_insert">that </span><span class="diff_insert">are </span><span class="diff_insert">approved </span><span class="diff_insert">for </span><span class="diff_insert">use </span><span class="diff_insert">at </span><span class="diff_insert">a </span><span class="diff_insert">competitive </span><span class="diff_insert">event.</span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="diff_insert">SSL-Vision </span><span class="diff_insert">(</span><a href="https://github.com/RoboCup-SSL/ssl-vision" class="bare"><span class="diff_insert">https://github.com/RoboCup-SSL/ssl-vision</span></a><span class="diff_insert">)</span></p>
+</li>
+<li>
+<p><span class="diff_insert">Vision </span><span class="diff_insert">Processor </span><span class="diff_insert">(</span><a href="https://github.com/TIGERs-Mannheim/vision-processor" class="bare"><span class="diff_insert">https://github.com/TIGERs-Mannheim/vision-processor</span></a><span class="diff_insert">)</span></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="diff_insert">いずれのソフトウェアも同一のパターンを認識し、同一のネットワークパケットを生成する。各チームはシステムが共有ビジョンシステムと互換性があり、システムが共有ビジョンシステムによって提供される実際のセンサーのデータの(ノイズ、レイテンシ、誤検出、欠落を含む)典型的な特性を処理できることを確認する必要がある。ロボット最上部にあるビジョンパターンはSSL-Visionで定義された仕様を尊寿する必要がある。チームはイベント主催者によって指定される(もしくは提供される)カラーペーパーを使用しなければならない。</span><br><span class="diff_insert">
+Both </span><span class="diff_insert">softwares </span><span class="diff_insert">detect </span><span class="diff_insert">the </span><span class="diff_insert">same </span><span class="diff_insert">approved </span><span class="diff_insert">jersey </span><span class="diff_insert">patterns, </span><span class="diff_insert">and </span><span class="diff_insert">produce </span><span class="diff_insert">the </span><span class="diff_insert">same </span><span class="diff_insert">network </span><span class="diff_insert">packets. </span>Teams need to ensure that their systems are compatible with the shared vision system output and that their systems are able to handle the typical properties of real-world sensory data as provided by the shared vision system (including noise, latency, or occasional failed detections and misclassifications). The vision patterns on the top of the robots must adhere to the specifications <span class="diff_delete">of </span><span class="diff_delete">SSL-Vision, </span><span class="diff_delete">and </span><span class="diff_insert">defined </span><span class="diff_insert">at </span><span class="diff_insert">SSL-Vision. </span><span class="diff_insert">Teams </span>must <span class="diff_delete">be </span><span class="diff_delete">of </span><span class="diff_insert">use </span>the <span class="diff_delete">standard </span>color paper <span class="diff_delete">as </span>specified <span class="diff_delete">in </span><span class="diff_insert">(or </span><span class="diff_insert">provided) </span><span class="diff_insert">by </span>the <span class="diff_delete">SSL-Vision </span><span class="diff_delete">documentation.</span><span class="diff_insert">event </span><span class="diff_insert">organizers.</span></p>
 </div>
 <div class="paragraph">
 <p>競技会の主催者からの発表があった場合や特別に許可されている場合を除いて、共有ビジョン機器のそばに、チーム独自のカメラや外部のセンサーを取り付けることは許されない。<br>
@@ -1502,8 +1520,9 @@ Besides the shared vision equipment, teams are not allowed to mount their own ca
 </div>
 <div class="paragraph">
 <p>SSL-Vision は、フィルタリングされ拡充されたデータを含む追加の <a href="https://github.com/RoboCup-SSL/ssl-vision/blob/master/src/shared/proto/messages_robocup_ssl_wrapper_tracked.proto">tracker protocol</a> を定義する。このメッセージは SSL-Vision それ自身によって公開されることは無いが、たとえばいずれかの<a href="#_オートレフautomatic_referee">オートレフ</a>がそれを行う事がある。
-これは<a href="#_game_controller">Game Controller</a>や、洗練されたフィルタを保有していないチームによって使用される事を意図している。<br>
-SSL-Vision defines an additional <a href="https://github.com/RoboCup-SSL/ssl-vision/blob/master/src/shared/proto/messages_robocup_ssl_wrapper_tracked.proto">tracker protocol</a> that contains filtered and enriched tracking data. Messages are not published by SSL-Vision itself, but for example by some <a href="#_オートレフautomatic_referee">automatic referees</a>.
+これは<a href="#_game_controller">Game Controller</a>や、洗練されたフィルタを保有していないチームによって使用される事を意図している。<br><span class="diff_delete">
+SSL-Vision </span><span class="diff_insert">
+The </span><span class="diff_insert">league </span>defines an additional <a href="https://github.com/RoboCup-SSL/ssl-vision/blob/master/src/shared/proto/messages_robocup_ssl_wrapper_tracked.proto">tracker protocol</a> that contains filtered and enriched tracking data. Messages are not published by <span class="diff_delete">SSL-Vision </span><span class="diff_insert">the </span><span class="diff_insert">shared </span><span class="diff_insert">vision </span><span class="diff_insert">system </span>itself, but for example by some <a href="#_オートレフautomatic_referee">automatic referees</a>.
 It is meant to be used by the <a href="#_game_controller">game controller</a> and by teams that do not yet have their own sophisticated filter.</p>
 </div>
 <div class="admonitionblock note">
@@ -4679,7 +4698,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 <span class="diff_delete">2025-11-24 </span><span class="diff_delete">12:08:56 </span><span class="diff_insert">2026-04-24 </span><span class="diff_insert">08:50:16 </span>UTC
+最終更新 <span class="diff_delete">2025-11-24 </span><span class="diff_delete">12:08:56 </span><span class="diff_insert">2026-05-24 </span><span class="diff_insert">12:25:46 </span>UTC
 </div>
 </div>
 </body>
