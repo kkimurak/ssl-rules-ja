@@ -170,7 +170,7 @@ during <<停止/Stop, Stop>>
 | (次の停止時に)<<Halt>>、次いで<<停止/Stop, 停止>> +
 <<Halt>> (after next stoppage), then <<停止/Stop, Stop>> | no | remote control
 || <<チャレンジフラッグ/Challenge Flags, CHALLENGE_FLAG>> | 常時/always | - | no | remote control
-|| <<非常停止/Emergency stop, EMERGENCY_STOP>> | 常時/always | <<Halt>> -> <<タイムアウト/Timeouts, Timeout>> + <<イエローカード/Yellow Card>>>> | no | remote control
+|| <<強制タイムアウト/Forced Timeout, EMERGENCY_STOP>> | 常時/always | <<Halt>> -> <<タイムアウト/Timeouts, Timeout>> + <<イエローカード/Yellow Card>>>> | no | remote control
 
 6+| *手動/Manual*
 || <<得点/Scoring Goals, GOAL>> | - | <<停止/Stop>> -> <<キックオフ/Kick-Off>> | no | human referee

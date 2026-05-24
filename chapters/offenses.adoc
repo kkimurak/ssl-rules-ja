@@ -49,6 +49,10 @@ It is not allowed to damage or modify robots of other teams.
 フィールドやボールを損傷させたり変形させたりしてはならない。 +
 It is not allowed to damage or modify the field or the ball.
 
+==== 危険操作/Unsafe Operations
+参加者や観客を危険にさらすようなロボットの故障は許されない。危険操作にはたとえば次のようなものを含むがこれに限らない: 高出力もしくは高速での制御不能なロボット動作、電子機器の発火、高電圧または目に見えるようなアーク放電。 +
+It is not allowed to have robot failures that endanger the participants or spectators. Examples of unsafe operations include, but are not limited to: high power or high velocity uncontrolled robot operation, electronics fire, high voltage or visible arc discharge.
+
 ==== 手順の軽視/Disrespect Procedures
 次に示すような行為を繰り返してはならない。 +
 Not following defined procedures repetitively, like for example:
