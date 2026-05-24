@@ -592,8 +592,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_他ロボットへの傷害damaging_other_robots">8.3.1. 他ロボットへの傷害/Damaging Other Robots</a></li>
 <li><a href="#_ボールやフィールドの損傷damaging_the_field_or_the_ball">8.3.2. ボールやフィールドの損傷/Damaging The Field Or The Ball</a></li>
-<li><a href="#_手順の軽視disrespect_procedures">8.3.3. 手順の軽視/Disrespect Procedures</a></li>
-<li><a href="#_敬意の欠如showing_lack_of_respect">8.3.4. 敬意の欠如/Showing Lack Of Respect</a></li>
+<li><a href="#_危険操作unsafe_operations">8.3.3. 危険操作/Unsafe Operations</a></li>
+<li><a href="#_手順の軽視disrespect_procedures">8.3.4. 手順の軽視/Disrespect Procedures</a></li>
+<li><a href="#_敬意の欠如showing_lack_of_respect">8.3.5. 敬意の欠如/Showing Lack Of Respect</a></li>
 </ul>
 </li>
 <li><a href="#_ファウルfouls">8.4. ファウル/Fouls</a>
@@ -641,7 +642,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_シュートアウトshoot_out">10. シュートアウト/Shoot-Out</a></li>
-<li><a href="#_非常停止emergency_stop">11. 非常停止/Emergency stop</a></li>
+<li><a href="#_強制タイムアウトforced_timeout">11. 強制タイムアウト/Forced Timeout</a></li>
 <li><a href="#_チャレンジフラッグchallenge_flags">12. チャレンジフラッグ/Challenge Flags</a></li>
 <li><a href="#_大会期間中のルール変更rule_changes_during_competition">13. 大会期間中のルール変更/Rule Changes During Competition</a></li>
 <li><a href="#_専門用語terminology">付録 A: 専門用語/Terminology</a>
@@ -1157,24 +1158,24 @@ It is a physical device that allows entering the following commands:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>チャレンジフラッグを揚げる<br>
-Raise a challenge flag</p>
-</li>
-<li>
 <p>タイムアウトを要求する<br>
 Request a timeout</p>
+</li>
+<li>
+<p>強制タイムアウトを要求する<br>
+Request a forced timeout</p>
 </li>
 <li>
 <p>ロボットの交代を要求する<br>
 Request robot substitution</p>
 </li>
 <li>
-<p>非常停止を要求する<br>
-Request emergency stop</p>
-</li>
-<li>
 <p>キーパーのIDを変更する<br>
 Change the keeper id</p>
+</li>
+<li>
+<p>チャレンジフラッグを揚げる<br>
+Raise a challenge flag</p>
 </li>
 </ul>
 </div>
@@ -1212,9 +1213,9 @@ The official implementation for the league can be found on GitHub: <a href="http
 <h3 id="_コミュニケーションフラッグcommunication_flags">2.4. コミュニケーションフラッグ/Communication Flags</h3>
 <div class="paragraph">
 <p>コミュニケーションフラッグは、試合中の<a href="#_主審referee">主審</a>に対するジェスチャーや野次を回避するために用いられる。
-これらのフラッグは<a href="#_タイムアウトtimeouts">タイムアウト</a>や<a href="#_非常停止emergency_stop">非常停止</a>、<a href="#_ロボットの交代robot_substitution">手動でのロボットの交代</a>、<a href="#_チャレンジフラッグchallenge_flags">チャレンジ</a>など、さまざまな場面で用いられる。<br>
+これらのフラッグは<a href="#_タイムアウトtimeouts">タイムアウト</a>や<a href="#_強制タイムアウトforced_timeout">非常停止</a>、<a href="#_ロボットの交代robot_substitution">手動でのロボットの交代</a>、<a href="#_チャレンジフラッグchallenge_flags">チャレンジ</a>など、さまざまな場面で用いられる。<br>
 The communication flags are used to avoid gesturing and yelling with the <a href="#_主審referee">referee</a> during a match.
-These flags are responsible for communicating various intents, such as: <a href="#_タイムアウトtimeouts">timeouts</a>, <a href="#_非常停止emergency_stop">emergency stops</a>, <a href="#_ロボットの交代robot_substitution">manual robot substitution</a> and <a href="#_チャレンジフラッグchallenge_flags">challenges</a>.</p>
+These flags are responsible for communicating various intents, such as: <a href="#_タイムアウトtimeouts">timeouts</a>, <a href="#_強制タイムアウトforced_timeout">forced timeout</a>, <a href="#_ロボットの交代robot_substitution">manual robot substitution</a> and <a href="#_チャレンジフラッグchallenge_flags">challenges</a>.</p>
 </div>
 <div class="paragraph">
 <p><a href="#_主審referee">主審</a>もしくは<a href="#_game_controller_operator">game controller operator</a>がコミュニケーションフラッグを確認する必要がある。
@@ -2925,7 +2926,14 @@ It is not allowed to damage or modify the field or the ball.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_手順の軽視disrespect_procedures">8.3.3. 手順の軽視/Disrespect Procedures</h4>
+<h4 id="_危険操作unsafe_operations">8.3.3. 危険操作/Unsafe Operations</h4>
+<div class="paragraph">
+<p>参加者や観客を危険にさらすようなロボットの故障は許されない。危険操作にはたとえば次のようなものを含むがこれに限らない: 高出力もしくは高速での制御不能なロボット動作、電子機器の発火、高電圧または目に見えるようなアーク放電。<br>
+It is not allowed to have robot failures that endanger the participants or spectators. Examples of unsafe operations include, but are not limited to: high power or high velocity uncontrolled robot operation, electronics fire, high voltage or visible arc discharge.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_手順の軽視disrespect_procedures">8.3.4. 手順の軽視/Disrespect Procedures</h4>
 <div class="paragraph">
 <p>次に示すような行為を繰り返してはならない。<br>
 Not following defined procedures repetitively, like for example:</p>
@@ -2948,7 +2956,7 @@ Robots do not conform to the positioning rules during a <a href="#_ペナルテ�
 </div>
 </div>
 <div class="sect3">
-<h4 id="_敬意の欠如showing_lack_of_respect">8.3.4. 敬意の欠如/Showing Lack Of Respect</h4>
+<h4 id="_敬意の欠如showing_lack_of_respect">8.3.5. 敬意の欠如/Showing Lack Of Respect</h4>
 <div class="paragraph">
 <p>チームメンバーは試合に関わる全員に対して適切な敬意を示している必要がある。このルールの侵害には以下が含まれるがこれらに限定されない。<br>
 A team member must show appropriate respect to everyone involved in the game. Infringements of this rule include but are not limited to:</p>
@@ -3595,14 +3603,14 @@ Shoot-Out is used to determine the winner of an elimination match if both teams 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_非常停止emergency_stop">11. 非常停止/Emergency stop</h2>
+<h2 id="_強制タイムアウトforced_timeout">11. 強制タイムアウト/Forced Timeout</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <div class="title">定義/Definition</div>
 <p>チームは現在の状況に関係なく、10秒の猶予時間後もしくは次のストップのいずれか早い時点でゲームを停止するよう要求できる。
 これはイエローカードとなり、直ちにタイムアウトの取得となる。
 非常停止を要求したチームにタイムアウトが残されていない場合でもフィールド上からロボットを取り除くことはできるが、残りのタイムアウト時間を使用することはできない。<br>
-A team can ask to stop the game immediately after a grace period of 10 seconds or at the next stoppage, whichever happens first regardless of the current situation.
+A team can ask to stop the game after a grace period of 10 seconds or at the next stoppage, whichever happens first regardless of the current situation.
 It will receive a yellow card for this and must take a timeout immediately.
 If the team is out of timeouts, it is still allowed to remove robots from the field, but can not use any remaining timeout time.</p>
 </div>
@@ -3613,8 +3621,8 @@ If the team is out of timeouts, it is still allowed to remove robots from the fi
 <i class="fa icon-note" title="注記"></i>
 </td>
 <td class="content">
-このルールは極端な - 例えばソフトウェアがクラッシュした、ロボットが自分自身にダメージを与えている、といった - 状況でのみ使用されることを想定する。<br>
-This rule is supposed to be used in extreme situations only, e.g. a software crash or when robots are damaging themselves significantly.
+このルールは極端な - 例えばソフトウェアがクラッシュした、ロボットが自分自身にダメージを与えている、といった - 状況でのみ使用されることを想定する。ロボットが参加者を危険にさらすほど故障した場合、審判は直ちに試合をHaltさせ、当該チームに「<a href="#_危険操作unsafe_operations">危険操作</a>」としてペナルティを科すことができる。<br>
+This rule is supposed to be used in extreme situations only, e.g. a software crash or when robots are damaging themselves significantly. If robots are failing to the extent they are endangering the participants, the referee should immediately invoke Halt, and may choose to penalize the team for <a href="#_危険操作unsafe_operations">unsafe operations</a>.
 </td>
 </tr>
 </table>
@@ -3657,8 +3665,8 @@ For <strong>3</strong>, the game is continued like after a regular timeout.</p>
 </div>
 <div class="paragraph">
 <div class="title">用途/Usage</div>
-<p>非常停止の意図は<a href="#_コミュニケーションフラッグcommunication_flags">コミュニケーションフラッグ</a>を使用して伝えらえる。<br>
-An emergency stop intent can be made using <a href="#_コミュニケーションフラッグcommunication_flags">communication flags</a>.</p>
+<p>強制タイムアウトの意図は<a href="#_コミュニケーションフラッグcommunication_flags">コミュニケーションフラッグ</a>を使用して伝えらえる。<br>
+A forced timeout intent can be made using <a href="#_コミュニケーションフラッグcommunication_flags">communication flags</a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4097,7 +4105,7 @@ during <a href="#_停止stop">Stop</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_非常停止emergency_stop">EMERGENCY_STOP</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_強制タイムアウトforced_timeout">EMERGENCY_STOP</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">常時/always</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_halt">Halt</a> &#8594; <a href="#_タイムアウトtimeouts">Timeout</a> + <a href="#_イエローカードyellow_card">イエローカード/Yellow Card</a>&gt;&gt;</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
@@ -4267,7 +4275,7 @@ Division A has shorter timeouts in some situations</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-最終更新 2026-05-24 12:30:24 UTC
+最終更新 2026-05-24 12:32:36 UTC
 </div>
 </div>
 </body>
