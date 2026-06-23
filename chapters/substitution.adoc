@@ -69,16 +69,16 @@ A substitution grants the team 20 seconds to take robots out. After that time, a
 Each team has 5 free substitutions per halftime.
 Every additional substitution will result in an <<ロボット交代回数超過/Excessive Robot Substitutions, excessive robot substitutions foul>> for the team.
 
-ロボットの交代の意思表示は次のようにして行う： +
+ロボットの交代の意思表示は次の者が行うことができる： +
 A robot substitution intent can be made by:
 
-. <<ハンドラー/Robot Handler, ハンドラー>>は<<Game Controller Operator, game controller operator>>に通知することで<<Game Controller, game controller>>に意図を入力する。 +
+. <<ハンドラー/Robot Handler, ハンドラー>>が<<Game Controller, game controller>>に意図を入力する<<Game Controller Operator, game controller operator>>に通知することで +
 A <<ハンドラー/Robot Handler, robot handler>> by informing the <<Game Controller Operator, game controller operator>> who in turn enters the intent into the <<Game Controller, game controller>>.
-. <<ハンドラー/Robot Handler, ハンドラー>>は、提供されていれば<<リモコン/Remote Control, リモコン>>を使用する。 +
+. <<ハンドラー/Robot Handler, ハンドラー>>が<<リモコン/Remote Control, リモコン>>を使用ことで(提供されている場合) +
 A <<ハンドラー/Robot Handler, robot handler>> by using the <<リモコン/Remote Control, remote control>>, if provided.
-. チームのソフトウェアは<<Game Controller, game controller>>へリクエストを送信する。 +
+. チームのソフトウェアが<<Game Controller, game controller>>へリクエストを送信することによって。 +
 A team software by sending a request to the <<Game Controller, game controller>>.
-. <<Game Controller, game controller>>は当該チームに許された最大ロボット数を超えていないかを確認し(例えばチームが<<イエローカード/Yellow Card, イエロー>>か<<レッドカード/Red Card, レッドカード>>を受け取ったあと等)、リクエストを処理する。 +
+. <<Game Controller, game controller>>が(例えばチームが<<イエローカード/Yellow Card, イエロー>>か<<レッドカード/Red Card, レッドカード>>を受け取った等の理由で)各チームに許された最大ロボット数を超えていることを確認したことによって +
 The <<Game Controller, game controller>> itself if a team exceeds the maximum number of robots (for example after a team receives a <<イエローカード/Yellow Card, yellow>> or <<レッドカード/Red Card, red card>>).
 
 片方のチームの交代の意図のために試合がHaltされた場合、少なくとも一台のロボットが除去されなければならない。交代のために試合がHaltされていない場合に限り交代の意図を取り消すことができる。 +
