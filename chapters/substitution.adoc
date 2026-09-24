@@ -8,9 +8,11 @@
 A robot is considered to be in the Goal Substitution Area if it is at least 0.3 meters outside the field, behind its own goal line.
 
 ロボットは試合中、ゴール側交代エリアにいてよい。
-これらは自由に移動することができ、以下のルールに従う必要がある: +
+これらはルールに違反しない限りにおいて自由に移動することができる。
+これには以下のルールを含むが限定されない: +
 Robots are allowed to remain in the Goal Substitution Area while the game is running.
-They are allowed to move freely and must comply with the following rules:
+They are allowed to move freely, as long as they don't break any rules.
+This includes, but is not limited to the following rules:
 
 * <<停止/Stop, 「停止」>>中、もしくは<<フリーキック/Free Kick, フリーキック>>中におけるボールとの最小距離制約を満たすこと +
 Minimum ball distance during <<停止/Stop, stop>> or <<フリーキック/Free Kick, free kick>>
